@@ -1,0 +1,5 @@
+# Store text files with LF in the repo; shell scripts and Dockerfiles must stay LF
+# even on Windows checkouts, or they break inside Linux containers.
+* text=auto
+*.sh text eol=lf
+Dockerfile text eol=lf
