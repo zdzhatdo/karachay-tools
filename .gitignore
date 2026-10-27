@@ -1,0 +1,110 @@
+# ---------------------------------------------------------------
+# Secrets — never commit
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------------------------------------------------------------
+# Corpus data — licensing: raw/processed text may not be
+# republishable (see docs/DESIGN.md §14). Keep data out of git;
+# store it locally or in object storage instead.
+# ---------------------------------------------------------------
+data/
+pipeline/data/
+*.jsonl
+*.jsonl.gz
+# Wikipedia dumps
+*.bz2
+*.xml.gz
+
+# Audio recordings — consent-protected, never in git
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.flac
+
+# NOTE: the frozen eval set (eval/heldout-v*.txt) IS committed on
+# purpose — CI needs it. Only put text there you're allowed to share.
+
+# ---------------------------------------------------------------
+# Apertium / HFST build output (compiled transducers + autotools)
+# Scoped to lexicon/ so a top-level dev Makefile isn't ignored.
+# ---------------------------------------------------------------
+*.hfst
+*.hfstol
+*.att
+lexicon/**/*.bin
+lexicon/**/*.mode
+lexicon/**/modes/
+lexicon/**/autom4te.cache/
+lexicon/**/config.log
+lexicon/**/config.status
+lexicon/**/configure
+lexicon/**/Makefile
+lexicon/**/Makefile.in
+lexicon/**/aclocal.m4
+lexicon/**/*.pc
+lexicon/**/install-sh
+lexicon/**/missing
+lexicon/**/.deps/
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------
+# Node / frontend
+# ---------------------------------------------------------------
+node_modules/
+web/dist/
+.vite/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------------
+# Infra
+# ---------------------------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.lock.hcl.bak
+docker-compose.override.yml
+
+# Local Postgres data, if run outside Docker volumes
+pgdata/
+
+# Load-test and metrics output
+loadtest/results/
+metrics*.json
+!eval/baseline-metrics.json
+
+# ---------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
