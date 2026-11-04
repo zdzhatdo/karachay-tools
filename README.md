@@ -62,7 +62,7 @@ Full design rationale (data model, pipeline contract, CI gate, roadmap): [`docs/
 
 - [x] Project plan
 - [x] Database schema ([`db/schema.sql`](db/schema.sql)) — tested on PostgreSQL 16
-- [ ] apertium-krc builds in Docker
+- [x] apertium-krc builds in Docker ([`analyzer/Dockerfile`](analyzer/Dockerfile))
 - [ ] Baseline coverage script
 - [ ] Coverage tests in CI
 - [ ] Ingestion pipeline (Wikipedia first)
