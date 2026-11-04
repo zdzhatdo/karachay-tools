@@ -17,6 +17,9 @@ RUN apt-get update \
  && apt-get install -y apertium-all-dev \
  && rm -rf /var/lib/apt/lists/*
 
+# Record exact toolchain versions so every image says what it was built with.
+RUN dpkg-query -W hfst lttoolbox cg3 apertium > /toolchain-versions.txt
+
 COPY lexicon/ /src/lexicon/
 WORKDIR /src/lexicon
 RUN ./autogen.sh && make
