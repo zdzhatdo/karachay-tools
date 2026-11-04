@@ -1,0 +1,7 @@
+# [twol] -Iб
+^къой<v><tv><prc_perf>$
+# [twol] -AрGA
+^къой<v><tv><ger_aor><dat>$
+^тый<v><tv><ger_aor><dat>$
+# [twol] -sIn
+^король<n><px3sp><nom>$

@@ -1,0 +1,309 @@
+Alphabet
+
+ А а  Б б  В в  Г г  Д д  Е е
+ Ё ё  Ж ж  З з  И и  Й й  К к  Л л
+ М м  Н н  О о  П п  Р р  С с  Т т
+ У у  Ф ф  Х х  Ц ц  Ч ч  Ш ш  Щ щ
+ Ъ ъ  Ы ы  Ь ь  Э э  Ю ю  Я я  
+
+ %{I%}:ы ! %{I%}:и %{I%}:у %{I%}:ю %{I%}:0
+ %{y%}:ы %{y%}:и %{y%}:у %{y%}:ю %{y%}:0
+ %{G%}:г ! %{G%}:х %{G%}:0
+ %{D%}:д ! %{D%}:т
+ %{N%}:н ! %{N%}:0
+ %{R%}:р %{R%}:л %{R%}:н
+ %{A%}:а ! %{A%}:е 
+ %{E%}:а %{E%}:е %{E%}:й
+ %{ъ%}:0   ! for forms with гъ that alternates with к etc.
+ %{s%}:0 ! %{s%}:с 
+ %{р%}:р %{р%}:0
+ %{n%}:н %{n%}:0
+ %{е%}:0 
+
+%{а%}:0
+%{э%}:0
+%{о%}:0
+%{ү%}:0
+
+%{н%}:0
+%{з%}:0
+%{т%}:0
+
+
+ %{·%}:0
+ %{☭%}:0
+ %{❗%}:0
+ %{ꚜ%}:0   ! force back harmony
+ %{ь%}:0   ! force front harmony
+
+ %-
+
+ %>:0  ;
+
+Sets
+
+Vow =     А Э И О У Я Е Ы Ё Ю 
+          а э и о у я е ы ё ю ; 
+
+FrontVow = Э Е И
+           э е и ;
+
+BackVow = А О Ы У 
+          а о ы у ;
+
+BackRoundVow = О У
+               о у ;
+
+AmbigVow = Ё Ю
+           ё ю ;
+
+Cns =     Б В Г Д Ж З Й К Л М Н П Р С Т Ў Ф Х Ц Ч Ш Щ 
+          б в г д ж з й к л м н п р с т ў ф х ц ч ш щ 
+          %{s%} %{n%} %{р%} %{G%} %{D%} %{L%} %{N%} ; 
+
+CnsRight = Б В Г Д Ж З Й К Л М Н О П Р С Т Ў Ф Х Ц Ч Ш Щ Ъ 
+           б в г д ж з й к л м н о п р с т ў ф х ц ч ш щ ъ ; 
+
+AbstrCns = %{s%} %{n%} %{р%} %{G%} %{D%} %{L%} %{N%} ; 
+
+RealCns = Б В Г Д Ж З Й К Л М Н О П Р С Т Ф Х Ц Ч Ш Щ
+          б в г д ж з й к л м н о п р с т ф х ц ч ш щ ; 
+
+VclsCns = с б т ш ч х д ж щ ф п ;
+
+AbsVow = %{а%} %{э%} %{о%} %{ү%} ;
+
+
+Rules 
+
+
+
+!!!! Dative stuff !!!!
+
+"{G} of dative deletes after px.sg"
+%{G%}:0 <=> %{I%}: [ м | [ н г ] | %{n%}: ] %>: _ %{ъ%}: %{A%}: ; 
+
+
+"{ъ} of dative or p1.sg is ъ only in back vowel context after г"
+%{ъ%}:ъ <=> [ :BackVow [ :у | :Cns ]* ]/:0* [ :к | :г ] _ ;
+                                   [ :к | :г ] _ :BackVow ;
+            [ .#. | :BackVow ] :AmbigVow/[ :0 - %{ь%}: ] [ :к | :г ] _ ;
+        except
+            %{G%}:н _ ; ! seems to be necessary to avoid conflicts
+            [ [ :AmbigVow | :FrontVow ] :у :Cns* ]/:0* [ :к | :г ] _ ;  ! кёзюуге, сермешиуге
+
+!%{ъ%}:ъ <=> :BackVow [ :Cns ]*/[ :0 | :ъ ]* %{G%}:г _ ;
+!        except
+!            %{G%}:н _ ;  ! not sure why this isn't already excluded, but seems to be necessary to avoid conflicts
+
+!@ х:х а:а л:л к:к ъ:ъ >:0 {G}:г {ъ}:ъ {A}:а
+
+!"{ъ} of dative deletes after sg px endings, when {G}:х, when {A}:е"
+!%{ъ%}:0 <=> [ %{I%}: м | %{I%}: н г | %{n%}: ] %>: %{G%}: _ %{A%}: ; 
+!                                                  %{G%}:х _ %{A%}:а ;
+!                                                          _ :FrontVow ; 
+!                                             :FrontVow :к _ ;
+!                     [ :с | :б | :т | :ш | :т ь: ] %>: :х _ :а  ; 
+!              [ :с | :б | :т | :ш | :т ь: ] %>: %{н%}: :х _ :а  ; 
+!                                     :н %>: %{н%}: %{G%}: _ %{A%}: ; 
+
+!@ а:а т:т >:0 {I}:ы м:м >:0 {G}:0 {ъ}:0 {A}:а
+
+!@ с:с а:а й:й л:л а:а н:н >:0 {G}:г {ъ}:0 {A}:а н:н >:0 д:д {I}:ы 
+
+!@ б:б а:а ш:ш л:л а:а н:н >:0 {G}:г {ъ}:0 {A}:а н:н >:0 д:д {I}:ы 
+
+"{G} is х after voiceless consonants in back vowel contexts"
+%{G%}:х <=> [ :VclsCns ( ь: ) ]/[ :0 - %{n%}: ]* %>: _ %{ъ%}: :а  ;
+
+!@ с е к у н д {☭}:0 >:0 {G}:х {ъ}:0 {A}:а
+
+!@ к:к ъ:ъ а:а т:т ы:ы ш:ш >:0 {G}:х {ъ}:0 {A}:а н:н >:0 д:д {I}:ы 
+
+!@ а:а х:х ы:ы р:р >:0 {s}:0 {I}:ы {n}:н >:0 {G}:0 {ъ}:0 {A}:а 
+
+!@ д:д ж:ж а:а н:н >:0 {I}:0 г:г {ъ}:ъ {I}:ы з:з 
+
+!@ к:к е:е ч:ч >:0 {I}:и р:р {A}:е к:к {ъ}:0
+
+!@ и:и н:н с:с т:т и:и т:т у:у т:т >:0 {G}:х {ъ}:0 {A}:а	
+
+!@ к:к е:е с:с е:е к:г >:0 {s}:0 {I}:и {n}:0
+
+!@ к:к ю:ю н:н б:б а:а т:т ы:ы ш:ш >:0 {G}:х {ъ}:0 {A}:а
+
+!@ д:д е:е >:0 {G}:г {ъ}:0 {A}:е н:н
+
+"{G}{ъ} as нг after nasals - н"
+%{G%}:н <=> [ :н | :м | [ :н :г ] ]/:0* _ ;
+        except
+            %{I%}: [ м | [ н г ] | %{n%}: ] %>: _  %{ъ%}: %{A%}: ;  ! we need to delete when px.sg
+            %{❗%}:0 _ ;  ! this is an orthography error, but good for analysis
+
+"{G}{ъ} as нг after nasals - г"
+%{ъ%}:г <=> %{G%}:н _ ;
+
+
+!!!! Voicing !!!!
+
+"Voicing between vowels"
+к:г <=> :Vow _ (:ъ) %>: (:0) :Vow ;  
+
+!@ к:к е:е с:с е:е к:г >:0 {s}:0 {I}:и {n}:0
+
+!@ а:а р:р а:а л:л ы:ы к:г ъ:ъ >:0 {s}:0 {I}:ы {n}:0
+
+
+!!!! Vowel harmony !!!!
+
+"{A} as е after front vowels"
+%{A%}:е <=> :FrontVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: | %{n%}: ]* _ ;
+            [ [ :Cns | :FrontVow ] :AmbigVow [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}: ]* _ ;
+            %{ь%}: [ :Cns | %{ъ%}: | [ :0 - %{ь%}: ] | %-: ]* _ ; ! for forced front harmony
+            :Cns л ь: [ :Cns | :0 ]* _ ;   ! for words like ансамбль/ансамблда
+            [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/:0 _ ;  ! for words like кёзюуюнде
+            %{э%}: [ [ :0 - %{э%}: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+
+!@ ё:ё м:м ю:ю р:р >:0 {G}:г {ъ}:0 {A}:е
+
+!@ к:к е:е с:с е:е к:к >:0 {G}:г {ъ}:0 {A}:е
+
+!@ п р а в и т е л ь с т в о >:0 {G}:г {ъ}:ъ {A}:а
+
+!@ ё т {ь}:0 >:0 {G}:г {ъ}:0 {A}:е н
+
+"{I} as и after front unrounded vowels"
+%{I%}:и <=> :FrontVow :Cns+/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ;
+            %{э%}: [ [ :0 - [ AbsVow: | %{ꚜ%}: ] ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+        except
+            %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
+
+
+"{I} as ю after front rounded vowels"
+%{I%}:ю <=> [ [ :Cns | :FrontVow ] :AmbigVow [ :у | :Cns ] :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ;
+            :FrontVow [ :у :Cns* ]/[ :0 - [ AbsVow: | %{ꚜ%}: ] ]* _ ; ! e.g., тёлеую
+            ! [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/[ :0 - AbsVow: ] _ ;  ! for words like кёзюуюнде
+            [ [ :AmbigVow | :FrontVow ] :у :AmbigVow :Cns+ ]/[ :0 - [ AbsVow: |  %{ꚜ%}: ] ]* _ ;  ! for words like кёзюуюнде
+            [ ( \:BackVow ) :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - [ %{ꚜ%}: | AbsVow: ] ] | :ь | %{ъ%}:0 ]* _ ; ! юсюнде
+            %{ү%}: [ [ :0 - [ AbsVow: | %{ꚜ%}: ] ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+            :BackRoundVow й:0 %>: _ ; ! къоюб
+        except
+            %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
+
+!@ б о л >:0 {I}:у ш >:0 {I}:у р >:0 {G}:г {ъ}:ъ {A}:а
+
+!@ б о л >:0 {I}:у р >:0 {G}:г {ъ}:ъ {A}:а
+
+!@ б о л >:0 {I}:у р
+
+!@ т ё л е у >:0 {I}:ю
+
+!@ т ю б >:0 {s}:0 {I}:ю {n}:0
+
+"{I} as у after back rounded vowels"
+%{I%}:у <=> [ [ [ :BackVow | [ :Cns (:ъ) ] | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ AbsVow: | %{n%}: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;
+            [ %{I%}:у :Cns+ ]/[ :0 - %{ь%}: ]* _ ;
+            %{о%}: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; ! for numerals and abbreviations
+            [ \[ :AmbigVow | :FrontVow ] :BackVow :ю :Cns+ ]/[ :0 - AbsVow: ]* _ ; ! союзну
+            ! [ :AmbigVow :Cns+ ]/[ :0 - [ AbsVow: | %{ь%}: ] ]* _ ;  ! самолётун  ! crucially, doesn't have {ꚜ} in context
+            ! FIXME: The following seems to be breaking forms like тюбю
+            [ :AmbigVow :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: [ :Cns/[ :0 - %{ꚜ%}: ]* %{ꚜ%}: ]* ]/[ :0 - [ AbsVow: | %{ь%}: | %{ꚜ%}: ] ]* _ ; ! самолётун
+            ! :AmbigVow :Cns %{ꚜ%}: :0* _ ;
+            [ [ :BackVow ] :у ]/[ :0 - [ AbsVow: ] | %{ь%}: ]* _ ; ! башланыуу
+            :BackRoundVow %{n%}: %>: %{❗%}: %{N%}: _ .#. ; ! after px3sp
+            [ :BackVow :у :Cns+ ]/[ :0 ]* _ .#. ; ! after px3sp
+        except
+            %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
+
+!@ д ж а ш а >:0 {I}:0 у >:0 {N}:н {I}:у
+
+!@ и ю н ь {ꚜ}:0 >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а
+
+!@ с а м о л ё т {ꚜ}:0 >:0 {s}:0 {I}:у {n}:0
+
+
+!!!! Epenthesis !!!!
+
+"Always realise {е} as е after ск"
+%{е%}:е <=> с к (%{ь%}:) _ (%{☭%}:) %>: ;
+
+"Epenthesis in some stems"
+%{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
+
+"{s} realised after vowels"
+!%{s%}:с <=> [ [ ? :Vow ] - [ :Vow :у ] ]/[ :0 ]* _ ;
+%{s%}:с <=> [ ? :Vow ]/[ :0 ]* _ ;
+        except
+            [ :Vow :у ]/[ :0 - %{s%}: ]* _ ;
+
+!@ а й н ы >:0 {I}:0 у >:0 {s}:0 {I}:у {n}:0
+
+!@ к:к ё:ё з:з ю:ю у:у >:0 {s}:0 {I}:ю {n}:н >:0 {D}:д {A}:е 
+
+!@ к ё з ю у >:0 {s}:0 {I}:ю {n}:0 >:0 {N}:н {I}:ю
+
+!"Deletion of {s} after a consonant"
+!%{s%}:0 <=> :CnsRight/[ :0 - AbstrCns: ] _ ;
+!                 AbstrCns:/[ %>: | %-: ] _ ;
+!                           :BackVow  :у  %>: _ ;
+!          except 
+!            [ [ ? :Vow ] - [ :BackVow  :у ] ] %>: _ ;
+!
+!
+!"Surfacing of {s} after a vowel"
+!%{s%}:с <=> [ [ ? :Vow ] - [ :BackVow :у ] ] %>: _ ;
+!
+!@ о:о н:н о:о у:у >:0 {s}:0 {I}:у {n}:н >:0 {D}:д {A}:а 
+
+
+!!!! Deleteion !!!!
+
+"Remove soft sign with suffix"
+ь:0 <=> _ [ :0 - %>: ]* %>: [ :0 - %>: ]* [ :Cns | :Vow ] ;
+    except
+        _ %{❗%}: ; ! to analyse forms where ь isn't removed, probably orthography errors
+
+"Plural -р- only appears before possessives"
+%{р%}:р <=> _ %>: [ %{s%}: | %{I%}: м | %{I%}: н г | %{I%}: б %{I%}: з | %{I%}: г %{ъ%}: %{I%}: з ] ; 
+
+
+"Delete {I} after vowels"
+%{I%}:0 <=> :Vow/[ :0 - %{s%}: ]* _ ;
+            %{n%}: %>: %{N%}: _ .#. ; ! after px3sp
+        except
+            [ [ :Cns | .#. ] :Vow :у ]/[ [ :0 - %{s%}: ] | :ь | :ъ ]* _ ;
+            [ :Cns | :FrontVow ] :AmbigVow [ [ :у | :Cns ] :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
+            :FrontVow [ :у :Cns* ]/[ :0 ]* _ ; ! e.g., тёлеую
+            [ \[ :Cns | :BackVow | :ъ ] :у :AmbigVow :Cns+ ]/:0 _ ;  ! for words like кёзюуюнде
+            [ :AmbigVow :Cns* %{ь%}: :Cns* ]/[ [ :0 - %{ꚜ%}: ] | :ь | %{ъ%}:0 ]* _ ;
+
+            ! for numerals and abbreviations
+            AbsVow: [ [ :0 - AbsVow: ] | :Cns | %-: ]* _ ; 
+
+				! avoid conflict with {I}:у 
+            [ [ [ :BackVow | [ :Cns (:ъ) ] | .#. ] :у ] | :о ] [ [ :у | :Cns ] :Cns* ]/[ [ :0 - [ AbsVow: | %{n%}: ] ] | :ь | :ъ | %{ъ%}: ]* _ ;  
+            [ :BackVow :ю :Cns+ ]/:0* _ ; ! союзну
+            [ :BackVow ] :у/[ :0 - [ AbsVow: | %{s%}: ] | %{ь%}: ]* _ ;
+
+            ! other conflicts
+            :BackRoundVow й:0 %>: _ ; ! къоюб
+
+"Delete й before back {I}:ю or front {A}:е"
+й:0 <=> :BackRoundVow _ %>: %{I%}: ;
+        [ :AmbigVow | FrontVow: ] _ %>: [ %{A%}:е | %{E%}:е ] ;
+
+!@ к ъ о й:0 >:0 {I}:ю п
+!@ с ү й:0 >:0 {E}:е >:0 м {A}:е
+
+!"Delete {n} before gen, acc, and end of word"
+!%{n%}:0 <=> _ :0* :н ;
+!            _ .#. ;
+"Realise {n} as н before dat/loc/abl"
+%{n%}:н <=> _ :0* %{G%}: ;
+            _ :0* %{D%}: %{A%}: ;
+
+!"{n} is 0 before gen, acc; end of word; м; д%{I%} (etc.)"
+!%{n%}:0 <=> _ :0* [ :н - %{G%}: ] ;
+!           _ .#. ;
+!           _ :0* :м ;
+!           _ :0* :д %{I%}: ;

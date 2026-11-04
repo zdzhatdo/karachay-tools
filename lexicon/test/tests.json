@@ -1,0 +1,50 @@
+{
+  "dative": {
+    "input": "dative-input.txt",
+    "mode": "krc-morph"
+  },
+  "dative-gen": {
+    "input": "dative-gen-input.txt",
+    "mode": "krc-gener"
+  },
+  "harmony": {
+    "input": "harmony-input.txt",
+    "mode": "krc-morph"
+  },
+  "harmony-gen": {
+    "input": "harmony-gen-input.txt",
+    "mode": "krc-gener"
+  },
+  "kün": {
+    "input": "kün-input.txt",
+    "mode": "krc-morph"
+  },
+  "kün-gen": {
+    "input": "kün-gen-input.txt",
+    "mode": "krc-gener"
+  },
+  "miscellaneous": {
+    "input": "miscellaneous-input.txt",
+    "mode": "krc-morph"
+  },
+  "miscellaneous-gen": {
+    "input": "miscellaneous-gen-input.txt",
+    "mode": "krc-gener"
+  },
+  "numerals": {
+    "input": "numerals-input.txt",
+    "mode": "krc-morph"
+  },
+  "numerals-gen": {
+    "input": "numerals-gen-input.txt",
+    "mode": "krc-gener"
+  },
+  "yots": {
+    "input": "yots-input.txt",
+    "mode": "krc-morph"
+  },
+  "yots-gen": {
+    "input": "yots-gen-input.txt",
+    "mode": "krc-gener"
+  }
+}

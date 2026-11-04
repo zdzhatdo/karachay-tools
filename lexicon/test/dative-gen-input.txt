@@ -1,0 +1,28 @@
+# [twol] Dative in гъа
+^джыл<n><dat>$
+^къол<n><dat>$
+^халкъ<n><dat>$
+# [twol] Dative in ха
+^баш<n><dat>$
+^кесамат<n><dat>$
+^арт<n><dat>$
+# [twol] Dative in ге
+^ёмюр<n><dat>$
+^кесек<n><dat>$
+# [twol] Dative in нга/нге
+^заман<n><dat>$
+^кюн<n><dat>$
+^океан<n><dat>$
+^закон<n><dat>$
+^дин<n><dat>$
+^айрымкан<n><dat>$
+^район<n><dat>$
+# [twol] consonantal у
+^кёзюу<n><dat>$
+# [twol] deleting ь
+^власть<n><dat>$
+^гавань<n><dat>$
+# [twol] Russian loans with final unvoiced
+^секунд<n><dat>$
+# [twol] Russian loans in -ство
+^правительство<n><dat>$

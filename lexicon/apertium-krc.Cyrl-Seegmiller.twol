@@ -1,0 +1,251 @@
+Alphabet 
+
+	а:a б:b в:w г:g д:d е:e ё:ö ж:j з:z и:i й:y к:k л:l м:m н:n о:o п:p р:r с:s т:t у:u ф:f х:h ч:ç ш:ş щ:ş ъ:0 ы:ı ь:0 э:e ю:ü я:a
+	А:A Б:B В:V Г:G Д:D Е:E Ё:Ö Ж:j З:Z И:İ Й:Y К:K Л:L М:M Н:N О:O П:P Р:R С:S Т:T У:U Ф:F Х:H Ч:Ç Ш:Ş Щ:Ş Ъ:0 Ы:I Ь:0 Э:Е Ю:Ü Я:A
+	a â b c ç d e f g ğ h i ı j k l m n ñ o ö p q r s ş t u ü v w x y z
+	A Â B C Ç D E F G Ğ H İ I J K L M N Ñ O Ö P Q R S Ş T U Ú V W X Y Z 
+   %{İ%}:İ %{й%}:0 %{☭%}:0
+	%{ö%}:ö %{ü%}:ü
+	%{c%}:c %{ğ%}:ğ %{q%}:q %{ŋ%}:ŋ
+	;
+
+
+Sets
+
+Cns = б в г д ж з й к л м н п р с т ф х ч ш щ
+	   Б В Г Д Ж З Й К Л М Н П Р С Т Ф Х Ч Ш Щ ; 
+
+Vow = е ё я ю а э и о у ы
+      Е Ё Я Ю А Э И О У Ы ;
+
+Yot = е ё я ю
+      Е Ё Я Ю ;
+
+FrontVow = е э и
+           Е Э И ; ! non-first syllable only!
+
+BackVow = а у о ы
+          А У О Ы ; ! non-first syllable only!
+
+Unspec = б в д ж з л й м н п р с т ф х ц ч ш щ
+         Б В Д Ж З Л й М Н П Р С Т Ф Х Ц Ч Ш Щ ;
+
+Ambig = к г
+        К Г ;
+
+FrontAmbig = н л
+             Н Л ;
+
+Rules
+
+
+!"Insert y for yot letters"
+!%{й%}:y <=> .#. _ Yot: ;
+!            Vow:  _ Yot: ;
+!            Cns: [ ь:0 ] _ Yot: ;
+!            Ambig: [ ъ:0 ] _ Yot: ;
+
+!! гонъюль:göñül
+!@ г:g о:ö н:ñ ъ:0 {й}:0 ю:ü л:l ь:0
+
+!! кенъез:keñez
+
+!! юзюни:yüzüni
+!@ {й}:y ю:ü з:z {й}:0 ю:ü н:n и:i
+
+!"я as â after Consonants"
+!я:â <=> Cns: [ :0 - [ ь: | ъ: ] ]* _ ;
+
+!-! Ягъя:yağya
+!! ягъя:yağya
+
+!! дюньяны:dünyanı
+!-@ д:d ю:ü н:n ь:0 {й}:y я:a н:n ы:ı
+
+!! яраткъан:yaratqan
+!-@ 0:y я:a р:r а:a т:t к:q ъ:0 а:a н:n
+
+!! къыяфетимизге:qıyafetimizge
+!-@ к:q ъ:0 ы:ı 0:y я:a ф:f е:e т:t и:i м:m и:i з:z г:g е:e
+
+!! лянет:lânet
+!-@ л:l я:â н:n е:e т:t
+
+!"Make къ and гъ and нъ into q and ğ and ñ"
+!Cx:Cy <=> _ ъ:0 ;
+!      where Cx in ( к г н К Г Н )
+!            Cy in ( q ğ ŋ Q Ğ Ŋ )
+!      matched ;
+
+!! ёкъ:yoq
+!-@ 0:y ё:o к:q ъ:0
+
+!! ер:yer
+
+
+!! яхшы:yahşı
+
+
+!"Back vowels in back vowel contexts"
+!Sx:Sy <=> Vow: ( %{й%}: ) _ Unspec:* [ BackVow: | [ Ambig: ъ: ] ] ;
+!          .#. ( %{й%}: ) _ Unspec:* [ BackVow: | [ Ambig: ъ: ] | [ Unspec: .#. ] ] ;
+!      except
+!          BackVow: Unspec:* _ ;
+!      where Sx in ( ё ю )
+!            Sy in ( o u )
+!      matched ;
+
+!! махлюкъларгъа:mahlüqlarğa
+
+!! ёнь:yön
+
+!! учь:üç
+
+!! кунь:kün
+
+!! уджюм:ucüm
+
+!-! долашыюр:dolaşıyur
+
+!-! резолюция:rezolütsiya
+
+
+!"Front vowels in front vowel contexts"
+!Sx:Sy <=> _ [ Unspec: | %{й%}: ]*/[ :0 - ъ: ]* [ FrontVow: | [ Ambig: \ъ: ] | ь: ] ;
+!          _ [ Unspec: | %{й%}: ]*/[ :0 - ъ: ]* ю:ü ;
+!          Ambig: _ ; ! кок:kök кой:köy
+!          _ [ Unspec: ь: ]+ :0* .#. ; ! уй:üy
+!      except
+!          ъ:0 _ ;
+!          _ [ Unspec: ]* %{й%}: ю: [ Unspec: | %{й%}: ]* [ BackVow: | [ Ambig: ъ: ] ] ;
+!          _ [ Unspec: | %{й%}: | [ н: ъ: ] ]* [ BackVow: | [ Ambig: ъ: ] ] ;
+!          _ [ Unspec: ( ъ: ) ]* .#. ; ! рух:ruh, бу:bu
+!     ! lexical exceptions
+!          .#. _ н: %{й%}:0 е: н: .#. ;
+!          .#. б: _ г: у: н: ь: ;
+!          .#. %{й%}: е: _ д: и: й: ;
+!          .#. _ д: ж: %{й%}:0 ю: м: ;
+!          _ [ : - [ %{☭%}: | ь: ] ]* %{☭%}: ;
+!      where Sx in ( о у О У )
+!            Sy in ( ö ü Ö Ü )
+!      matched ;
+
+!! пунктуация:punktuatsiya
+!@ п:p у:u н:n к:k т:t у:u а:a т:t с:s и:i {й}:y я:a {☭}:0
+
+!! бугуньге:bugünge
+
+!! еудийлер:yeudiyler
+
+!! сёзюни:sözüni
+
+!! союндан:soyundan
+
+!! Исраильге:İsrailge
+
+!! онен:onen
+!@ о:o н:n {й}:0 е:e н:n
+
+!! сонъ:soñ
+
+!! олсун:olsun
+!@ о:o л:l с:s у:u н:n
+
+!! бу:bu
+!@ б:b у:u
+
+!! боюнджа:boyunca
+!@ б:b о:o {й}:y ю:u н:n д:0 ж:c а:a 
+
+!! буюк:büyük
+!@ б:b у:ü {й}:y ю:ü к:k 
+
+!! бутюн:bütün
+!@ б:b у:ü т:t {й}:0 ю:ü н:n
+
+!! кок:kök
+
+!-! Озюнинъ:Özüniñ
+
+!! экинджи:ekinci
+
+!"дж to c — ж:c"
+!ж:c <=> д: _ ;
+
+!"дж to c — д:0"
+!д:0 <=> _ ж: ;
+
+!! озь:öz
+
+!! озю:özü
+
+!! урьмет:ürmet
+
+!! омюр:ömür
+
+!! козю:közü
+
+!! косьтерген:köstergen
+
+!! ольдюрильди:öldürildi
+!! ольдюрильген:öldürilgen
+
+
+!! озюнъни:özüñni
+
+!! озю:özü
+
+!! къуюны:quyunı
+!-@ к:q ъ:0 у:u 0:y ю:u н:n ы:ı
+
+!! корьдим:kördim
+
+!! къоркъкъан:qorqqan
+
+!! куню:künü
+
+!! Ибрамгъа:İbramğa
+
+!! мумкюн:mümkün
+
+!! къоюлгъан:qoyulğan
+
+!! коюне:köyüne
+
+!! мушкюль:müşkül
+
+!! юзь:yüz
+
+!! огълан:oğlan
+!@ о:o г:ğ ъ:0 л:l а:a н:n
+
+!! онъа:oña
+!@ о:o н:ñ ъ:0 а:a
+
+!! огълуна:oğluna
+!@ о:o г:ğ ъ:0 л:l у:u н:n а:a
+
+!! бугунь:bugün
+
+!! ёл:yol
+!@ {й}:y ё:o л:l
+
+!! гъурбетликте:ğurbetlikte
+
+!! къасеветини:qasevetini
+
+!! эвлятларынъ:evlâtlarıñ
+
+!! лякин:lâkin
+
+!! рух:ruh
+!@ р:r у:u х:h
+
+!! уй:üy
+!@ у:ü й:y
+
+!! кой:köy
+!@ к:k о:ö й:y
+
+"dummy rule"
+а:0 <=> а: а: _ б: б: ;

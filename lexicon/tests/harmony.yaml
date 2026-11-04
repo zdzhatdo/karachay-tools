@@ -1,0 +1,46 @@
+Config:
+  hfst:
+      App: hfst-lookup
+      Gen: ../krc.autogen.hfst
+      Morph: ../krc.automorf.hfst
+
+Tests:
+
+ "[twol] Harmony stuff":
+    август<n><loc><attr> : августдагъы
+    ёт<v><iv><gpr_past> : ётген
+    ансамбль<n><pl><acc> : ансамбллени
+    спектакль<n><loc> : спектаклде
+
+ "[twol] More harmony":
+    де<v><tv><prc_perf> : деб
+    эки<num><ord> : экинчи
+    джокъ<adj>+э<cop><aor><p3><sg> : джокъду
+    къура<v><tv><pass><past><p3><sg> : къуралгъанды
+    башла<vaux><prc_perf> : башлаб
+
+ "[twol] with ю":
+    союз<n><acc> : союзну
+    союз<n><loc> : союзда
+    самолёт<n><px3sp><nom> : самолёту
+    июль<n><loc> : июлда
+    къую<n><loc> : къуюда
+    оюн<n><loc> : оюнда
+    чоюн<n><loc> : чоюнда
+    июнь<n><px3sp><loc> : июнунда
+    июль<n><px3sp><loc> : июлунда
+
+ "[twol] with consonantal у":
+    серме<v><tv><coop><ger><nom> : сермешиу
+    серме<v><tv><coop><ger><dat> : сермешиуге
+    кёзюу<n><loc> : кёзюуде
+    юс<n><px3sp><abl> : юсюнден
+
+ "[twol] stuff":
+    кюн<n><px3sp><nom>+э<cop><aor><p3><sg> : кюнюдю
+    кёбю<prn><qnt><px3sp><dat> : кёбюсюне
+    тюб<n><px3sp><nom> : тюбю
+    кёбю<prn><qnt><px3sp><nom> : кёбюсю
+    башлан<v><iv><ger><px3sp><nom> : башланыуу
+    башлан<v><iv><ger><px3sp><dat> : башланыууна
+    бёлюм<n><px3sp><nom> : бёлюмю

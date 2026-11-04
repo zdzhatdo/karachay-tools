@@ -1,0 +1,29 @@
+"<Австралияны>"
+	"Австралия" np top gen @nmod:poss #1->4
+"<эм>"
+	"эм" adv @advmod #2->3
+"<уллу>"
+	"уллу" adj @amod #3->4
+"<шахарыны>"
+	"шахар" n px3sp gen @nmod:poss #4->5
+"<аты>"
+	"ат" n px3sp nom @nsubj #5->13
+"<,>"
+	"," cm @punct #6->13
+"<Уллу>"
+	"уллу" adj @amod #7->8
+"<Британияны>" 
+	"Британия" np top gen @nmod:poss #8->9
+"<колонияларыны>"
+	"колония" n pl px3sp gen @nmod:poss #9->10
+"<министрини>"
+	"министр" n px3sp gen @nmod:poss #10->11
+"<сыйы>"
+	"сый" n px3sp nom @obl #11->13
+"<ючюн>"
+	"ючюн" post @case #12->11
+"<берилгенди>"
+	"бер" v tv pass past p3 sg @root #13->0
+"<.>"
+	"." sent @punct #14->13
+

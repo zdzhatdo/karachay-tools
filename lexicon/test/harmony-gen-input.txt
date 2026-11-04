@@ -1,0 +1,34 @@
+# [twol] Harmony stuff
+^август<n><loc><attr>$
+^ёт<v><iv><gpr_past>$
+^ансамбль<n><pl><acc>$
+^спектакль<n><loc>$
+# [twol] More harmony
+^де<v><tv><prc_perf>$
+^эки<num><ord>$
+^джокъ<adj>+э<cop><aor><p3><sg>$
+^къура<v><tv><pass><past><p3><sg>$
+^башла<vaux><prc_perf>$
+# [twol] with ю
+^союз<n><acc>$
+^союз<n><loc>$
+^самолёт<n><px3sp><nom>$
+^июль<n><loc>$
+^къую<n><loc>$
+^оюн<n><loc>$
+^чоюн<n><loc>$
+^июнь<n><px3sp><loc>$
+^июль<n><px3sp><loc>$
+# [twol] with consonantal у
+^серме<v><tv><coop><ger><nom>$
+^серме<v><tv><coop><ger><dat>$
+^кёзюу<n><loc>$
+^юс<n><px3sp><abl>$
+# [twol] stuff
+^кюн<n><px3sp><nom>+э<cop><aor><p3><sg>$
+^кёбю<prn><qnt><px3sp><dat>$
+^тюб<n><px3sp><nom>$
+^кёбю<prn><qnt><px3sp><nom>$
+^башлан<v><iv><ger><px3sp><nom>$
+^башлан<v><iv><ger><px3sp><dat>$
+^бёлюм<n><px3sp><nom>$

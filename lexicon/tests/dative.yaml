@@ -1,0 +1,43 @@
+Config:
+  hfst:
+      App: hfst-lookup
+      Gen: ../krc.autogen.hfst
+      Morph: ../krc.automorf.hfst
+
+Tests:
+
+ "[twol] Dative in гъа":
+    джыл<n><dat> : джылгъа
+    къол<n><dat> : къолгъа
+    халкъ<n><dat> : халкъгъа
+
+ "[twol] Dative in ха":
+    баш<n><dat> : башха
+    кесамат<n><dat> : кесаматха
+    арт<n><dat> : артха
+
+ "[twol] Dative in ге":
+    ёмюр<n><dat> : ёмюрге
+    кесек<n><dat> : кесекге
+ 
+ "[twol] Dative in нга/нге":
+    заман<n><dat> : заманнга
+    кюн<n><dat> : кюннге
+    океан<n><dat> : океаннга
+    закон<n><dat> : законнга
+    дин<n><dat> : диннге
+    айрымкан<n><dat> : айрымканнга
+    район<n><dat> : районнга
+
+ "[twol] consonantal у":
+    кёзюу<n><dat> : кёзюуге
+
+ "[twol] deleting ь":
+    власть<n><dat> : властха
+    гавань<n><dat> : гаваннга
+
+ "[twol] Russian loans with final unvoiced":
+    секунд<n><dat> : секундха
+
+ "[twol] Russian loans in -ство":
+    правительство<n><dat> : правительствогъа

@@ -1,0 +1,42 @@
+Config:
+  hfst:
+      App: hfst-lookup
+      Gen: ../krc.autogen.hfst
+      Morph: ../krc.automorf.hfst
+
+Tests:
+
+ "[twol] кюн":
+
+
+  кюн<n><attr> : кюн
+  кюн<n><nom> : кюн
+  кюн<n><acc> : кюнню
+  кюн<n><gen> : кюнню
+  кюн<n><dat> : кюннге
+  кюн<n><loc> : кюнде
+  кюн<n><abl> : кюнден
+  кюн<n><nom>+э<cop><aor><p3><sg> : кюндю
+  кюн<n><pl><abl> : кюнледен
+  кюн<n><pl><acc> : кюнлени
+  кюн<n><pl><dat> : кюнлеге
+  кюн<n><pl><gen> : кюнлени
+  кюн<n><pl><loc> : кюнледе
+  кюн<n><pl><nom> : кюнле
+  кюн<n><pl><nom>+э<cop><aor><p3><pl> : кюнледиле
+  кюн<n><pl><px3sp><nom> : кюнлери
+  кюн<n><pl><px3sp><dat> : кюнлерине
+  кюн<n><pl><px3sp><acc> : кюнлерини
+  кюн<n><pl><px3sp><gen> : кюнлерини
+  кюн<n><px1pl><nom> : кюнюбюз
+  кюн<n><px2sg><dat> : кюннге
+  кюн<n><px2sg><nom> : кюнюнг
+  кюн<n><px3sp><acc> : кюнюн
+  кюн<n><px3sp><dat> : кюнюне
+  кюн<n><px3sp><gen> : кюнюню
+  кюн<n><px3sp><loc> : кюнде
+  кюн<n><px3sp><loc> : кюнюнде
+  кюн<n><px3sp><nom> : кюню
+  кюн<n><px3sp><nom>+э<cop><aor><p1><pl> : кюнюбюз
+  кюн<n><px3sp><nom>+э<cop><aor><p3><sg> : кюндю
+  кюн<n><px3sp><nom>+э<cop><aor><p3><sg> : кюнюдю

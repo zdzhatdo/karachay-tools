@@ -1,0 +1,9 @@
+Vendored from: https://github.com/apertium/apertium-krc
+Upstream commit: e84bc3a67a4e5a39cafaf6963144e7fb12e1b9fa (2022-03-05)
+License: GPL-3.0 (see COPYING)
+
+The first commit touching lexicon/ is a copy of that upstream commit, unmodified except:
+- Omitted tests/morphotactics/prefixes/PRN.prefix.dix. "PRN" is a reserved device name on
+  Windows, so the file can't be checked out there. It is only used by the optional
+  tests/morphotactics helper, not by the main build.
+Every local change is a separate commit on top; see `git log -- lexicon/`.

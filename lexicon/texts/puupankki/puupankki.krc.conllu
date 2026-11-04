@@ -1,0 +1,167 @@
+# sent_id = wikipedia-misc.vislcg.txt:1:0
+# text = Австралияны эм уллу шахарыны аты, Уллу Британияны колонияларыны министрини сыйы ючюн берилгенди.
+1	Австралияны	Австралия	PROPN	np	Case=Gen	4	nmod:poss	_	_
+2	эм	эм	ADV	adv	_	3	advmod	_	_
+3	уллу	уллу	ADJ	adj	_	4	amod	_	_
+4	шахарыны	шахар	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
+5	аты	ат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nsubj	_	_
+6	,	,	PUNCT	cm	_	13	punct	_	_
+7	Уллу	уллу	ADJ	adj	_	8	amod	_	_
+8	Британияны	Британия	PROPN	np	Case=Gen	9	nmod:poss	_	_
+9	колонияларыны	колония	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod:poss	_	_
+10	министрини	министр	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	11	nmod:poss	_	_
+11	сыйы	сый	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	obl	_	_
+12	ючюн	ючюн	ADP	post	_	11	case	_	_
+13	берилгенди	бер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+14	.	.	PUNCT	sent	_	13	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:1:0
+# text = Норвегияда тил соруу къатышды.
+1	Норвегияда	Норвегия	PROPN	np	Case=Loc	4	obl	_	_
+2	тил	тил	NOUN	n	Case=Nom	3	compound	_	_
+3	соруу	сор	NOUN	n	Case=Nom	4	nsubj	_	_
+4	къатышды	къатыш	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	.	.	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:2:10
+# text = Норвегияны кърал телерадиосу (NRK) эки тилде да бериулени бардырады.
+1	Норвегияны	Норвегия	PROPN	np	Case=Gen	3	nmod:poss	_	_
+2	кърал	кърал	NOUN	n	Case=Nom	3	compound	_	_
+3	телерадиосу	телерадио	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	_
+4	(	(	PUNCT	lpar	_	5	punct	_	_
+5	NRK	NRK	PROPN	np	Case=Nom	3	appos	_	_
+6	)	)	PUNCT	rpar	_	5	punct	_	_
+7	эки	эки	NUM	num	NumType=Card	8	nummod	_	_
+8	тилде	тил	NOUN	n	Case=Loc	11	obl	_	_
+9	да	да	ADV	postadv	_	11	advmod	_	_
+10	бериулени	бер	X	v	Case=Acc|Number=Plur|VerbForm=Ger	11	x	_	_
+11	бардырады	бардыр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
+12	.	.	PUNCT	sent	_	11	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:3:35
+# text = Тарихи.
+1	Тарихи	тарих	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
+2	.	.	PUNCT	sent	_	1	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:4:40
+# text = Ол заманлада джюн алфавит хайырландырылгъанды.
+1	Ол	ол	DET	det	PronType=Dem	2	det	_	_
+2	заманлада	заман	NOUN	n	Case=Loc|Number=Plur	5	obl	_	_
+3	джюн	джюн	NOUN	n	Case=Nom	4	compound	_	_
+4	алфавит	алфавит	NOUN	n	Case=Nom	5	nsubj	_	_
+5	хайырландырылгъанды	хайырландыр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	.	.	PUNCT	sent	_	5	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:5:53
+# text = 1030 джылда Норвегиягъа христианлыкъ келеди, ол биргесине латин алфавитни келтиреди.
+1	1030	1030	NUM	num	NumType=Ord	2	amod	_	_
+2	джылда	джыл	NOUN	n	Case=Loc	5	obl	_	_
+3	Норвегиягъа	Норвегия	PROPN	np	Case=Dat	5	obl	_	_
+4	христианлыкъ	христианлыкъ	NOUN	n	Case=Nom	5	nsubj	_	_
+5	келеди	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	11	parataxis	_	_
+6	,	,	PUNCT	cm	_	11	punct	_	_
+7	ол	ол	X	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	x	_	_
+8	биргесине	бирге	X	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	11	x	_	_
+9	латин	латин	NOUN	n	Case=Nom	10	compound	_	_
+10	алфавитни	алфавит	NOUN	n	Case=Acc	11	obj	_	_
+11	келтиреди	келтир	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
+12	.	.	PUNCT	sent	_	11	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:6:78
+# text = Джангы алфавитде джазылгъан норвег манускриптле джюз джыл сора чыгъа башлайдыла.
+1	Джангы	джангы	ADJ	adj	_	2	amod	_	_
+2	алфавитде	алфавит	NOUN	n	Case=Loc	3	obl	_	_
+3	джазылгъан	джаз	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	5	acl:relcl	_	_
+4	норвег	норвег	NOUN	n	Case=Nom	5	compound	_	_
+5	манускриптле	манускрипт	NOUN	n	Case=Nom|Number=Plur	9	nsubj	_	_
+6	джюз	джюз	NUM	num	NumType=Card	7	nummod	_	_
+7	джыл	джыл	NOUN	n	Case=Nom	9	obl	_	_
+8	сора	сора	ADP	post	_	7	case	_	_
+9	чыгъа	чыкъ	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
+10	башлайдыла	башла	AUX	vaux	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	9	aux	_	_
+11	.	.	PUNCT	sent	_	9	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:7:101
+# text = Ол заманлада норвег тил хоншуларындан айырыла башлайды.
+1	Ол	ол	DET	det	PronType=Dem	2	det	_	_
+2	заманлада	заман	NOUN	n	Case=Loc|Number=Plur	6	obl	_	_
+3	норвег	норвег	NOUN	n	Case=Nom	4	compound	_	_
+4	тил	тил	NOUN	n	Case=Nom	5	nmod:poss	_	_
+5	хоншуларындан	хоншу	NOUN	n	Case=Abl|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
+6	айырыла	айыр	VERB	v	Aspect=Imp|VerbForm=Cov|Voice=Pass	0	root	_	_
+7	башлайды	башла	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	6	aux	_	_
+8	.	.	PUNCT	sent	_	6	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:8:118
+# text = Исландия бла Норвегияны тиллери 1300 джыллагъа дери бек ушаш болгъанды.
+1	Исландия	Исландия	PROPN	np	Case=Nom	3	conj	_	_
+2	бла	бла	CCONJ	cnjcoo	_	3	cc	_	_
+3	Норвегияны	Норвегия	PROPN	np	Case=Gen	4	nmod:poss	_	_
+4	тиллери	тил	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
+5	1300	1300	NUM	num	NumType=Ord	6	amod	_	_
+6	джыллагъа	джыл	NOUN	n	Case=Dat|Number=Plur	9	obl	_	_
+7	дери	дери	ADP	post	_	6	case	_	_
+8	бек	бек	ADV	adv	_	9	advmod	_	_
+9	ушаш	ушаш	ADJ	adj	_	0	root	_	_
+10	болгъанды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	_
+11	.	.	PUNCT	sent	_	9	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:9:141
+# text = Норвеглиле керти боусунмауну даулаб башлайдыла.
+1	Норвеглиле	норвегли	NOUN	n	Case=Nom|Number=Plur	4	nsubj	_	_
+2	керти	керти	NOUN	n	Case=Nom	3	compound	_	_
+3	боусунмауну	боусунмау	NOUN	n	Case=Acc	4	obj	_	_
+4	даулаб	даула	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
+5	башлайдыла	башла	AUX	vaux	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	4	aux	_	_
+6	.	.	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:10:154
+# text = Эки джол да сыналгъанды.
+1	Эки	эки	NUM	num	NumType=Card	2	nummod	_	_
+2	джол	джол	NOUN	n	Case=Nom	4	nsubj	_	_
+3	да	да	ADV	postadv	_	4	advmod	_	_
+4	сыналгъанды	сына	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	.	.	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:11:165
+# text = Датчадан норвегчагъа.
+1	Датчадан	датча	NOUN	n	Case=Abl	2	nmod	_	_
+2	норвегчагъа	норвегча	NOUN	n	Case=Dat	0	root	_	_
+3	.	.	PUNCT	sent	_	2	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:12:172
+# text = Грамматика да тюрлендириледи.
+1	Грамматика	грамматика	NOUN	n	Case=Nom	3	nsubj	_	_
+2	да	да	ADV	postadv	_	3	advmod	_	_
+3	тюрлендириледи	тюрлендир	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:13:181
+# text = Джазма тилле.
+1	Джазма	джаз	NOUN	n	Case=Nom	2	compound	_	_
+2	тилле	тил	NOUN	n	Case=Nom|Number=Plur	0	root	_	_
+3	.	.	PUNCT	sent	_	2	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:14:188
+# text = Букмол бла нюношк.
+1	Букмол	букмол	NOUN	n	Case=Nom	3	conj	_	_
+2	бла	бла	CCONJ	cnjcoo	_	3	cc	_	_
+3	нюношк	нюношк	NOUN	n	Case=Nom	0	root	_	_
+4	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:15:197
+# text = «Кърал тил».
+1	«	«	PUNCT	lquot	_	3	punct	_	_
+2	Кърал	кърал	NOUN	n	Case=Nom	3	compound	_	_
+3	тил	тил	NOUN	n	Case=Nom	0	root	_	_
+4	»	»	PUNCT	rquot	_	3	punct	_	_
+5	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = норег_тил.vislcg.txt:16:208
+# text = «Мийик норвегча».
+1	«	«	PUNCT	lquot	_	3	punct	_	_
+2	Мийик	мийик	ADJ	adj	_	3	amod	_	_
+3	норвегча	норвегча	NOUN	n	Case=Nom	0	root	_	_
+4	»	»	PUNCT	rquot	_	3	punct	_	_
+5	.	.	PUNCT	sent	_	3	punct	_	_
+

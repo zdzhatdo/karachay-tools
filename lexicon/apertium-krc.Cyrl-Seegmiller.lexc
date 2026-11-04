@@ -1,0 +1,101 @@
+Multichar_Symbols 
+
+%<n%> 
+
+%{ö%}
+%{ü%}
+%{c%}
+%{ş%}
+%{ç%}
+%{q%}
+%{ğ%}
+%{ŋ%}
+%{İ%}
+%{й%}
+%{☭%}
+
+LEXICON Root 
+
+Alpha ; 
+Punct ; 
+! Exceptions ;
+Digits ;
+
+LEXICON AlphaLoop 
+
+Alpha ;
+ # ;
+
+LEXICON Alpha
+
+б:б AlphaLoop "weight: 1.0" ; 
+в:в AlphaLoop "weight: 1.0" ; 
+г:г AlphaLoop "weight: 1.0" ; 
+д:д AlphaLoop "weight: 1.0" ; 
+ж:ж AlphaLoop "weight: 1.0" ; 
+з:з AlphaLoop "weight: 1.0" ; 
+й:й AlphaLoop "weight: 1.0" ; 
+к:к AlphaLoop "weight: 1.0" ; 
+л:л AlphaLoop "weight: 1.0" ; 
+м:м AlphaLoop "weight: 1.0" ; 
+н:н AlphaLoop "weight: 1.0" ; 
+п:п AlphaLoop "weight: 1.0" ; 
+р:р AlphaLoop "weight: 1.0" ; 
+с:с AlphaLoop "weight: 1.0" ; 
+т:т AlphaLoop "weight: 1.0" ; 
+ф:ф AlphaLoop "weight: 1.0" ; 
+х:х AlphaLoop "weight: 1.0" ; 
+ч:ч AlphaLoop "weight: 1.0" ; 
+ш:ш AlphaLoop "weight: 1.0" ; 
+!щ:щ AlphaLoop "weight: 1.0" ; 
+ъ:ъ AlphaLoop "weight: 1.0" ; 
+ь:ь AlphaLoop "weight: 1.0" ; 
+
+ы:ы AlphaLoop "weight: 1.0" ; 
+и:и AlphaLoop "weight: 1.0" ; 
+
+у:у AlphaLoop "weight: 1.0" ; 
+а:а AlphaLoop "weight: 1.0" ; 
+э:э AlphaLoop "weight: 1.0" ; 
+о:о AlphaLoop "weight: 1.0" ; 
+
+ц:тс AlphaLoop "weight: 1.0" ;
+щ:шч AlphaLoop "weight: 1.0" ; 
+
+ю:йу AlphaLoop "weight: 1.0" ; 
+я:йа AlphaLoop "weight: 1.0" ; 
+е:йе AlphaLoop "weight: 1.0" ; 
+ё:йо AlphaLoop "weight: 1.0" ; 
+
+ю:%{ü%} AlphaLoop "weight: 1.0" ; 
+ё:%{ö%} AlphaLoop "weight: 1.0" ; 
+ю:й%{ü%} AlphaLoop "weight: 1.0" ; 
+ё:й%{ö%} AlphaLoop "weight: 1.0" ; 
+
+дж:%{c%} AlphaLoop "weight: 1.0" ; 
+къ:%{q%} AlphaLoop "weight: 1.0" ; 
+гъ:%{ğ%} AlphaLoop "weight: 1.0" ; 
+нг:%{ŋ%} AlphaLoop "weight: 1.0" ;
+
+И:%{İ%} AlphaLoop "weight: 0.5" ; 
+
+LEXICON Digits
+
+<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> # ;
+
+LEXICON Punct
+
+%.:%. # ; 
+%-:%- # ; 
+%,:%, # ; 
+%;:%; # ; 
+%::%: # ; 
+%!:%! # ; 
+%?:%? # ; 
+%“:%“ # ; 
+%”:%” # ; 
+%«:%« # ; 
+%»:%» # ; 
+%(:%( # ; 
+%):%) # ; 
+%–:%– # ; 

@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=@libdir@
+dir=@libdir@/apertium/apertium-krc
+srcdir=@datarootdir@/apertium/apertium-krc
+
+Name: apertium-krc
+Description: Finite-state morphological transducer and constraint grammar for Karachay-Balkar 
+Version: @VERSION@
+

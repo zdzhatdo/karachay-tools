@@ -1,0 +1,22 @@
+Config:
+  hfst:
+      App: hfst-lookup
+      Gen: ../krc.autogen.hfst
+      Morph: ../krc.automorf.hfst
+
+Tests:
+
+ "[twol] Miscellaneous":
+    агрессор<n><pl><gen> : агрессорланы
+    айны<v><tv><gpr_fut2> : айнырыкъ
+    аквариум<n><pl><px1pl><loc> : аквариумларыбызда
+    алам<n><loc><attr> : аламдагъы
+    архитектор<n><pl><nom> : архитекторла
+    ал<v><tv><gna_until> : алгъынча
+    акъырын<adj><comp> : акъырыныракъ
+    ач<v><tv><ger_past><pl><dat> : ачханлагъа
+    ач<v><tv><ger_past><abl> : ачхандан
+    бегемот<n><pl><nom> : бегемотла
+    кёзюу<n><px3sp><loc> : кёзюуюнде
+    кёзюу<n><px3sp><acc> : кёзюуюню
+    тёлеу<n><px3sp><nom> : тёлеую 

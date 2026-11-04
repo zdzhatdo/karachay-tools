@@ -1,0 +1,14 @@
+# [twol] Miscellaneous
+^агрессор<n><pl><gen>$
+^айны<v><tv><gpr_fut2>$
+^аквариум<n><pl><px1pl><loc>$
+^алам<n><loc><attr>$
+^архитектор<n><pl><nom>$
+^ал<v><tv><gna_until>$
+^акъырын<adj><comp>$
+^ач<v><tv><ger_past><pl><dat>$
+^ач<v><tv><ger_past><abl>$
+^бегемот<n><pl><nom>$
+^кёзюу<n><px3sp><loc>$
+^кёзюу<n><px3sp><acc>$
+^тёлеу<n><px3sp><nom>$

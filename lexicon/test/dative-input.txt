@@ -1,0 +1,28 @@
+# [twol] Dative in гъа
+джылгъа
+къолгъа
+халкъгъа
+# [twol] Dative in ха
+башха
+кесаматха
+артха
+# [twol] Dative in ге
+ёмюрге
+кесекге
+# [twol] Dative in нга/нге
+заманнга
+кюннге
+океаннга
+законнга
+диннге
+айрымканнга
+районнга
+# [twol] consonantal у
+кёзюуге
+# [twol] deleting ь
+властха
+гаваннга
+# [twol] Russian loans with final unvoiced
+секундха
+# [twol] Russian loans in -ство
+правительствогъа

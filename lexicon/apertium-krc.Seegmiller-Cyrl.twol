@@ -1,0 +1,210 @@
+Alphabet
+	а б в г д е ё ж з и й к л м н о п р с т у ф х ч ц ш щ ъ ы ь э ю я
+	А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ч Ц Ш Щ Ъ Ы Ь Э Ю Я
+
+	a:а â:я e:е i:и     ı:ы o:о ö:ё u:у ü:ю
+        A:А Â:Я E:Е İ:И I:И I:Ы O:О Ö:О Ö:Ё U:У Ü:У Ü:Ю
+
+        b:б c:0 ç:ч d:д f:ф g:г ğ:г h:х j:ж k:к l:л m:м n:н ñ:н p:п q:к r:р s:с ş:ш t:т v:в w:в x:х y:й z:з
+        B:Б C:0 Ç:Ч D:Д F:Ф G:Г Ğ:Г H:Х J:Ж K:К L:Л M:М N:Н Ñ:Н P:П Q:К R:Р S:С Ş:Ш T:Т V:В W:В X:Х Y:Й Z:З
+
+        %{ъ%}:ъ %{ъ%}:0 %{ь%}:ь ! %{ь%}:0
+ 
+        %{☭%}:0 ! %{Ъ%}:ъ %{Ь%}:ь
+        %{щ%}:щ %{ц%}:ц 
+
+
+;
+
+Sets
+
+Cns = b c ç d f g ğ h j k l m n ñ p q r s ş t v w x y z
+      B C Ç D F G Ğ H J K L M N Ñ P Q R S Ş T V W X Y Z ;
+
+Vow = a â e i ı ï o ö u ü
+      A Â E İ I Ï O Ö U Ü ;
+
+FrontVow = e i ö ü
+           E İ Ö Ü ;
+
+FrontRoundVow = ö ü
+                Ö Ü ;
+
+FrontUnroundVow = e i
+                  E İ ;
+
+BackVow = a â ı ï o u
+          A Â I Ï O U ;
+
+CyrBackVowNoYot = а о у
+                  А О У ;
+
+CyrYotVowels = е ё ю я
+               Е Ё Ю Я ;
+
+CyrYotBackVowels = ё ю
+                   Ё Ю ;
+
+
+Rules
+
+!"Use ь after front vowel realised as back vowel and all front l"
+!!%{ь%}:ь <=> FrontVow:CyrBackVowNoYot Cns: ( %{ь%}: Cns: ) _ ;
+!%{ь%}:ь => FrontVow:CyrBackVowNoYot Cns: ( %{ь%}: Cns: ) _ ;
+!            .#. y: FrontVow:CyrYotBackVowels Cns: _ .#. ;
+!            :ъ FrontRoundVow: Cns: _ .#. ;
+!            FrontVow: l: _ \Vow: ;
+!        except
+!            _ FrontVow: ;
+!            l: _ l: ; ! telli:телли
+!            l: _ â: ; ! külâ:куля
+!            [ k: | g: ] _ ;
+!            \l: _ Cns: [ Cns: | :ъ | :0 ]* :CyrYotBackVowels ;
+!            _ Cns: %{ь%}: .#. ; ! üst:усть
+
+!! üst:усть
+!@ 
+!! telli:телли
+
+"Use ъ after к and г in the context of back vowels"
+%{ъ%}:ъ <=> BackVow: [ k: | g: ] _ ;
+            [ k: | g: ] _ BackVow: ;
+
+"Delete й in conversion to yot vowels"
+Cx:0 <=> _ :CyrYotVowels ;
+     where Cx in ( y Y ) ;
+
+"Yot conversion for back vowels"
+Vx:Vy <=> [ y: | Y: ] _ ;
+      where Vx in ( o u a ) ! e )
+            Vy in ( ё ю я ) ! е )
+      matched ;
+
+!! yoq:ёкъ
+
+!! yol:ёл
+
+!! yer:ер
+
+!! yahşı:яхшы
+
+!! şeer:шеэр
+
+!@ ş:ш {ь}:0 e:е e:э r:р {ь}:0
+
+!"Front vowel yot conversion"
+!Vx:Vy <=> y: _ Cns: :0* [ :ь | FrontVow: ] ;
+!          _ .#. ;
+!          .#. y: _ ;
+!          [ Cns: - [ y: | k: | g: ] ] _ [ Cns: - [ ç: | y: ] ] ;   ! [ ñ: | n: | r: | l: ] ; ! bütün:бут_ю_н
+!          [ Vow: Cns: [ Cns: | :ъ | %{ь%}: ]* ]/:0* k: _ ;
+!          _ Cns: [ :ъ | :0 | Cns: ]* FrontUnroundVow: ;                 ! öldürildi:ольд_ю_рильди, sözüni:сёз_ю_ни
+!          t: %{ь%}: _ n: ;
+!      except
+!          .#. [ k: | g: ] ( %{ь%}: ) _ ;
+!          \y: _ Cns: [ :ъ | :0 | Cns: ]* FrontRoundVow: ; ! göñül:г_о_нъюль, bütün:б_у_тюн EXCEPT sözüni:с_ё_зюни
+!          .#. _ Cns: [ :ъ | :0 | Cns: ]* FrontRoundVow: ; ! öldürildi:_о_льдюрильди
+!          .#. _ Cns: :ь ; ! урьмет
+!      where Vx in ( ö ü )
+!            Vy in ( ё ю )
+!      matched ;
+
+! Pattern A
+!! bütün:бутюн
+!@ b:б {ь}:0 ü:у t:т {ь}:0 ü:ю n:н {ь}:0
+!! mümkün:мумкюн
+!@ m:м {ь}:0 ü:у m:м {ь}:0 k:к {ь}:0 ü:ю n:н {ь}:0
+!! müşkül:мушкюль
+
+! Pattern B
+!! sözüni:сёзюни
+!! söz:сёз
+
+! Pattern C
+!! özüñni:озюнъни
+!! özü:озю
+!! öldürildi:ольдюрильди
+!@ ö:о l:л {ь}:ь d:д {ь}:0 ü:ю r:р {ь}:0 i:и l:л {ь}:ь d:д {ь}:0 i:и
+!! öldürilgen:ольдюрильген
+
+
+
+!! yüz:юзь
+!@ y:0 ü:ю z:з {ь}:ь
+
+!! yön:ёнь
+
+!! göñül:гонъюль
+
+!! üç:учь
+!! öz:озь
+!! üy:уй
+!! kün:кунь
+
+!! büyük:буюк
+
+"e as э"
+e:э <=> .#. _ ;
+        [ e: | a: | i: | ü: ] _ ;
+
+!"ts → ц the t part"
+!t:0 <=> _ :0* s: ;
+!
+!"ts → ц the s part"
+!s:ц <=> t: :0* _ ;
+
+
+!! keñez:кенъез
+!! yüzüni:юзюни
+!@ y:0 ü:ю z:з {ь}:0 ü:ю n:н {ь}:0 i:и
+
+!! yağya:ягъя
+!! dünyanı:дюньяны
+!! yaratqan:яраткъан
+!! qıyafetimizge:къыяфетимизге
+!! lânet:лянет
+!! mahlüqlarğa:махлюкъларгъа
+!! ucüm:уджюм
+!! punktuatsiya:пунктуация
+!! bugünge:бугуньге
+!! yeudiyler:еудийлер
+!! soyundan:союндан
+!! İsrailge:Исраильге
+!! onen:онен
+!! soñ:сонъ
+!! olsun:олсун
+!! bu:бу
+!! boyunca:боюнджа
+!! kök:кок
+!! köy:кой
+
+!! ekinci:экинджи
+!! özü:озю
+!! ürmet:урьмет
+!@ ü:у r:р {ь}:ь m:м {ь}:0 e:е t:т {ь}:0
+!! ömür:омюр
+!! közü:козю
+!! köstergen:косьтерген
+!! quyunı:къуюны
+!! kördim:корьдим
+!! qorqqan:къоркъкъан
+!! künü:куню
+!! İbramğa:Ибрамгъа
+!! qoyulğan:къоюлгъан
+!! köyüne:коюне
+!! oğlan:огълан
+!! oña:онъа
+!! oğluna:огълуна
+!! bugün:бугунь
+!! ğurbetlikte:гъурбетликте
+!! qasevetini:къасеветини
+!! evlâtlarıñ:эвлятларынъ
+!! lâkin:лякин
+!! ruh:рух
+
+!! telli:телли
+!! süngertaş:сюнгерташ
+!! özgün:озьгюн
+
+!! Şçolkino:Щёлкино
+!! köçip:кочип

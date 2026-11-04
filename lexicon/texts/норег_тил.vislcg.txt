@@ -1,0 +1,3040 @@
+"<Норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<(>"
+	"(" lpar
+"<кеси>"
+	"кеси" prn ref px3sp nom
+"<аты>"
+	"ат" n px3sp nom
+"<">"
+	""" quot
+"<norsk>"
+	"norsk" barb
+"<">"
+	""" quot
+"<)>"
+	")" rpar
+"<—>"
+	"—" guio
+"<герман>"
+	"герман" n nom
+	"герман" n attr
+	"герман" n px3sp nom
+"<къауумда>"
+	"къауум" n loc
+	"къауум" n px3sp loc
+"<тилди>"
+	"тил" n nom
+		"э" cop aor p3 sg
+	"тил" n px3sp nom
+		"э" cop aor p3 sg
+"<,>"
+	"," cm
+"<Норвегияда>"
+	"Норвегия" np top loc
+"<джайылгъанды>"
+	"джай" v tv pass past p3 sg
+"<.>"
+	"." sent
+
+"<Тамалында>"
+	"тамал" n px3sp loc
+"<фарер>"
+	"*фарер"
+"<эм>"
+	"эм" n nom
+	"эм" adv
+	"эм" n attr
+	"эм" cnjcoo
+	"эм" n px3sp nom
+"<исланд>"
+	"исланд" n nom
+	"исланд" n attr
+	"исланд" n px3sp nom
+"<тилге>"
+	"тил" n dat
+"<джууукъду>"
+	"джууукъ" n nom
+		"э" cop aor p3 sg
+	"джууукъ" adj
+		"э" cop aor p3 sg
+	"джууукъ" n px3sp nom
+		"э" cop aor p3 sg
+	"джууукъ" adj subst nom
+		"э" cop aor p3 sg
+	"джууукъ" adj subst px3sp nom
+		"э" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Алай>"
+	"алай" adv
+	"Алай" np top nom
+"<дат>"
+	"дат" n nom
+	"дат" n attr
+	"дат" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<кючлю>"
+	"кючлю" adj
+	"кючлю" adj subst nom
+"<эткисини>"
+	"этки" n px3sp gen
+	"этки" n px3sp acc
+"<,>"
+	"," cm
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<швед>"
+	"швед" n nom
+	"швед" n attr
+	"швед" n px3sp nom
+"<тилден>"
+	"тил" n abl
+	"тил" n px3sp abl
+"<алыныуланы>"
+	"алын" v iv ger pl gen
+	"алын" v iv ger pl acc
+	"ал" v tv pass ger pl gen
+	"ал" v tv pass ger pl acc
+"<эсебинде>"
+	"эсеб" n px3sp loc
+"<,>"
+	"," cm
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<бу>"
+	"бу" det dem
+	"бу" prn dem nom
+"<эки>"
+	"эки" num
+	"эки" num subst nom
+"<тилге>"
+	"тил" n dat
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<джууукълашханды>"
+	"джууукълаш" v iv past p3 sg
+	"джууукълаш" v iv ger_past nom
+		"э" cop aor p3 sg
+	"джууукълаш" v iv ger_past px3sp nom
+		"э" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Бусагъатдагъы>"
+	"бусагъатдагъы" adj
+"<классификация>"
+	"классификация" n nom
+	"классификация" n attr
+"<,>"
+	"," cm
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<,>"
+	"," cm
+"<айрымкан>"
+	"айрымкан" n nom
+	"айрымкан" n attr
+	"айрымкан" n px3sp nom
+"<скандинав>"
+	"скандинав" n nom
+	"скандинав" adj
+	"скандинав" n attr
+	"скандинав" n px3sp nom
+"<тилледен>"
+	"тил" n pl abl
+"<айырыб>"
+	"айыр" v tv prc_perf
+"<,>"
+	"," cm
+"<дат>"
+	"дат" n nom
+	"дат" n attr
+	"дат" n px3sp nom
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<швед>"
+	"швед" n nom
+	"швед" n attr
+	"швед" n px3sp nom
+"<тилле>"
+	"тил" n pl nom
+"<бла>"
+	"бла" post
+"<бирге>"
+	"бир" num subst dat
+	"бирге" n nom
+	"бирге" n attr
+"<континетал>"
+	"континетал" adj
+"<скандинав>"
+	"скандинав" n nom
+	"скандинав" adj
+	"скандинав" n attr
+	"скандинав" n px3sp nom
+"<тиллени>"
+	"тил" n pl gen
+	"тил" n pl acc
+"<къауумларына>"
+	"къауум" n pl px3sp dat
+"<къошады>"
+	"къош" v tv aor p3 sg
+"<.>"
+	"." sent
+
+"<Норвегияны>"
+	"Норвегия" np top gen
+	"Норвегия" np top acc
+"<бир>"
+	"бир" num
+	"бир" num subst nom
+	"бир" num subst px3sp nom
+"<къауум>"
+	"къауум" n nom
+	"къауум" n attr
+	"къауум" n px3sp nom
+"<бёлгелерини>"
+	"бёлге" n pl px3sp gen
+	"бёлге" n pl px3sp acc
+"<географиялыкъ>"
+	"географиялыкъ" adj
+"<изоляциясы>"
+	"изоляция" n px3sp nom
+"<себебли>"
+	"себебли" post
+"<,>"
+	"," cm
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<сёзлюк>"
+	"сёзлюк" n nom
+	"сёзлюк" n attr
+	"сёзлюк" n px3sp nom
+"<къурамында>"
+	"къурам" adj subst px3sp loc
+"<,>"
+	"," cm
+"<грамматикасында>"
+	"грамматика" n px3sp loc
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<синтаксисинде>"
+	"синтаксис" n px3sp loc
+"<кёб>"
+	"кёб" adj
+	"кёб" adj subst nom
+	"кёб" adj subst px3sp nom
+"<тюрлю>"
+	"тюрлю" adj
+	"тюрлю" adj subst nom
+"<диалект>"
+	"диалект" n nom
+	"диалект" n attr
+	"диалект" n px3sp nom
+"<башхалыкъ>"
+	"башхалыкъ" n nom
+	"башхалыкъ" n attr
+	"башхалыкъ" n px3sp nom
+"<барды>"
+	"бар" adj
+		"э" cop aor p3 sg
+	"бар" adj subst nom
+		"э" cop aor p3 sg
+	"бар" adj subst px3sp nom
+		"э" cop aor p3 sg
+	"бар" v iv ifi p3 sg
+	"бар" vaux ifi p3 sg
+"<.>"
+	"." sent
+
+"<Джюзле>"
+	"джюз" n pl nom
+"<бла>"
+	"бла" post
+"<джылланы>"
+	"джыл" n pl gen
+	"джыл" n pl acc
+"<Норвегияны>"
+	"Норвегия" np top gen
+	"Норвегия" np top acc
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<тили>"
+	"тил" n px3sp nom
+"<дат>"
+	"дат" n attr
+"<тил>"
+	"тил" n nom
+"<болгъанды>"
+	"бол" v iv past p3 sg
+"<.>"
+	"." sent
+
+"<Аны>"
+	"ол" prn pers p3 sg gen
+	"ол" prn pers p3 sg acc
+"<себебли>"
+	"себебли" post
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<айныуу>"
+	"айны" v tv ger nom
+	"айны" v tv ger px3sp nom
+"<къыйын>"
+	"къыйын" n nom
+	"къыйын" n attr
+	"къыйын" n px3sp nom
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<къатыш>"
+	"къатыш" post
+	"къатыш" v iv imp p2 sg
+"<болгъанды>"
+	"бол" v iv past p3 sg
+	"бол" v iv ger_past nom
+		"э" cop aor p3 sg
+	"бол" v iv ger_past px3sp nom
+		"э" cop aor p3 sg
+"<,>"
+	"," cm
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<миллетчилик>"
+	"миллетчилик" n nom
+	"миллетчилик" n attr
+	"миллетчилик" n px3sp nom
+"<бла>"
+	"бла" post
+"<,>"
+	"," cm
+"<элчи>"
+	"элчи" n nom
+	"элчи" n attr
+"<->"
+	"-" guio
+"<шахарчы>"
+	"шахарчы" n nom
+	"шахарчы" n attr
+"<дискурс>"
+	"дискурс" n nom
+	"дискурс" n attr
+	"дискурс" n px3sp nom
+"<бла>"
+	"бла" post
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<Норвегияны>"
+	"Норвегия" np top gen
+	"Норвегия" np top acc
+"<адабият>"
+	"адабият" n nom
+	"адабият" n attr
+	"адабият" n px3sp nom
+"<тарихи>"
+	"тарих" n px3sp nom
+"<бла>"
+	"бла" post
+"<къысыкъ>"
+	"къысыкъ" adj
+"<байламлы>"
+	"байламлы" adj
+"<болгъанды>"
+	"бол" v iv past p3 sg
+	"бол" v iv ger_past nom
+		"э" cop aor p3 sg
+	"бол" v iv ger_past px3sp nom
+		"э" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Кърал>"
+	"кърал" n attr
+"<политика>"
+	"политика" n nom
+"<бла>"
+	"бла" post
+"<эмда>"
+	"эмда" cnjcoo
+"<закон>"
+	"закон" n nom
+"<бла>"
+	"бла" post
+"<къралда>"
+	"кърал" n loc
+"<эки>"
+	"эки" num
+"<«>"
+	"«" lquot
+"<официал>"
+	"официал" adj
+"<»>"
+	"»" rquot
+"<норвег>"
+	"норвег" n attr
+"<тил>"
+	"тил" n nom
+"<шекел>"
+	"шекел" n nom
+	"шекел" n attr
+	"шекел" n px3sp nom
+"<балды>"
+	"бал" n nom
+		"э" cop aor p3 sg
+	"бал" n px3sp nom
+		"э" cop aor p3 sg
+"<—>"
+	"—" guio
+"<">"
+	""" quot
+"<букмол>"
+	"букмол" n nom
+	"букмол" n attr
+	"букмол" n px3sp nom
+"<">"
+	""" quot
+"<(>"
+	"(" lpar
+"<,>"
+	"," cm
+"<">"
+	""" quot
+"<китаб>"
+	"китаб" n attr
+"<сёз>"
+	"сёз" n nom
+"<">"
+	""" quot
+"<)>"
+	")" rpar
+"<эм>"
+	"эм" n nom
+	"эм" adv
+	"эм" n attr
+	"эм" cnjcoo
+	"эм" n px3sp nom
+"<">"
+	""" quot
+"<нюношк>"
+	"нюношк" n nom
+"<">"
+	""" quot
+"<(>"
+	"(" lpar
+"<,>"
+	"," cm
+"<">"
+	""" quot
+"<джангы>"
+	"джангы" adj
+"<норвег>"
+	"норвег" n attr
+"<тил>"
+	"тил" n nom
+"<">"
+	""" quot
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Норвегияда>"
+	"Норвегия" np top loc @obl #1->4
+"<тил>"
+	"тил" n attr @compound #2->3
+"<соруу>"
+	"сор" n nom @nsubj #3->4
+"<къатышды>"
+	"къатыш" v iv ifi p3 sg @root #4->0
+"<.>"
+	"." sent @punct #5->4
+
+"<Политика>"
+	"политик" n px3sp dat
+	"политика" n nom
+	"политика" n attr
+"<ситуация>"
+	"ситуация" n nom
+	"ситуация" n attr
+"<бла>"
+	"бла" post
+"<байланмагъанлыкъгъа>"
+	"*байланмагъанлыкъгъа"
+"<,>"
+	"," cm
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<«>"
+	"«" lquot
+"<консерватив>"
+	"консерватив" adj
+	"консерватив" adj subst nom
+	"консерватив" adj subst px3sp nom
+"<->"
+	"-" guio
+"<радикал>"
+	"радикал" adj
+"<»>"
+	"»" rquot
+"<спектр>"
+	"спектр" n nom
+"<кибик>"
+	"кибик" post
+"<халландырадыла>"
+	"халландыр" v tv aor p3 pl
+"<.>"
+	"." sent
+
+"<Букмол>"
+	"букмол" n nom
+	"букмол" n attr
+	"букмол" n px3sp nom
+"<бла>"
+	"бла" post
+"<нюношкну>"
+	"нюношк" n gen
+	"нюношк" n acc
+	"нюношк" n px3sp gen
+	"нюношк" n px3sp acc
+"<бусагъатдагъы>"
+	"бусагъатдагъы" adj
+"<шекеллери>"
+	"шекел" n pl px3sp nom
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<консерватив>"
+	"консерватив" adj
+	"консерватив" adj subst nom
+	"консерватив" adj subst px3sp nom
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<радикал>"
+	"радикал" adj
+"<версияларыча>"
+	"*версияларыча"
+"<кёрюледиле>"
+	"кёр" v tv pass aor p3 pl
+"<.>"
+	"." sent
+
+"<Официал>"
+	"официал" adj
+	"официал" adj subst nom
+	"официал" adj subst px3sp nom
+"<тышында>"
+	"тыш" n px3sp loc
+"<,>"
+	"," cm
+"<алай>"
+	"алай" adv
+"<а>"
+	"а" qst
+	"а" cnjcoo
+"<кенг>"
+	"кенг" adj
+	"кенг" adj subst nom
+	"кенг" adj subst px3sp nom
+"<хайырланнган>"
+	"хайырлан" v iv ger_past nom
+	"хайырлан" v iv ger_past px3sp nom
+"<риксмол>"
+	"риксмол" n nom
+	"риксмол" n attr
+	"риксмол" n px3sp nom
+"<(>"
+	"(" lpar
+"<">"
+	""" quot
+"<riksmål>"
+	"*riksmål"
+"<">"
+	""" quot
+"<,>"
+	"," cm
+"<«>"
+	"«" lquot
+"<кърал>"
+	"кърал" n nom
+	"кърал" n attr
+	"кърал" n px3sp nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<»>"
+	"»" rquot
+"<)>"
+	")" rpar
+"<атлы>"
+	"атлы" adj
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<форма>"
+	"форма" n nom
+	"форма" n attr
+"<букмолдан>"
+	"букмол" n abl
+	"букмол" n px3sp abl
+"<эсе>"
+	"эс" n px3sp dat
+	"э" cop gna_cond p3 sg
+"<консервативге>"
+	"консерватив" adj subst dat
+"<саналады>"
+	"сана" v tv pass aor p3 sg
+"<,>"
+	"," cm
+"<официал>"
+	"официал" adj
+	"официал" adj subst nom
+	"официал" adj subst px3sp nom
+"<болмагъан>"
+	"бол" v iv neg ger_past nom
+	"бол" v iv neg ger_past px3sp nom
+"<">"
+	""" quot
+"<høgnorsk>"
+	"*høgnorsk"
+"<">"
+	""" quot
+"<(>"
+	"(" lpar
+"<«>"
+	"«" lquot
+"<мийик>"
+	"мийик" adj
+	"мийик" adj subst nom
+	"мийик" adj subst px3sp nom
+"<норвегча>"
+	"норвегча" n nom
+	"норвегча" adv
+	"норвегча" n attr
+"<»>"
+	"»" rquot
+"<)>"
+	")" rpar
+"<—>"
+	"—" guio
+"<нюношкдан>"
+	"нюношк" n abl
+	"нюношк" n px3sp abl
+"<консерватив>"
+	"консерватив" adj
+	"консерватив" adj subst nom
+	"консерватив" adj subst px3sp nom
+"<.>"
+	"." sent
+
+"<Норвеглиле>"
+	"норвегли" n pl nom
+"<эки>"
+	"эки" num
+"<официал>"
+	"официал" adj
+"<тилледен>"
+	"тил" n pl abl
+"<бирин>"
+	"бир" num subst px3sp acc
+"<сайлаб>"
+	"сайла" v tv prc_perf
+"<окъуу>"
+	"окъу" v tv ger nom
+"<алыргъа>"
+	"ал" v tv ger_aor dat
+	"ал" vaux ger_aor dat
+"<эркин>"
+	"эркин" adj
+"<болсала>"
+	"бол" v iv prc_cond p3 sg
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<,>"
+	"," cm
+"<86>"
+	"86" num
+"<—>"
+	"—" guio
+"<90 %>"
+	"90" num percent
+"<букмолну>"
+	"букмол" n gen
+	"букмол" n acc
+	"букмол" n px3sp gen
+	"букмол" n px3sp acc
+"<хайырланады>"
+	"хайырлан" v iv aor p3 sg
+"<,>"
+	"," cm
+"<нюношкда>"
+	"нюношк" n loc
+"<уа>"
+	"а" cnjcoo
+"<10>"
+	"10" num
+"<—>"
+	"—" guio
+"<12 %>"
+	"12" num percent
+"<джазады>"
+	"джаз" v tv aor p3 sg
+"<.>"
+	"." sent
+
+"<Кенгирек>"
+	"кенг" adj comp
+	"кенг" adj comp subst nom
+	"кенг" adj comp subst px3sp nom
+"<къаралса>"
+	"къарал" v iv prc_cond p3 sg
+	"къара" v tv pass prc_cond p3 sg
+"<буксмол>"
+	"букмол" n nom
+	"букмол" n attr
+	"букмол" n px3sp nom
+"<бла>"
+	"бла" post
+"<риксмол>"
+	"риксмол" n nom
+	"риксмол" n attr
+	"риксмол" n px3sp nom
+"<шахарлада>"
+	"шахар" n pl loc
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<шахар>"
+	"шахар" n nom
+	"шахар" n attr
+	"шахар" n px3sp nom
+"<тёгерекледе>"
+	"тёгерек" n pl loc
+"<хайырландырыладыла>"
+	"хайырландыр" v tv pass aor p3 pl
+"<,>"
+	"," cm
+"<нюношк>"
+	"нюношк" n nom
+	"нюношк" n attr
+	"нюношк" n px3sp nom
+"<эсе>"
+	"эс" n px3sp dat
+	"э" cop gna_cond p3 sg
+"<уа>"
+	"а" cnjcoo
+"<элледе>"
+	"эл" n pl loc
+"<.>"
+	"." sent
+
+"<Норвегияны>"
+	"Норвегия" np top gen @nmod:poss #1->3
+"<кърал>"
+	"кърал" n attr @compound #2->3
+"<телерадиосу>"
+	"телерадио" n px3sp nom @nsubj #3->11
+"<(>"
+	"(" lpar @punct #4->5
+"<NRK>"
+	"NRK" np al nom @appos #5->3
+"<)>"
+	")" rpar @punct #6->5
+"<эки>"
+	"эки" num @nummod #7->8
+"<тилде>"
+	"тил" n loc @obl #8->11
+"<да>"
+	"да" postadv @advmod #9->11
+"<бериулени>"
+	"бер" v tv ger pl acc @x #10->11
+"<бардырады>"
+	"бардыр" v tv aor p3 sg @root #11->0
+"<.>"
+	"." sent @punct #12->11
+
+"<Бютеу>"
+	"бютеу" det qnt @det
+"<кърал>"
+	"кърал" n attr @compound
+"<учреждениядан>"
+	"учреждения" n abl @obl
+"<эки>"
+	"эки" num @nummod
+"<тилге>"
+	"тил" n dat
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<дагъан>"
+	"дагъан" n nom
+	"дагъан" n attr
+	"дагъан" n px3sp nom
+"<боллукъларын>"
+	"бол" v iv ger_fut2 pl px3sp gen
+	"бол" v iv ger_fut2 pl px3sp acc
+	"бол" v iv ger_fut2 pl px3sp nom
+"<изленеди>"
+	"изле" v tv pass aor p3 sg
+"<.>"
+	"." sent
+
+"<Букмол>"
+	"букмол" n nom
+	"букмол" n attr
+	"букмол" n px3sp nom
+"<неда>"
+	"не" prn itg loc
+	"неда" cnjcoo
+"<риксмол>"
+	"риксмол" n nom
+	"риксмол" n attr
+	"риксмол" n px3sp nom
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<басымны>"
+	"басым" n gen
+	"басым" n acc
+	"басым" n px3sp gen
+	"басым" n px3sp acc
+"<92%>"
+	"92" num percent
+"<хайырландырылады>"
+	"хайырландыр" v tv pass aor p3 sg
+"<,>"
+	"," cm
+"<нюношк>"
+	"нюношк" n nom
+	"нюношк" n attr
+	"нюношк" n px3sp nom
+"<эсе>"
+	"эс" n px3sp dat
+	"э" cop gna_cond p3 sg
+"<уа>"
+	"а" cnjcoo
+"<8 %>"
+	"8" num percent
+"<(>"
+	"(" lpar
+"<2000>"
+	"2000" num
+"<джылгъа>"
+	"джыл" n dat
+"<билгиле>"
+	"билги" n pl nom
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Эсебде>"
+	"эсеб" n loc
+	"эсеб" n px3sp loc
+"<алыныб>"
+	"алын" v iv prc_perf
+	"ал" v tv pass prc_perf
+"<къаралса>"
+	"къарал" v iv prc_cond p3 sg
+	"къара" v tv pass prc_cond p3 sg
+"<нюношк>"
+	"нюношк" n nom
+	"нюношк" n attr
+	"нюношк" n px3sp nom
+"<10>"
+	"10" num
+"<->"
+	"-" guio
+"<12%>"
+	"12" num percent
+"<норвеглиле>"
+	"норвегли" n pl nom
+"<бла>"
+	"бла" post
+"<неда>"
+	"не" prn itg loc
+	"неда" cnjcoo
+"<миллион>"
+	"миллион" num
+	"миллион" num subst nom
+	"миллион" num subst px3sp nom
+"<джарым>"
+	"джарым" n nom
+	"джарым" n attr
+	"джарым" n px3sp nom
+"<адам>"
+	"адам" n nom
+	"адам" n attr
+	"адам" n px3sp nom
+"<бла>"
+	"бла" post
+"<хайырландырылады>"
+	"хайырландыр" v tv pass aor p3 sg
+"<.>"
+	"." sent
+
+"<Диалектлени>"
+	"диалект" n pl gen
+	"диалект" n pl acc
+"<кючю>"
+	"кюч" n px3sp nom
+"<уллу>"
+	"уллу" adj
+	"уллу" adj subst nom
+"<болса>"
+	"бол" v iv prc_cond p3 sg
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<,>"
+	"," cm
+"<эртде>"
+	"эртде" adv
+"<кеч>"
+	"кеч" adj
+	"кеч" v tv imp p2 sg
+	"кеч" adj subst nom
+	"кеч" adj subst px3sp nom
+"<болса>"
+	"бол" v iv prc_cond p3 sg
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<бютеу>"
+	"бютеу" det qnt
+	"бютеу" prn qnt nom
+"<норвеглиле>"
+	"норвегли" n pl nom
+"<букмолгъа>"
+	"букмол" n dat
+"<джуукъ>"
+	"джууукъ" n nom
+	"джууукъ" n attr
+	"джууукъ" n px3sp nom
+"<болгъан>"
+	"бол" v iv ger_past nom
+	"бол" v iv ger_past px3sp nom
+"<ортакъ>"
+	"ортакъ" n nom
+	"ортакъ" n attr
+	"ортакъ" n px3sp nom
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилге>"
+	"тил" n dat
+"<кёчерикдиле>"
+	"*кёчерикдиле"
+"<.>"
+	"." sent
+
+"<Тарихи>"
+	"тарих" n px3sp nom @root #1->0
+"<.>"
+	"." sent @punct #2->1
+
+"<Скандинавияды>"
+	"Скандинавия" np top nom
+		"э" cop aor p3 sg
+"<бусагъатда>"
+	"бусагъатда" adv
+"<джюрюген>"
+	"джюрю" v iv ger_past nom
+	"джюрю" v iv ger_past px3sp nom
+"<тилле>"
+	"тил" n pl nom
+"<буруннгу>"
+	"буруннгу" adj
+	"буруннгу" adj subst nom
+"<скандинав>"
+	"скандинав" n nom
+	"скандинав" adj
+	"скандинав" n attr
+	"скандинав" n px3sp nom
+"<тилден>"
+	"тил" n abl
+	"тил" n px3sp abl
+"<айныгъанды>"
+	"айны" v tv past p3 sg
+	"айны" v tv ger_past nom
+		"э" cop aor p3 sg
+	"айны" v tv ger_past px3sp nom
+		"э" cop aor p3 sg
+"<,>"
+	"," cm
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<заманда>"
+	"заман" n loc
+	"заман" n px3sp loc
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<бусагъатдагъы>"
+	"бусагъатдагъы" adj
+"<Данияны>"
+	"Дания" np top gen
+	"Дания" np top acc
+"<,>"
+	"," cm
+"<Норвегияны>"
+	"Норвегия" np top gen
+	"Норвегия" np top acc
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<Швецияны>"
+	"Швеция" np top gen
+	"Швеция" np top acc
+"<джерлениде>"
+	"*джерлениде"
+"<джайылгъанды>"
+	"джай" v tv pass past p3 sg
+	"джай" v tv pass ger_past nom
+		"э" cop aor p3 sg
+	"джай" v tv pass ger_past px3sp nom
+		"э" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Саудюгерле>"
+	"саудюгер" n pl nom
+"<->"
+	"-" guio
+"<викингле>"
+	"викинг" n pl nom
+"<бу>"
+	"бу" det dem
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<бютеу>"
+	"бютеу" det qnt
+	"бютеу" prn qnt nom
+"<Европада>"
+	"Европа" np top loc
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<Россиягъа>"
+	"Россия" np top dat
+"<джайгъандыла>"
+	"джай" v tv past p3 pl
+	"джай" v tv ger_past nom
+		"э" cop aor p3 pl
+	"джай" v tv ger_past px3sp nom
+		"э" cop aor p3 pl
+"<,>"
+	"," cm
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<заманлада>"
+	"заман" n pl loc
+"<буруннгу>"
+	"буруннгу" adj
+	"буруннгу" adj subst nom
+"<скандинав>"
+	"скандинав" n nom
+	"скандинав" adj
+	"скандинав" n attr
+	"скандинав" n px3sp nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<эм>"
+	"эм" n nom
+	"эм" adv
+	"эм" n attr
+	"эм" cnjcoo
+	"эм" n px3sp nom
+"<джайылгъан>"
+	"джай" v tv pass ger_past nom
+	"джай" v tv pass ger_past px3sp nom
+"<тиллени>"
+	"тил" n pl gen
+	"тил" n pl acc
+"<бири>"
+	"бир" num subst px3sp nom
+"<болгъанды>"
+	"бол" v iv past p3 sg
+	"бол" v iv ger_past nom
+		"э" cop aor p3 sg
+	"бол" v iv ger_past px3sp nom
+		"э" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Король>"
+	"король" n attr @compound:nn #1->
+"<Харальд>"
+	"Харальд" np ant m nom @flat #2->
+"<I>"
+	"I" num ord @flat #3->
+"<Ариучачлы>"
+	"*Ариучачлы" x @x #4->
+"<Норвегияны>"
+	"Норвегия" np top acc @obj #5->8
+"<872>"
+	"872" num @amod #6->7
+"<джылда>"
+	"джыл" n loc @obl #7->8
+"<бирлешдиргенди>"
+	"бирлешдир" v tv past p3 sg @root #8->0
+"<.>"
+	"." sent @punct #9->8
+
+"<Ол>"
+	"ол" det dem @det #1->2
+"<заманлада>"
+	"заман" n pl loc @obl #2->5
+"<джюн>"
+	"джюн" n attr @compound #3->4
+"<алфавит>"
+	"алфавит" n nom @nsubj #4->5
+"<хайырландырылгъанды>" 
+	"хайырландыр" v tv pass past p3 sg @root #5->0
+"<.>"
+	"." sent @punct #6->5
+
+"<Ол>"
+	"ол" det dem 
+"<заманладан>"
+	"заман" n pl abl
+"<ташлада>"
+	"таш" n pl loc
+"<къалгъан>"
+	"къал" v iv ger_past nom
+	"къал" vaux ger_past nom
+	"къал" v iv ger_past px3sp nom
+	"къал" vaux ger_past px3sp nom
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<эсгертмеле>"
+	"эсгертме" n pl nom
+"<кёргюзгеннге>"
+	"кёргюз" v tv ger_past px2sg dat
+"<кёре>"
+	"кёр" n px3sp dat
+	"кёр" v tv prc_impf
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<замандагъы>"
+	"заман" n loc attr
+	"заман" n px3sp loc attr
+	"заман" n loc subst nom
+	"заман" n px3sp loc subst nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<регионлагъа>"
+	"регион" n pl dat
+"<кёре>"
+	"кёр" n px3sp dat
+	"кёр" v tv prc_impf
+"<кючлю>"
+	"кючлю" adj
+	"кючлю" adj subst nom
+"<тюрленмегенди>"
+	"тюрлен" v iv neg past p3 sg
+	"тюрлен" v iv neg ger_past nom
+		"э" cop aor p3 sg
+	"тюрлен" v iv neg ger_past px3sp nom
+		"э" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<1030>"
+	"1030" num @amod #1->2
+"<джылда>"
+	"джыл" n loc @obl #2->5
+"<Норвегиягъа>"
+	"Норвегия" np top dat @obl #3->5
+"<христианлыкъ>"
+	"христианлыкъ" n nom @nsubj #4->5
+"<келеди>"
+	"кел" v iv aor p3 sg @parataxis #5->11
+"<,>"
+	"," cm @punct #6->11
+"<ол>"
+	"ол" prn pers p3 sg nom @x #7->11
+"<биргесине>"
+	"бирге" n px3sp dat @x #8->11
+"<латин>"
+	"латин" n attr @compound #9->10
+"<алфавитни>"
+	"алфавит" n acc @obj #10->11
+"<келтиреди>"
+	"келтир" v tv aor p3 sg @root #11->0
+"<.>"
+	"." sent @punct #12->11
+
+"<Джангы>"
+	"джангы" adj @amod #1->2
+"<алфавитде>"
+	"алфавит" n loc @obl #2->3
+"<джазылгъан>"
+	"джаз" v tv pass gpr_past @acl:relcl #3->5
+"<норвег>"
+	"норвег" n attr @compound #4->5
+"<манускриптле>"
+	"манускрипт" n pl nom @nsubj #5->9
+"<джюз>"
+	"джюз" num @nummod #6->7
+"<джыл>"
+	"джыл" n nom @obl #7->9
+"<сора>"
+	"сора" post @case #8->7
+"<чыгъа>"
+	"чыкъ" v iv prc_impf @root #9->0
+"<башлайдыла>"
+	"башла" vaux aor p3 pl @aux #10->9
+"<.>"
+	"." sent @punct #11->9
+
+"<Ол>"
+	"ол" det dem @det #1->2
+"<заманлада>"
+	"заман" n pl loc @obl #2->6
+"<норвег>"
+	"норвег" n attr @compound #3->4
+"<тил>"
+	"тил" n nom @nmod:poss #4->5
+"<хоншуларындан>"
+	"хоншу" n pl px3sp abl @obl #5->6
+"<айырыла>"
+	"айыр" v tv pass prc_impf @root #6->0
+"<башлайды>"
+	"башла" vaux aor p3 sg @aux #7->6
+"<.>"
+	"." sent @punct #8->6
+
+"<Викингле>"
+	"викинг" n pl nom
+"<IX>"
+	"IX" num ord
+"<ёмюрде>"
+	"ёмюр" n loc
+"<Исландияны>"
+	"Исландия" np top acc
+"<кючлей>"
+	"кючле" v tv prc_impf
+"<башлайдыла>"
+	"башла" vaux aor p3 pl
+"<,>"
+	"," cm
+"<биргелерине>"
+	"бирге" n pl px3sp dat
+"<ала>"
+	"ал" v tv prc_impf
+	"ал" vaux prc_impf
+	"ала" prn pers p3 pl nom
+"<буруннгу>"
+	"буруннгу" adj
+	"буруннгу" adj subst nom
+"<скандинав>"
+	"скандинав" adj
+"<тилни>"
+	"тил" n acc
+"<келтиредиле>"
+	"келтир" v tv aor p3 pl
+"<.>"
+	"." sent
+
+"<Заманны>"
+	"заман" n gen
+	"заман" n acc
+	"заман" n px3sp gen
+	"заман" n px3sp acc
+"<баргъаны>"
+	"бар" v iv ger_past px3sp nom
+	"бар" vaux ger_past px3sp nom
+"<бла>"
+	"бла" post
+"<буруннгу>"
+	"буруннгу" adj
+	"буруннгу" adj subst nom
+"<скандинав>"
+	"скандинав" n nom
+	"скандинав" adj
+	"скандинав" n attr
+	"скандинав" n px3sp nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<«>"
+	"«" lquot
+"<кюнбатыш>"
+	"кюнбатыш" n nom
+	"кюнбатыш" n attr
+	"кюнбатыш" n px3sp nom
+"<»>"
+	"»" rquot
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<«>"
+	"«" lquot
+"<кюнчыгъыш>"
+	"кюнчыгъыш" n nom
+	"кюнчыгъыш" n attr
+	"кюнчыгъыш" n px3sp nom
+"<»>"
+	"»" rquot
+"<вариантлагъа>"
+	"вариант" n pl dat
+"<айрылады>"
+	"*айрылады"
+"<.>"
+	"." sent
+
+"<Кюнбатыш>"
+	"кюнбатыш" n nom
+"<варианты>"
+	"вариант" n px3sp nom
+"<ареалы>"
+	"*ареалы"
+"<Исландия>"
+	"Исландия" np top nom
+"<бла>"
+	"бла" post
+"<Норвегияны>"
+	"Норвегия" np top gen
+	"Норвегия" np top acc
+"<алгъанды>"
+	"ал" v tv past p3 sg
+	"ал" vaux past p3 sg
+	"ал" v tv ger_past nom
+		"э" cop aor p3 sg
+	"ал" vaux ger_past nom
+		"э" cop aor p3 sg
+	"ал" v tv ger_past px3sp nom
+		"э" cop aor p3 sg
+	"ал" vaux ger_past px3sp nom
+		"э" cop aor p3 sg
+"<,>"
+	"," cm
+"<кюнчыгъыш>"
+	"кюнчыгъыш" n nom
+	"кюнчыгъыш" n attr
+	"кюнчыгъыш" n px3sp nom
+"<тюрлюсю>"
+	"тюрлю" adj subst px3sp nom
+"<уа>"
+	"а" cnjcoo
+"<->"
+	"-" guio
+"<Дания>"
+	"Дания" np top nom
+"<бла>"
+	"бла" post
+"<Швецияны>"
+	"Швеция" np top gen
+	"Швеция" np top acc
+"<.>"
+	"." sent
+
+"<Исландия>"
+	"Исландия" np top nom @conj #1->3
+"<бла>"
+	"бла" cnjcoo @cc #2->3
+"<Норвегияны>"
+	"Норвегия" np top gen @nmod:poss #3->4
+"<тиллери>"
+	"тил" n pl px3sp nom @nsubj #4->9
+"<1300>"
+	"1300" num @amod #5->6
+"<джыллагъа>"
+	"джыл" n pl dat @obl #6->9
+"<дери>"
+	"дери" post @case #7->6
+"<бек>"
+	"бек" adv @advmod #8->9
+"<ушаш>"
+	"ушаш" adj @root #9->0
+"<болгъанды>"
+	"бол" v iv past p3 sg @cop #10->9
+"<.>"
+	"." sent @punct #11->9
+
+"<Андан>"
+	"ол" prn pers p3 sg abl
+"<сора>"
+	"сора" post
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<«>"
+	"«" lquot
+"<буруннгу>"
+	"буруннгу" adj
+	"буруннгу" adj subst nom
+"<исланд>"
+	"исланд" n nom
+	"исланд" n attr
+	"исланд" n px3sp nom
+"<»>"
+	"»" rquot
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<«>"
+	"«" lquot
+"<буруннгу>"
+	"буруннгу" adj
+	"буруннгу" adj subst nom
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<»>"
+	"»" rquot
+"<тиллеге>"
+	"тил" n pl dat
+"<юлешиниб>"
+	"юлешин" v iv prc_perf
+	"юлеш" v tv pass prc_perf
+"<айры>"
+	"айры" adj
+"<айныб>"
+	"айны" v tv prc_perf
+"<башлагъанды>"
+	"башла" vaux past p3 sg
+"<.>"
+	"." sent
+
+"<1397>"
+	"1397" num
+"<джылда>"
+	"джыл" n loc
+	"джыл" n px3sp loc
+"<Норвегия>"
+	"Норвегия" np top nom
+"<Дания>"
+	"дания" n nom
+	"дания" n attr
+	"Дания" np top nom
+"<бла>"
+	"бла" post
+"<энчи>"
+	"энчи" adj
+"<униягъа>"
+	"уния" n dat
+"<киреди>"
+	"кир" v iv aor p3 sg
+"<,>"
+	"," cm
+"<Дания>"
+	"дания" n nom
+	"дания" n attr
+	"Дания" np top nom
+"<биригиуде>"
+	"биригиу" n loc
+	"бирик" v iv ger loc
+"<башчылыкъ>"
+	"башчылыкъ" n nom
+	"башчылыкъ" n attr
+	"башчылыкъ" n px3sp nom
+"<этгенди>"
+	"эт" v tv past p3 sg
+	"эт" v tv ger_past nom
+		"э" cop aor p3 sg
+	"эт" v tv ger_past px3sp nom
+		"э" cop aor p3 sg
+"<,>"
+	"," cm
+"<дат>"
+	"дат" n nom
+	"дат" n attr
+	"дат" n px3sp nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<эсе>"
+	"эс" n px3sp dat
+	"э" cop gna_cond p3 sg
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<кибик>"
+	"кибик" post
+"<хайырландырыла>"
+	"хайырландыр" v tv pass prc_impf
+"<башлагъанды>"
+	"башла" vaux past p3 sg
+	"башла" vaux ger_past nom
+		"э" cop aor p3 sg
+	"башла" vaux ger_past px3sp nom
+		"э" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Уния>"
+	"уния" n nom
+	"уния" n attr
+"<400>"
+	"400" num
+"<джылдан>"
+	"джыл" n abl
+	"джыл" n px3sp abl
+"<артыкъны>"
+	"*артыкъны"
+"<тургъанды>"
+	"тур" v iv past p3 sg
+	"тур" vaux past p3 sg
+	"тур" v iv ger_past nom
+		"э" cop aor p3 sg
+	"тур" vaux ger_past nom
+		"э" cop aor p3 sg
+	"тур" v iv ger_past px3sp nom
+		"э" cop aor p3 sg
+	"тур" vaux ger_past px3sp nom
+		"э" cop aor p3 sg
+"<,>"
+	"," cm
+"<1814>"
+	"1814" num
+"<джыл>"
+	"джыл" n nom
+	"джыл" n attr
+	"джыл" n px3sp nom
+"<Норвегия>"
+	"Норвегия" np top nom
+"<Данияда>"
+	"дания" n loc
+	"Дания" np top loc
+"<айры>"
+	"айры" adj
+"<болады>"
+	"бол" v iv aor p3 sg
+"<,>"
+	"," cm
+"<алай>"
+	"алай" adv
+"<а>"
+	"а" qst
+	"а" cnjcoo
+"<Швеция>"
+	"Швеция" np top nom
+"<бла>"
+	"бла" post
+"<униягъа>"
+	"уния" n dat
+"<кирирге>"
+	"кир" v iv ger_aor dat
+"<зорланады>"
+	"зорлан" v iv aor p3 sg
+	"зорла" v tv pass aor p3 sg
+"<.>"
+	"." sent
+
+"<Норвеглиле>"
+	"норвегли" n pl nom @nsubj #1->4
+"<керти>"
+	"керти" n attr @compound #2->3
+"<боусунмауну>"
+	"боусунмау" n acc @obj #3->4
+"<даулаб>"
+	"даула" v tv prc_perf @root #4->0
+"<башлайдыла>"
+	"башла" vaux aor p3 pl @aux #5->4
+"<.>"
+	"." sent @punct #6->4
+
+"<Бу>"
+	"бу" det dem
+	"бу" prn dem nom
+"<миллетчи>"
+	"миллетчи" n nom
+	"миллетчи" n attr
+"<джюрюшню>"
+	"джюрюш" n gen
+	"джюрюш" n acc
+	"джюрюш" n px3sp gen
+	"джюрюш" n px3sp acc
+"<бир>"
+	"бир" num
+	"бир" num subst nom
+	"бир" num subst px3sp nom
+"<нюзюрлери>"
+	"нюзюр" n pl px3sp nom
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<айры>"
+	"айры" adj
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<айныуу>"
+	"айны" v tv ger nom
+	"айны" v tv ger px3sp nom
+"<болгъанды>"
+	"бол" v iv past p3 sg
+	"бол" v iv ger_past nom
+		"э" cop aor p3 sg
+	"бол" v iv ger_past px3sp nom
+		"э" cop aor p3 sg
+"<,>"
+	"," cm
+"<бу>"
+	"бу" det dem
+	"бу" prn dem nom
+"<айныуда>"
+	"айны" v tv ger loc
+"<эки>"
+	"эки" num
+	"эки" num subst nom
+"<джол>"
+	"джол" n nom
+	"джол" n attr
+	"джол" n px3sp nom
+"<болгъанды>"
+	"бол" v iv past p3 sg
+	"бол" v iv ger_past nom
+		"э" cop aor p3 sg
+	"бол" v iv ger_past px3sp nom
+		"э" cop aor p3 sg
+"<:>"
+	":" sent
+"<1>"
+	"1" num
+"<)>"
+	")" rpar
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<заманлада>"
+	"заман" n pl loc
+"<баш>"
+	"баш" n nom
+	"баш" n attr
+	"баш" n px3sp nom
+"<къауумда>"
+	"къауум" n loc
+	"къауум" n px3sp loc
+"<джюрюген>"
+	"джюрю" v iv ger_past nom
+	"джюрю" v iv ger_past px3sp nom
+"<дат>"
+	"дат" n nom
+	"дат" n attr
+	"дат" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<модификациясы>"
+	"модификация" n px3sp nom
+"<,>"
+	"," cm
+"<неда>"
+	"не" prn itg loc
+	"неда" cnjcoo
+"<2>"
+	"2" num
+"<)>"
+	")" rpar
+"<джюз>"
+	"джюз" num
+	"джюз" n nom
+	"джюз" n attr
+	"джюз" num subst nom
+	"джюз" n px3sp nom
+	"джюз" v iv imp p2 sg
+	"джюз" num subst px3sp nom
+"<джылла>"
+	"джыл" n pl nom
+"<бла>"
+	"бла" post
+"<сингиб>"
+	"синг" v iv prc_perf
+"<тургъан>"
+	"тур" v iv ger_past nom
+	"тур" vaux ger_past nom
+	"тур" v iv ger_past px3sp nom
+	"тур" vaux ger_past px3sp nom
+"<тыш>"
+	"тыш" n nom
+	"тыш" n attr
+	"тыш" n px3sp nom
+"<кърал>"
+	"кърал" n nom
+	"кърал" n attr
+	"кърал" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<къоратыб>"
+	"къорат" v tv prc_perf
+"<,>"
+	"," cm
+"<къара>"
+	"къар" n px3sp dat
+	"къара" adj
+	"къара" v tv imp p2 sg
+	"къара" adj subst nom
+"<халкъны>"
+	"халкъ" n gen
+	"халкъ" n acc
+	"халкъ" n px3sp gen
+	"халкъ" n px3sp acc
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тили>"
+	"тил" n px3sp nom
+"<бла>"
+	"бла" post
+"<ишлеу>"
+	"ишле" v tv ger nom
+"<.>"
+	"." sent
+
+"<Эки>"
+	"эки" num @nummod #1->2
+"<джол>"
+	"джол" n nom @nsubj #2->4
+"<да>"
+	"да" postadv @advmod #3->4
+"<сыналгъанды>"
+	"сына" v tv pass past p3 sg @root #4->0
+"<.>"
+	"." sent @punct #5->4
+
+"<Датчадан>"
+	"датча" n abl @nmod #1->2
+"<норвегчагъа>"
+	"норвегча" n dat @root #2->0
+"<.>"
+	"." sent @punct #3->2
+
+"<1840>"
+	"1840" num
+"<джыллада>"
+	"джыл" n pl loc
+"<джазыучула>"
+	"джазыучу" n pl nom
+	"джаз" v tv ger_pres pl nom
+"<дат>"
+	"дат" n nom
+	"дат" n attr
+	"дат" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<«>"
+	"«" lquot
+"<норвеглендириб>"
+	"норвеглендир" v tv prc_perf
+"<»>"
+	"»" rquot
+"<башлайдыла>"
+	"башла" vaux aor p3 pl
+"<,>"
+	"," cm
+"<ала>"
+	"ал" v tv prc_impf
+	"ал" vaux prc_impf
+	"ала" prn pers p3 pl nom
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<табигъатны>"
+	"табигъат" n gen
+	"табигъат" n acc
+	"табигъат" n px3sp gen
+	"табигъат" n px3sp acc
+"<,>"
+	"," cm
+"<къара>"
+	"къар" n px3sp dat
+	"къара" adj
+	"къара" v tv imp p2 sg
+	"къара" adj subst nom
+"<халкъны>"
+	"халкъ" n gen
+	"халкъ" n acc
+	"халкъ" n px3sp gen
+	"халкъ" n px3sp acc
+"<джашауун>"
+	"джаша" v iv ger gen
+	"джаша" v iv ger acc
+	"джаша" v iv ger px3sp gen
+	"джаша" v iv ger px3sp acc
+	"джаша" v iv ger px3sp nom
+"<суратлагъан>"
+	"суратла" v tv ger_past nom
+	"суратла" v tv ger_past px3sp nom
+"<джерли>"
+	"джерли" adj
+	"джерли" adj subst nom
+"<сёзлени>"
+	"сёз" n pl gen
+	"сёз" n pl acc
+"<къошуб>"
+	"къош" v tv prc_perf
+"<башлайдыла>"
+	"башла" vaux aor p3 pl
+"<.>"
+	"." sent
+
+"<Грамматика>"
+	"грамматика" n nom @nsubj #1->3
+"<да>"
+	"да" postadv @advmod #2->3
+"<тюрлендириледи>"
+	"тюрлендир" v tv pass aor p3 sg @root #3->0
+"<.>"
+	"." sent @punct #4->3
+
+"<Норвегияны>"
+	"Норвегия" np top gen
+	"Норвегия" np top acc
+"<парламенти>"
+	"парламент" n px3sp nom
+"<бу>"
+	"бу" det dem
+	"бу" prn dem nom
+"<стандартны>"
+	"стандарт" n gen
+	"стандарт" n acc
+	"стандарт" n px3sp gen
+	"стандарт" n px3sp acc
+"<риксмол>"
+	"риксмол" n nom
+	"риксмол" n attr
+	"риксмол" n px3sp nom
+"<(>"
+	"(" lpar
+"<">"
+	""" quot
+"<riksmål>"
+	"*riksmål"
+"<">"
+	""" quot
+"<)>"
+	")" rpar
+"<аты>"
+	"ат" n px3sp nom
+"<бла>"
+	"бла" post
+"<1899>"
+	"1899" num
+"<джыл>"
+	"джыл" n nom
+	"джыл" n attr
+	"джыл" n px3sp nom
+"<мюкюл>"
+	"мюкюл" n nom
+	"мюкюл" n attr
+	"мюкюл" n px3sp nom
+"<этеди>"
+	"эт" v tv aor p3 sg
+"<.>"
+	"." sent
+
+"<Алай>"
+	"алай" adv
+	"Алай" np top nom
+"<а>"
+	"а" qst
+	"а" cnjcoo
+"<миллетчи>"
+	"миллетчи" n nom
+	"миллетчи" n attr
+"<джюрюш>"
+	"джюрюш" n nom
+	"джюрюш" n attr
+	"джюрюш" n px3sp nom
+	"джюрю" v iv coop imp p2 sg
+"<джангы>"
+	"джангы" adj
+	"джангы" adj subst nom
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<къуралыуун>"
+	"къура" v tv pass ger px3sp gen
+	"къура" v tv pass ger px3sp acc
+	"къура" v tv pass ger px3sp nom
+"<излегендиле>"
+	"изле" v tv past p3 pl
+	"изле" v tv ger_past nom
+		"э" cop aor p3 pl
+	"изле" v tv ger_past px3sp nom
+		"э" cop aor p3 pl
+"<.>"
+	"." sent
+
+"<Ивар>"
+	"Ивар" np ant m nom
+"<Осен>"
+	"Осен" np cog mf nom
+"<кесича>"
+	"*кесича"
+"<юреннген>"
+	"юрен" v iv ger_past nom
+	"юрен" v iv ger_past px3sp nom
+"<лингвист>"
+	"лингвист" n nom
+	"лингвист" n attr
+	"лингвист" n px3sp nom
+"<,>"
+	"," cm
+"<22>"
+	"22" num
+"<джылында>"
+	"джыл" n px3sp loc
+"<джангы>"
+	"джангы" adj
+	"джангы" adj subst nom
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<къурауда>"
+	"къура" v tv ger loc
+"<ишни>"
+	"иш" n gen
+	"иш" n acc
+	"иш" n px3sp gen
+	"иш" n px3sp acc
+"<башлайды>"
+	"башла" vaux aor p3 sg
+"<.>"
+	"." sent
+
+"<Ол>"
+	"ол" prn pers p3 sg nom
+"<къралда>"
+	"кърал" n loc
+	"кърал" n px3sp loc
+"<айланыб>"
+	"айлан" v iv prc_perf
+"<,>"
+	"," cm
+"<диалектлени>"
+	"диалект" n pl gen
+	"диалект" n pl acc
+"<тенглешдиреди>"
+	"тенглешдир" v tv aor p3 sg
+"<,>"
+	"," cm
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилча>"
+	"*тилча"
+"<тыш>"
+	"тыш" n nom
+	"тыш" n attr
+	"тыш" n px3sp nom
+"<эткиледен>"
+	"этки" n pl abl
+"<къутулгъан>"
+	"къутул" v iv ger_past nom
+	"къутул" v iv ger_past px3sp nom
+"<исланд>"
+	"исланд" n nom
+	"исланд" n attr
+	"исланд" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<айныуун>"
+	"айны" v tv ger gen
+	"айны" v tv ger acc
+	"айны" v tv ger px3sp gen
+	"айны" v tv ger px3sp acc
+	"айны" v tv ger px3sp nom
+"<тинтеди>"
+	"тинт" v iv aor p3 sg
+"<.>"
+	"." sent
+
+"<Ол>"
+	"ол" prn pers p3 sg nom
+"<заманладан>"
+	"заман" n pl abl
+"<талай>"
+	"талай" det qnt
+"<китаблада>"
+	"китаб" n pl loc
+"<басмаланнган>"
+	"басмалан" v iv ger_past nom
+	"басмала" v tv pass ger_past nom
+	"басмалан" v iv ger_past px3sp nom
+	"басмала" v tv pass ger_past px3sp nom
+"<тинтиуледе>"
+	"тинт" v iv ger pl loc
+"<джангы>"
+	"джангы" adj
+	"джангы" adj subst nom
+"<тилге>"
+	"тил" n dat
+"<ланнсмол>"
+	"лансмол" n nom
+	"лансмол" n attr
+	"лансмол" n px3sp nom
+"<(>"
+	"(" lpar
+"<">"
+	""" quot
+"<landsmål>"
+	"*landsmål"
+"<">"
+	""" quot
+"<,>"
+	"," cm
+"<«>"
+	"«" lquot
+"<миллет>"
+	"миллет" n nom
+	"миллет" n attr
+	"миллет" n px3sp nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<»>"
+	"»" rquot
+"<)>"
+	")" rpar
+"<атайды>"
+	"ата" v tv aor p3 sg
+"<.>"
+	"." sent
+
+"<Швеция>"
+	"Швеция" np top nom
+"<бла>"
+	"бла" cnjcoo
+"<уния>"
+	"уния" n nom
+"<къоратылгъандан>"
+	"къорат" v tv pass ger_past abl
+"<сора>"
+	"сора" post
+"<,>"
+	"," cm
+"<эки>"
+	"эки" num
+"<тил>"
+	"тил" n nom
+"<айныуларын>"
+	"айны" v tv ger pl px3sp gen
+	"айны" v tv ger pl px3sp acc
+	"айны" v tv ger pl px3sp nom
+"<андан>"
+	"ол" prn pers p3 sg abl
+"<ары>"
+	"ары" adv
+"<бардыргъандыла>"
+	"бардыр" v tv past p3 pl
+"<.>"
+	"." sent
+
+"<Риксмол>"
+	"риксмол" n nom
+	"риксмол" n attr
+	"риксмол" n px3sp nom
+"<1929>"
+	"1929" num
+"<джыл>"
+	"джыл" n nom
+"<">"
+	""" quot
+"<bokmål>"
+	"*bokmål"
+"<">"
+	""" quot
+"<(>"
+	"(" lpar
+"<букмол>"
+	"букмол" n nom
+	"букмол" n attr
+	"букмол" n px3sp nom
+"<,>"
+	"," cm
+"<">"
+	""" quot
+"<китаб>"
+	"китаб" n attr
+"<тил>"
+	"тил" n nom
+"<">"
+	""" quot
+"<)>"
+	")" rpar
+"<атны>"
+	"ат" n gen
+	"ат" n acc
+	"ат" n px3sp gen
+	"ат" n px3sp acc
+"<алады>"
+	"ал" v tv aor p3 sg
+	"ал" vaux aor p3 sg
+"<,>"
+	"," cm
+"<ланнсмол>"
+	"лансмол" n nom
+	"лансмол" n attr
+	"лансмол" n px3sp nom
+"<эсе>"
+	"эс" n px3sp dat
+	"э" cop gna_cond p3 sg
+"<уа>"
+	"а" cnjcoo
+"<—>"
+	"—" guio
+"<">"
+	""" quot
+"<nynorsk>"
+	"*nynorsk"
+"<">"
+	""" quot
+"<(>"
+	"(" lpar
+"<нюношк>"
+	"нюношк" n nom
+"<,>"
+	"," cm
+"<">"
+	""" quot
+"<джангы>"
+	"джангы" adj
+"<норвегча>"
+	"норвегча" n nom
+"<">"
+	""" quot
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Букмол>"
+	"букмол" n nom
+	"букмол" n attr
+	"букмол" n px3sp nom
+"<бла>"
+	"бла" post
+"<нюношк>"
+	"нюношк" n nom
+	"нюношк" n attr
+	"нюношк" n px3sp nom
+"<1917>"
+	"1917" num
+"<,>"
+	"," cm
+"<1938>"
+	"1938" num
+"<эм>"
+	"эм" n nom
+	"эм" adv
+	"эм" n attr
+	"эм" cnjcoo
+	"эм" n px3sp nom
+"<1959>"
+	"1959" num
+"<джыллада>"
+	"джыл" n pl loc
+"<реформаладан>"
+	"реформа" n pl abl
+"<сора>"
+	"сора" post
+	"сор" v tv prc_impf
+"<джуукълашхандыла>"
+	"джууукълаш" v iv past p3 pl
+	"джууукълаш" v iv ger_past nom
+		"э" cop aor p3 pl
+	"джууукълаш" v iv ger_past px3sp nom
+		"э" cop aor p3 pl
+"<.>"
+	"." sent
+
+"<Ол>"
+	"ол" det dem
+"<заманлада>"
+	"заман" n pl loc
+"<кърал>"
+	"кърал" n nom
+	"кърал" n attr
+	"кърал" n px3sp nom
+"<эки>"
+	"эки" num
+	"эки" num subst nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<бир>"
+	"бир" num
+	"бир" num subst nom
+	"бир" num subst px3sp nom
+"<ортакъ>"
+	"ортакъ" n nom
+	"ортакъ" n attr
+	"ортакъ" n px3sp nom
+"<тилге>"
+	"тил" n dat
+"<бирикдириу>"
+	"бирикдир" v tv ger nom
+"<политиканы>"
+	"политика" n gen
+	"политика" n acc
+"<бардыргъанды>"
+	"бардыр" v tv past p3 sg
+	"бардыр" v tv ger_past nom
+		"э" cop aor p3 sg
+	"бардыр" v tv ger_past px3sp nom
+		"э" cop aor p3 sg
+"<(>"
+	"(" lpar
+"<самношк>"
+	"самношк" n nom
+"<,>"
+	"," cm
+"<">"
+	""" quot
+"<samnorsk>"
+	"*samnorsk"
+"<">"
+	""" quot
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<1946>"
+	"1946" num
+"<джылда>"
+	"джыл" n loc
+"<бардырылгъан>"
+	"бардыр" v tv pass ger_past nom
+	"бардыр" v tv pass ger_past px3sp nom
+"<сорууламагъа>"
+	"*сорууламагъа"
+"<кёре>"
+	"кёр" n px3sp dat
+	"кёр" v tv prc_impf
+"<бу>"
+	"бу" det dem
+"<политиканы>"
+	"политика" n gen
+	"политика" n acc
+"<джюзден>"
+	"джюз" n abl
+	"джюз" num subst abl
+	"джюз" n px3sp abl
+	"джюз" num subst px3sp abl
+"<джетмиш>"
+	"джетмиш" num
+"<тогъуз>"
+	"тогъуз" num
+"<норвегли>"
+	"норвегли" n nom
+"<джакълагъанды>"
+	"джакъла" v tv past p3 sg
+"<.>"
+	"." sent
+
+"<алай>"
+	"алай" adv
+"<официал>"
+	"официал" adj
+	"официал" adj subst nom
+	"официал" adj subst px3sp nom
+"<политикагъа>"
+	"политика" n dat
+"<къаршчыла>"
+	"къаршчы" n pl nom
+"<самношкгъа>"
+	"самношк" n dat
+"<базман>"
+	"базман" n nom
+	"базман" n attr
+	"базман" n px3sp nom
+"<болуб>"
+	"бол" v iv prc_perf
+"<бу>"
+	"бу" det dem
+	"бу" prn dem nom
+"<реформаланы>"
+	"реформа" n pl gen
+	"реформа" n pl acc
+"<тохтатхандыла>"
+	"тохтат" v tv past p3 pl
+	"тохтат" v tv ger_past nom
+		"э" cop aor p3 pl
+	"тохтат" v tv ger_past px3sp nom
+		"э" cop aor p3 pl
+"<.>"
+	"." sent
+
+"<Джазма>"
+	"джаз" n attr @compound #1->2
+"<тилле>"
+	"тил" n pl nom @root #2->0
+"<.>"
+	"." sent @punct #3->2
+
+"<Букмол>"
+	"букмол" n nom @conj #1->3
+"<бла>"
+	"бла" cnjcoo @cc #2->3
+"<нюношк>"
+	"нюношк" n nom @root #3->0
+"<.>"
+	"." sent @punct #4->3
+
+"<Букмол>"
+	"букмол" n nom
+"<да>"
+	"да" cnjcoo
+"<,>"
+	"," cm
+"<нюношк>"
+	"нюношк" n nom
+"<да>"
+	"да" cnjcoo
+"<кёб>"
+	"кёб" adj
+"<тюрлю>"
+	"тюрлю" adj
+"<вариантха>"
+	"вариант" n dat
+"<иедиле>"
+	"ие" n nom
+		"э" cop aor p3 pl
+"<.>"
+	"." sent
+
+"<Букмолну>"
+	"букмол" n gen
+	"букмол" n acc
+	"букмол" n px3sp gen
+	"букмол" n px3sp acc
+"<риксмолгъа>"
+	"риксмол" n dat
+"<джуукъ>"
+	"джууукъ" n nom
+	"джууукъ" n attr
+	"джууукъ" n px3sp nom
+"<формаларына>"
+	"форма" n pl px3sp dat
+"<консерватив>"
+	"консерватив" adj
+	"консерватив" adj subst nom
+	"консерватив" adj subst px3sp nom
+"<дейдиле>"
+	"де" v tv aor p3 pl
+"<,>"
+	"," cm
+"<нюношкгъа>"
+	"нюношк" n dat
+"<джуукъ>"
+	"джууукъ" n nom
+	"джууукъ" n attr
+	"джууукъ" n px3sp nom
+"<буксмол>"
+	"букмол" n nom
+	"букмол" n attr
+	"букмол" n px3sp nom
+"<формалагъа>"
+	"форма" n pl dat
+"<уа>"
+	"а" cnjcoo
+"<радикал>"
+	"радикал" adj
+"<дейдиле>"
+	"де" v tv aor p3 pl
+"<.>"
+	"." sent
+
+"<Нюношкда>"
+	"нюношк" n loc
+	"нюношк" n px3sp loc
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<тамал>"
+	"тамал" n nom
+	"тамал" n attr
+	"тамал" n px3sp nom
+"<лансмолгъа>"
+	"лансмол" n dat
+"<джуукъ>"
+	"джууукъ" n nom
+	"джууукъ" n attr
+	"джууукъ" n px3sp nom
+"<болгъан>"
+	"бол" v iv ger_past nom
+	"бол" v iv ger_past px3sp nom
+"<,>"
+	"," cm
+"<буксмолгъа>"
+	"букмол" n dat
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<джуукъ>"
+	"джууукъ" n nom
+	"джууукъ" n attr
+	"джууукъ" n px3sp nom
+"<болгъан>"
+	"бол" v iv ger_past nom
+	"бол" v iv ger_past px3sp nom
+"<формала>"
+	"форма" n pl nom
+"<бардыла>"
+	"бар" adj
+		"э" cop aor p3 pl
+	"бар" adj subst nom
+		"э" cop aor p3 pl
+	"бар" adj subst px3sp nom
+		"э" cop aor p3 pl
+	"бар" v iv ifi p3 sg
+	"бар" vaux ifi p3 sg
+"<.>"
+	"." sent
+
+"<«>"
+	"«" lquot @punct #1->3
+"<Кърал>"
+	"кърал" n attr @compound #2->3
+"<тил>"
+	"тил" n nom @root #3->0
+"<»>"
+	"»" rquot @punct #4->3
+"<.>"
+	"." sent @punct #5->3
+
+"<Буксмол>"
+	"букмол" n nom
+"<бла>"
+	"бла" cnjcoo
+"<нюношкну>"
+	"нюношк" n gen
+	"нюношк" n acc
+	"нюношк" n px3sp gen
+	"нюношк" n px3sp acc
+"<джуукълашыу>"
+	"джууукълаш" v iv ger nom
+	"джууукълаш" v iv ger px3sp nom
+"<реформалагъа>"
+	"реформа" n pl dat
+"<къаршчыла>"
+	"къаршчы" n pl nom
+"<«>"
+	"«" lquot
+"<риксмол>"
+	"риксмол" n nom
+	"риксмол" n attr
+	"риксмол" n px3sp nom
+"<»>"
+	"»" rquot
+"<атны>"
+	"ат" n gen
+	"ат" n acc
+	"ат" n px3sp gen
+	"ат" n px3sp acc
+"<джакълайдыла>"
+	"джакъла" v tv aor p3 pl
+"<,>"
+	"," cm
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<ортакъ>"
+	"ортакъ" n nom
+	"ортакъ" n attr
+	"ортакъ" n px3sp nom
+"<норвег>"
+	"норвег" n nom
+	"норвег" n attr
+	"норвег" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<къуралыу>"
+	"къура" v tv pass ger nom
+	"къура" v tv pass ger px3sp nom
+"<джюрюшюню>"
+	"джюрюш" n px3sp gen
+	"джюрюш" n px3sp acc
+"<аллында>"
+	"алл" n px3sp loc
+"<грамматика>"
+	"грамматика" n nom
+	"грамматика" n attr
+"<бла>"
+	"бла" post
+"<хайырланадыла>"
+	"хайырлан" v iv aor p3 pl
+"<.>"
+	"." sent
+
+"<Риксмол>"
+	"риксмол" n nom
+	"риксмол" n attr
+	"риксмол" n px3sp nom
+"<бла>"
+	"бла" post
+"<буксмолну>"
+	"букмол" n gen
+	"букмол" n acc
+	"букмол" n px3sp gen
+	"букмол" n px3sp acc
+"<консерватив>"
+	"консерватив" adj
+	"консерватив" adj subst nom
+	"консерватив" adj subst px3sp nom
+"<вариантлары>"
+	"вариант" n pl px3sp nom
+"<">"
+	""" quot
+"<де факто>"
+	"де-факто" adv
+"<">"
+	""" quot
+"<ХХ>"
+	"XX" num ord
+"<ёмюрню>"
+	"ёмюр" n gen
+	"ёмюр" n acc
+	"ёмюр" n px3sp gen
+	"ёмюр" n px3sp acc
+"<асламысында>"
+	"асламысы" prn qnt loc
+"<Норвегияны>"
+	"Норвегия" np top gen
+	"Норвегия" np top acc
+"<джазма>"
+	"джаз" n nom
+		"э" cop aor p1 sg
+	"джаз" n px3sp nom
+		"э" cop aor p1 sg
+	"джаз" n px1sg dat
+	"джаз" v tv neg imp p2 sg
+"<тилини>"
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<стандарты>"
+	"стандарт" n px3sp nom
+"<болгъандыла>"
+	"бол" v iv past p3 pl
+	"бол" v iv ger_past nom
+		"э" cop aor p3 pl
+	"бол" v iv ger_past px3sp nom
+		"э" cop aor p3 pl
+"<.>"
+	"." sent
+
+"<Аланы>"
+	"алан" n px3sp nom
+	"ала" prn pers p3 pl gen
+	"ала" prn pers p3 pl acc
+"<газетле>"
+	"газет" n pl nom
+"<,>"
+	"," cm
+"<энциклопедияла>"
+	"энциклопедия" n pl nom
+"<,>"
+	"," cm
+"<Норвегияны>"
+	"Норвегия" np top gen
+	"Норвегия" np top acc
+"<ара>"
+	"ара" n nom
+	"ара" n attr
+"<шахары>"
+	"шахар" n px3sp nom
+"<Ослону>"
+	"Осло" np top gen
+	"Осло" np top acc
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<аны>"
+	"ол" prn pers p3 sg gen
+	"ол" prn pers p3 sg acc
+"<тёгерегини>"
+	"тёгерек" n px3sp gen
+	"тёгерек" n px3sp acc
+"<,>"
+	"," cm
+"<башха>"
+	"баш" n dat
+	"башха" adj
+	"башха" adj subst nom
+"<уллу>"
+	"уллу" adj
+	"уллу" adj subst nom
+"<шахарланы>"
+	"шахар" n pl gen
+	"шахар" n pl acc
+"<халкъы>"
+	"халкъ" n px3sp nom
+"<хайырланнгандыла>"
+	"хайырлан" v iv past p3 pl
+	"хайырлан" v iv ger_past nom
+		"э" cop aor p3 pl
+	"хайырлан" v iv ger_past px3sp nom
+		"э" cop aor p3 pl
+"<.>"
+	"." sent
+
+"<1981>"
+	"1981" num
+"<эм>"
+	"эм" n nom
+	"эм" adv
+	"эм" n attr
+	"эм" cnjcoo
+	"эм" n px3sp nom
+"<2003>"
+	"2003" num
+"<джыллада>"
+	"джыл" n pl loc
+"<реформаладан>"
+	"реформа" n pl abl
+"<сора>"
+	"сора" post
+	"сор" v tv prc_impf
+"<официал>"
+	"официал" adj
+	"официал" adj subst nom
+	"официал" adj subst px3sp nom
+"<буксмол>"
+	"букмол" n nom
+	"букмол" n attr
+	"букмол" n px3sp nom
+"<бла>"
+	"бла" post
+"<бусагъатдагъы>"
+	"бусагъатдагъы" adj
+"<риксмол>"
+	"риксмол" n nom
+	"риксмол" n attr
+	"риксмол" n px3sp nom
+"<бирчадыла>"
+	"бирча" adj
+		"э" cop aor p3 pl
+	"бирча" adj subst nom
+		"э" cop aor p3 pl
+"<.>"
+	"." sent
+
+"<Аланы>"
+	"алан" n px3sp nom
+	"ала" prn pers p3 pl gen
+	"ала" prn pers p3 pl acc
+"<араларында>"
+	"ара" n pl px3sp loc
+"<башхалыкъланы>"
+	"башхалыкъ" n pl gen
+	"башхалыкъ" n pl acc
+"<британ>"
+	"британ" n nom
+	"британ" n attr
+	"британ" n px3sp nom
+"<эмда>"
+	"эм" n loc
+	"эм" n px3sp loc
+	"эмда" cnjcoo
+"<американ>"
+	"американ" n nom
+	"американ" n attr
+	"американ" n px3sp nom
+"<ингилиз>"
+	"ингилиз" n nom
+	"ингилиз" n attr
+	"ингилиз" n px3sp nom
+"<тил>"
+	"тил" n nom
+	"тил" n attr
+	"тил" n px3sp nom
+"<вариантлары>"
+	"вариант" n pl px3sp nom
+"<бла>"
+	"бла" post
+"<тенглешдирирге>"
+	"тенглешдир" v tv ger_aor dat
+"<боллукъду>"
+	"бол" v iv fut2 p3 sg
+	"бол" v iv ger_fut2 nom
+		"э" cop aor p3 sg
+	"бол" v iv ger_fut2 px3sp nom
+		"э" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<«>"
+	"«" lquot @punct #1->3
+"<Мийик>"
+	"мийик" adj @amod #2->3
+"<норвегча>"
+	"норвегча" n nom @root #3->0
+"<»>"
+	"»" rquot @punct #4->3
+"<.>"
+	"." sent @punct #5->3
+
+"<Нюношкну>"
+	"нюношк" n gen @nmod:poss
+"<официал>"
+	"официал" adj @acl:relcl
+"<болмагъан>"
+	"бол" v iv neg gpr_past @cop
+"<">"
+	""" quot @punct
+"<høgnorsk>"
+	"høgnorsk" barb @x
+"<">"
+	""" quot @punct
+"<атлы>"
+	"атлы" adj @amod
+"<формасы>"
+	"форма" n px3sp nom 
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<барды>"
+	"бар" adj
+		"э" cop aor p3 sg
+	"бар" adj subst nom
+		"э" cop aor p3 sg
+	"бар" adj subst px3sp nom
+		"э" cop aor p3 sg
+	"бар" v iv ifi p3 sg
+	"бар" vaux ifi p3 sg
+"<(>"
+	"(" lpar
+"<«>"
+	"«" lquot
+"<мийик>"
+	"мийик" adj
+	"мийик" adj subst nom
+	"мийик" adj subst px3sp nom
+"<норвегча>"
+	"норвегча" n nom
+	"норвегча" adv
+	"норвегча" n attr
+"<»>"
+	"»" rquot
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<1917>"
+	"1917" num
+"<джылдан>"
+	"джыл" n abl
+	"джыл" n px3sp abl
+"<сора>"
+	"сора" post
+	"сор" v tv prc_impf
+"<реформаланы>"
+	"реформа" n pl gen
+	"реформа" n pl acc
+"<къабыл этмегенди>"
+	"къабыл эт" v tv neg past p3 sg
+	"къабыл эт" v tv neg ger_past nom
+		"э" cop aor p3 sg
+	"къабыл эт" v tv neg ger_past px3sp nom
+		"э" cop aor p3 sg
+"<,>"
+	"," cm
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<себебден>"
+	"себеб" n abl
+	"себеб" n px3sp abl
+"<Ивар>"
+	"Ивар" np ant m nom
+"<Осенни>"
+	"Осен" np cog mf gen
+	"Осен" np cog mf acc
+"<проектине>"
+	"проект" n px3sp dat
+"<эм>"
+	"эм" n nom
+	"эм" adv
+	"эм" n attr
+	"эм" cnjcoo
+	"эм" n px3sp nom
+"<джуукъду>"
+	"джууукъ" n nom
+		"э" cop aor p3 sg
+	"джууукъ" n px3sp nom
+		"э" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Høgnorsk>"
+	"Høgnorsk" barb
+	"Høgnorsk" np unk
+"<миллетчиле>"
+	"миллетчи" n pl nom
+"<джанындан>"
+	"джан" n px3sp abl
+"<джакъланса>"
+	"джакъла" v tv pass prc_cond p3 sg
+"<да>"
+	"да" cnjcoo
+	"да" postadv
+"<джайылыуу>"
+	"джай" v tv pass ger px3sp nom
+"<чеклиди>"
+	"*чеклиди"
+"<.>"
+	"." sent
+
+"<Норвег>"
+	"норвег" n attr
+"<тилдеги>"
+	"тил" n loc attr
+"<башхалыкъланы>"
+	"башхалыкъ" n pl gen
+"<юлгюлери>"
+	"юлгю" n pl px3sp nom
+"<.>"
+	"." sent
+
+"<Тюбюнде>"
+	"тюб" n px3sp loc
+"<букмол>"
+	"букмол" n nom
+	"букмол" n attr
+	"букмол" n px3sp nom
+"<бла>"
+	"бла" post
+"<нюношкну>"
+	"нюношк" n gen
+	"нюношк" n acc
+	"нюношк" n px3sp gen
+	"нюношк" n px3sp acc
+"<риксмолну>"
+	"риксмол" n gen
+	"риксмол" n acc
+	"риксмол" n px3sp gen
+	"риксмол" n px3sp acc
+"<консерватив>"
+	"консерватив" adj
+	"консерватив" adj subst nom
+	"консерватив" adj subst px3sp nom
+"<формасы>"
+	"форма" n px3sp nom
+"<бла>"
+	"бла" post
+"<(>"
+	"(" lpar
+"<дат>"
+	"дат" n nom
+	"дат" n attr
+	"дат" n px3sp nom
+"<тилге>"
+	"тил" n dat
+"<джуукъ>"
+	"джууукъ" n nom
+	"джууукъ" n attr
+	"джууукъ" n px3sp nom
+"<)>"
+	")" rpar
+"<дат>"
+	"дат" n nom
+	"дат" n attr
+	"дат" n px3sp nom
+"<тилни>"
+	"тил" n gen
+	"тил" n acc
+	"тил" n px3sp gen
+	"тил" n px3sp acc
+"<кесини>"
+	"кеси" prn ref px3sp gen
+	"кеси" prn ref px3sp acc
+"<арасында>"
+	"ара" n px3sp loc
+"<башхалыкъланы>"
+	"башхалыкъ" n pl gen
+	"башхалыкъ" n pl acc
+"<кёргюзген>"
+	"кёргюз" v tv ger_past nom
+	"кёргюз" v tv ger_past px3sp nom
+"<талай>"
+	"талай" det qnt
+"<айтым>"
+	"айтым" n nom
+	"айтым" n attr
+	"айтым" n px3sp nom
+"<бериледи>"
+	"бер" v tv pass aor p3 sg
+"<:>"
+	":" sent
+

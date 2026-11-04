@@ -1,0 +1,58 @@
+[0JpqBRIELkdx#0] ^союзда/союз<n><loc>$
+[/0JpqBRIELkdx]
+[2BcevjXN-0iP#0] ^юсюнден/*юсюнден$
+[/2BcevjXN-0iP]
+[3BDBS1xZuhRO#0] ^августдагъы/август<n><loc><attr>/август<n><loc><subst><nom>$
+[/3BDBS1xZuhRO]
+[3UXCE8hzeLP9#0] ^кюнюдю/*кюнюдю$
+[/3UXCE8hzeLP9]
+[8gPccz5rOSfd#0] ^къуюда/къую<n><loc>$
+[/8gPccz5rOSfd]
+[DXg1-n6H1s8N#0] ^кёбюсю/кёбю\<prn\>\<qnt\><px3sp><nom>$
+[/DXg1-n6H1s8N]
+[GXyvbLnFGbPN#0] ^июлда/июль<n><loc>$
+[/GXyvbLnFGbPN]
+[Pqd5rT7H4TF-#0] ^тюбю/тюб<n><px3sp><nom>$
+[/Pqd5rT7H4TF-]
+[RBpux6igYNZb#0] ^сермешиуге/серме<v><tv>\<coop\>\<ger\><dat>$
+[/RBpux6igYNZb]
+[SR5wmvMk3ryx#0] ^ётген/ёт<v><iv><ger_past><nom>/ёт<v><iv>\<gpr_past\>$
+[/SR5wmvMk3ryx]
+[Shj5T8LT6V9N#0] ^кёбюсюне/кёбю\<prn\>\<qnt\><px3sp><dat>$
+[/Shj5T8LT6V9N]
+[T-sAaLG0gWgG#0] ^июлунда/июль<n><px3sp><loc>$
+[/T-sAaLG0gWgG]
+[TW2JAPG4fQna#0] ^чоюнда/чоюн<n><loc>$
+[/TW2JAPG4fQna]
+[WBssxkDBImXB#0] ^къуралгъанды/къура<v><tv>\<pass\><past><p3><sg>/къура<v><tv>\<pass\><ger_past><nom>+э<cop><aor><p3><sg>$
+[/WBssxkDBImXB]
+[YF9kTbdeiwjc#0] ^деб/де<v><tv>\<prc_perf\>$
+[/YF9kTbdeiwjc]
+[bhxJEYPomwDd#0] ^джокъду/джокъ<adj>+э<cop><aor><p3><sg>/джокъ<adj><subst><nom>+э<cop><aor><p3><sg>$
+[/bhxJEYPomwDd]
+[dmyN_Xa5i7oB#0] ^союзну/союз<n><acc>/союз<n><gen>$
+[/dmyN_Xa5i7oB]
+[jrr-t9mwE8Z_#0] ^башланыуу/башлан<v><iv>\<ger\><px3sp><nom>$
+[/jrr-t9mwE8Z_]
+[kmXx9Hc9nBKZ#0] ^июнунда/июнь<n><px3sp><loc>$
+[/kmXx9Hc9nBKZ]
+[lB9y86IAWk_e#0] ^бёлюмю/бёлю<v><tv><imp><p2><sg>+мы<qst>/бёлюм<n><px3sp><nom>$
+[/lB9y86IAWk_e]
+[lVcs43rhzB75#0] ^спектаклде/спектакль<n><loc>$
+[/lVcs43rhzB75]
+[mMhmYrV6Ek4b#0] ^кёзюуде/кёзюу<n><loc>$
+[/mMhmYrV6Ek4b]
+[ncQddqY01L4q#0] ^экинчи/эки<num><ord>/эки<num><ord><subst><nom>$
+[/ncQddqY01L4q]
+[p3727MIlf-iT#0] ^самолёту/самолёт<n><px3sp><nom>$
+[/p3727MIlf-iT]
+[qqAmgJdcw8E_#0] ^оюнда/оюн<n><loc>$
+[/qqAmgJdcw8E_]
+[sEep5D9M1TmE#0] ^башланыууна/башлан<v><iv>\<ger\><px3sp><dat>$
+[/sEep5D9M1TmE]
+[wI29hA17XxwD#0] ^ансамбллени/ансамбль<n><pl><acc>/ансамбль<n><pl><gen>$
+[/wI29hA17XxwD]
+[xcPTcJmNENuA#0] ^сермешиу/серме<v><tv>\<coop\>\<ger\><nom>$
+[/xcPTcJmNENuA]
+[zlIR7B1jn_2Q#0] ^башлаб/башла\<vaux\>\<prc_perf\>$
+[/zlIR7B1jn_2Q]
