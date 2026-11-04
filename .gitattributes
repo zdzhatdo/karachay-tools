@@ -3,3 +3,7 @@
 * text=auto
 *.sh text eol=lf
 Dockerfile text eol=lf
+
+# Vendored apertium-krc is built in Linux containers straight from the working tree,
+# so its text files must stay LF on Windows too. text=auto leaves binaries (krc.prob) alone.
+lexicon/** text=auto eol=lf
