@@ -61,3 +61,43 @@
 - Write stage 1 of `analyzer/Dockerfile` from today's commands: pinned base image, Apertium repo, `ENV LANG`,
   pinned apertium-krc commit, apply fix, `autogen.sh && make`. Done when `hfst-lookup` in the built image
   analyzes `киштигим` and `Тибр`.
+
+## 2026-11-04 — Week 1, day 3: analyzer image builds from the repo
+
+**Did**
+- Vendored apertium-krc into `lexicon/` (upstream `e84bc3a`, dormant since 2022) instead of a separate fork,
+  so lexicon fixes, their tests, and CI path filters (`lexicon/**`) live in one repo and one PR.
+  `lexicon/UPSTREAM` records the source commit and the one omitted file.
+- Commit structure: unmodified upstream copy first, then each local change as its own commit, so
+  `git diff <vendor commit> HEAD -- lexicon/` shows exactly what we changed (needed for upstream PRs).
+- Wrote `analyzer/Dockerfile` (build stage only): Debian bookworm, Apertium nightly toolchain, copy
+  `lexicon/`, `autogen.sh && make`. Built on the first try. Inside the image, `киштигим` →
+  `киштик<n><px1sg><nom>` and `Тибр` → `Тибр<np><top>` — same as the manual day 2 build.
+- Layer order: toolchain install before `COPY lexicon/`, so lexicon edits reuse the cached toolchain
+  (`make` alone takes ~17 s).
+- Image records its toolchain in `/toolchain-versions.txt` (`dpkg-query`): apertium 3.10.0, cg3 1.7.0,
+  hfst 3.17.3, lttoolbox 3.8.4, each with its upstream source hash.
+
+**Broke / learned**
+- Windows broke the vendored copy in four separate ways:
+  - `PRN.prefix.dix`: `PRN` is a reserved device name on Windows; git refuses the path. Omitted (only used
+    by an optional upstream test helper) and documented in `UPSTREAM`.
+  - Windows `tar` decoded UTF-8 filenames as CP437 (`kün.yaml` → `k├╝n.yaml`) — mojibake in file names.
+  - Executable bits were lost (`autogen.sh` 755 → 644), which would fail `./autogen.sh` in Linux.
+  - Upstream's `.gitignore` ignores files upstream tracks (`krc.prob`), so `git add` silently skipped them.
+  - Fix for names and modes: load upstream's tree straight from git objects with `git update-index
+    --index-info` (skipping PRN), bypassing the filesystem. Verified every entry's mode and hash against
+    upstream with `git ls-tree`.
+- Upstream's SVN-era `lexicon/.gitattributes` (`* text=auto !eol`) overrode our root LF rule, because a
+  nested `.gitattributes` wins. Removed it; `git check-attr eol` now reports `lf`, and
+  `git ls-files --eol` shows the binary `krc.prob` is detected as `-text` (never converted).
+- `SHELL ["/bin/bash", "-o", "pipefail", "-c"]` in the Dockerfile so `curl … | bash` fails the build if
+  `curl` fails — same lesson as `${PIPESTATUS[0]}` on day 2.
+- Reproducibility: the lexicon is pinned; `debian:bookworm` and the Apertium nightly packages are not
+  (nightly can't really be pinned). Goal is a reproducible *artifact* (published, tagged image) plus a
+  version record, rather than bit-identical rebuilds. Pin the base image by digest later, with automated
+  update PRs.
+
+**Next (day 4)**
+- Run a Wikipedia article and some native-speaker text through the analyzer; look at what's right
+  and wrong (DESIGN.md §15).
