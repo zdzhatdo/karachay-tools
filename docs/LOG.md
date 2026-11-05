@@ -101,3 +101,39 @@
 **Next (day 4)**
 - Run a Wikipedia article and some native-speaker text through the analyzer; look at what's right
   and wrong (DESIGN.md §15).
+
+## 2026-11-05 — Week 1, day 4: first look at real text
+
+**Did**
+- Ran a small native-speaker sample and one Wikipedia article (`Алан`, revision 129091) through
+  `apertium -d /src/lexicon krc-morph`. Samples stay in gitignored `data/`.
+- Wikipedia article: 1,328 words, 230 unknown (180 distinct), 716 with more than one analysis. Exploratory
+  numbers from one name-heavy history article, not a coverage score; those come only from the eval set.
+- Sorted unknowns by cause instead of treating them as one list:
+  - Missing stems: names, ethnonyms (`гуннла`, `печенегле`), loanwords, some verbs. Plural `-ла/-ле` itself
+    works (`киштикле`).
+  - Attached `бла`: only the separate word is in the lexicon (`киштик бла` works, `киштикбла` doesn't).
+  - Missing verb form: `джаша` is in the lexicon, but `джашагъадыла` is unknown.
+  - Misclassified stem: `полк` is entered as an adjective, so noun endings fail.
+  - Possible overgeneration: `айт<v><tv><aor><p3><pl>` generates `айтадыла`, `айтедиле`, `айтйдыла`.
+
+**Broke / learned**
+- Correction to day 2: capitalization failure is specific to `hfst-lookup`. The `krc-morph` pipeline
+  (`lt-proc -w`) analyzes `Киштигим` and `КИШТИК` and splits punctuation. Compare it with the planned
+  lowercase fallback before building the service (DESIGN.md §8).
+- The pipeline appends a `^./.<sent>$` token when the input has no final period, so counting tokens naively
+  would be wrong. The coverage script must handle it.
+- An unknown word isn't necessarily a misspelling. Two "maybe misspelled" verbs fit the lexicon's patterns;
+  `къайт-` also appears in an unrelated article (`къайтханны`), which suggests a missing stem.
+- First hypothesis (missing verbs are the main gap) didn't hold on the Wikipedia sample, which was a mix.
+- One rule can fix many words; one stem fixes only that word. Frequency across more text should decide order.
+- Windows Python printed through cp1252 and crashed on Cyrillic; `-X utf8` fixes it.
+
+**To verify with native speakers**
+- Spelling of `къууан-` and `къайт-` forms; spelling of `казак` in Karachay-Balkar.
+- Whether `бла` is normally attached, separate, or both.
+- Whether `айтедиле` and `айтйдыла` are valid. If not, they become negative tests.
+- Whether `полк` should be a noun.
+
+**Next (day 5)**
+- Coverage script: read text → analyze → print % recognized and top 20 unknowns (first baseline, DESIGN.md §15).
