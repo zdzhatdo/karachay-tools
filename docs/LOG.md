@@ -137,3 +137,37 @@
 
 **Next (day 5)**
 - Coverage script: read text → analyze → print % recognized and top 20 unknowns (first baseline, DESIGN.md §15).
+
+## 2026-11-06 — Week 1, day 5: first coverage baseline
+
+**Did**
+- Added `eval/coverage_report.py`, which reads Apertium stream output and reports word count, unknown count,
+  token and type coverage, and the top 20 unknowns. It needs no HFST or Docker: Docker produces the analysis,
+  Python only reads it, so tests run in milliseconds.
+- Added `eval/test_coverage_report.py` (4 pytest tests): unknown markers, multiple analyses, escapes, and the
+  word rule. Tests use placeholder strings, not Karachay-Balkar forms.
+- **First dev baseline: 82.1% token coverage, 76.6% type coverage** (1,279 words, 229 unknown).
+
+**How it was measured**
+- Text: Wikipedia article `Алан`, revision 129091, plain text from the MediaWiki API (`prop=extracts`).
+- Analyzer: lexicon at `5d4d0ea`; image built 2026-11-04 with apertium 3.10.0, cg3 1.7.0, hfst 3.17.3,
+  lttoolbox 3.8.4.
+- Commands: `apertium -d /src/lexicon krc-morph` in the image, then
+  `python -X utf8 eval/coverage_report.py <output>`.
+- A word is a token whose surface form contains a letter. Numbers and punctuation are excluded; tokens like
+  `1828дж` count as words. Types are compared in lowercase.
+- This is one name-heavy article, not the eval set, so it stays out of the README metrics table.
+
+**Broke / learned**
+- Correction to day 4: the 1,328 words / 230 unknown in that entry came from a quick script that counted numbers
+  and some punctuation as words. The letter rule gives 1,279 / 229.
+- The letter rule replaced a list of punctuation tags, and also removes the extra `.` the pipeline appends.
+- Apertium escapes special characters with backslashes, so the parser uses negative lookbehind
+  (`(?<!\\)`) to avoid ending a token at an escaped `$`.
+- Renamed the script from `coverage.py`: that name can shadow the `coverage` package that `pytest-cov` needs.
+- Known limits: an empty input file crashes; a word that is known in one place and unknown in another
+  counts as unknown for type coverage.
+
+**Next**
+- Roadmap step 1: run the tests and coverage report in CI.
+- Add the U+0301 stripping rule to the normalize stage in DESIGN.md §6.
