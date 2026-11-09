@@ -194,6 +194,28 @@
     gold accuracy ("correct analysis among candidates", DESIGN.md §9).
   - Not accepting all changes with `-a`: that would hide any real regressions.
 
+**Regtest triage (same day)**
+- Sorted all 32 mismatches: 9 improved (unknown → known, gold among candidates), 9 snapshot formatting only
+  (old snapshot escaped tags as `\<...\>`), 5 extra candidates with gold still present, 9 open questions for
+  native speakers. No known → unknown regressions.
+- Updated the "expected" snapshot to current output only after that review (exactly 32 lines in 9 files);
+  gold files untouched (411/858 gold matches before and after). Then added `apertium-regtest test` to CI.
+- `apertium-regtest cli` accepts one corpus per session, so accepting needed repeated sessions.
+
+**Broke / learned**
+- Working-tree line endings were wrong: 60 files under `lexicon/` were CRLF on disk, because they were checked
+  out while upstream's `.gitattributes` was still active, and git doesn't rewrite unchanged files. The day 3
+  check missed it: Git Bash `grep` hides `\r`. `git ls-files --eol` is the reliable check.
+  - Main analyzer files were LF (no effect on analyses); the Seegmiller transliteration files and regtest files
+    were CRLF locally but LF in CI. Fixed by re-checking out `lexicon/`; triage rerun gave identical results.
+
+**To verify with native speakers (regtest)**
+- `кюнюн`: should it also have a genitive reading? `кёзюуюню`: accusative or genitive?
+- `кюн` + "your" + dative: `кюнюнге`, `кюнюнга`, or `кюннге`?
+- Ordinal + copula: `39-чусуду` or `39-чуду`; `55-чисиди` or `55-чиди`?
+- `айныныкъ`, `айнылыкъ`: valid, or overgeneration?
+- `алгъанча` or `алгъынча`? `къойаргъа` or `къояргъа`?
+
 **Next**
-- Triage the regtest changes: unknown → known, known → unknown (possible regressions), other.
 - Pin action versions and `pytest` together with the base-image digest.
+- Add the U+0301 stripping rule to the normalize stage in DESIGN.md §6.
