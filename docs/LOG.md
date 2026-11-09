@@ -171,3 +171,29 @@
 **Next**
 - Roadmap step 1: run the tests and coverage report in CI.
 - Add the U+0301 stripping rule to the normalize stage in DESIGN.md §6.
+
+## 2026-11-09 — Week 2, day 1: CI
+
+**Did**
+- Added GitHub Actions CI (`.github/workflows/ci.yml`), on every push to main and every pull request. Two
+  parallel jobs: `python-tests` (pytest on `eval/`) and `analyzer` (build the image, run the smoke test).
+  Least-privilege `permissions: contents: read`.
+- Added `analyzer/smoke-test.sh`: native-speaker-verified forms must still get their analyses
+  (`киштигим` → `киштик<n><px1sg><nom>`, `Тибр` → `Тибр<np><top><nom>`). Checks that the expected analysis
+  is among the candidates, so extra candidates don't break it. Confirmed it fails on a wrong expectation.
+- First run on `a6671bf`: both jobs passed. `python-tests` 9 s; `analyzer` 65 s, of which the image build
+  is 61 s. Under the 5-minute target without caching.
+
+**Broke / learned**
+- Upstream's `apertium-regtest` suite fails on our build: 9 of 12 corpora differ from the 2022 snapshot.
+  Left out of CI for now so CI stays green and meaningful; triage is a separate task.
+  - It compares against "expected" (last accepted output) and "gold" (human-checked answer). In `yots`,
+    `къоюб` went from unknown in the snapshot to 4 candidates including the gold analysis — an improvement
+    that still counts as a failure. So at least part of the red is a stale snapshot.
+  - Its gold check needs an exact match, but `krc-morph` returns every candidate. Stricter than our planned
+    gold accuracy ("correct analysis among candidates", DESIGN.md §9).
+  - Not accepting all changes with `-a`: that would hide any real regressions.
+
+**Next**
+- Triage the regtest changes: unknown → known, known → unknown (possible regressions), other.
+- Pin action versions and `pytest` together with the base-image digest.
