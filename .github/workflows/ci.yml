@@ -25,3 +25,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: docker build -f analyzer/Dockerfile -t krc-analyzer .
       - run: docker run --rm -v "$PWD/analyzer:/checks:ro" krc-analyzer bash /checks/smoke-test.sh
+      - run: docker run --rm krc-analyzer apertium-regtest test
