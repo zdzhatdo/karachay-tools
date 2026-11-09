@@ -14,7 +14,7 @@
 [/CavggcyV1hJc]
 [E3lX1EKoD-_7#0] ^джылгъа/джыл<n><dat>$
 [/E3lX1EKoD-_7]
-[F1qw5P5-4jL2#0] ^башха/баш<n><dat>/башха<adj>/башха<adj><subst><nom>$
+[F1qw5P5-4jL2#0] ^башха/баш<n><dat>/башха<adj>/башха<adj><subst><nom>/башха<prn><ind><nom>$
 [/F1qw5P5-4jL2]
 [KSLbJOtiIGbg#0] ^къолгъа/къол<n><dat>$
 [/KSLbJOtiIGbg]

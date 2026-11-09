@@ -1,6 +1,6 @@
 [2tCY49svqUgF#0] ^кюнледен/кюн<n><pl><abl>$
 [/2tCY49svqUgF]
-[3UXCE8hzeLP9#0] ^кюнюдю/*кюнюдю$
+[3UXCE8hzeLP9#0] ^кюнюдю/кюн<n><px3sp><nom>+э<cop><aor><p3><sg>$
 [/3UXCE8hzeLP9]
 [4_NkJVCgk3CO#0] ^кюннге/кюн<n><dat>$
 [/4_NkJVCgk3CO]
@@ -16,7 +16,7 @@
 [/AR4pGfJlyALs]
 [BRcpFZjEi58g#0] ^кюнледе/кюн<n><pl><loc>$
 [/BRcpFZjEi58g]
-[GOwBV4WBZ3ig#0] ^кюнюню/*кюнюню$
+[GOwBV4WBZ3ig#0] ^кюнюню/кюн<n><px3sp><gen>$
 [/GOwBV4WBZ3ig]
 [HQC-TlWhMNd6#0] ^кюнден/кюн<n><abl>$
 [/HQC-TlWhMNd6]
@@ -24,23 +24,23 @@
 [/LJ80HhtWwd3w]
 [NkGK1HruPgJk#0] ^кюнлерине/кюн<n><pl><px3sp><dat>$
 [/NkGK1HruPgJk]
-[RV_HQ1ZTdpuF#0] ^кюнлерини/*кюнлерини$
+[RV_HQ1ZTdpuF#0] ^кюнлерини/кюн<n><pl><px3sp><gen>$
 [/RV_HQ1ZTdpuF]
 [UiNfW_S-Sej-#0] ^кюнню/кюн<n><acc>/кюн<n><gen>$
 [/UiNfW_S-Sej-]
 [_NKWVoM0zEig#0] ^кюнлени/кюн<n><pl><acc>/кюн<n><pl><gen>$
 [/_NKWVoM0zEig]
-[d9SKuFra3Fbn#0] ^кюнюне/*кюнюне$
+[d9SKuFra3Fbn#0] ^кюнюне/кюн<n><px3sp><dat>$
 [/d9SKuFra3Fbn]
-[keoHRCfKi3wn#0] ^кюнюнде/*кюнюнде$
+[keoHRCfKi3wn#0] ^кюнюнде/кюн<n><px3sp><loc>$
 [/keoHRCfKi3wn]
-[l0MBcX3Xr39f#0] ^кюнюн/кюн<n><px3sp><acc>/кюн<n><px3sp><gen>$
+[l0MBcX3Xr39f#0] ^кюнюн/кюн<n><px3sp><acc>$
 [/l0MBcX3Xr39f]
 [lXOyYsezRbxA#0] ^кюнюнг/кюн<n><px2sg><nom>$
 [/lXOyYsezRbxA]
 [pdEup8E9LpgQ#0] ^кюнледиле/кюн<n><pl><nom>+э<cop><aor><p3><pl>$
 [/pdEup8E9LpgQ]
-[uMmI1xGByOlW#0] ^кюнюбюз/*кюнюбюз$
+[uMmI1xGByOlW#0] ^кюнюбюз/кюн<n><px3sp><nom>+э<cop><aor><p1><pl>/кюн<n><px1pl><nom>$
 [/uMmI1xGByOlW]
 [wL3aa9k5hk8q#0] ^кюнлеге/кюн<n><pl><dat>$
 [/wL3aa9k5hk8q]

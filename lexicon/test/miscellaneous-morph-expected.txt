@@ -1,4 +1,4 @@
-[0LoHkSBDmpq3#0] ^кёзюуюню/*кёзюуюню$
+[0LoHkSBDmpq3#0] ^кёзюуюню/кёзюу<n><px3sp><gen>$
 [/0LoHkSBDmpq3]
 [0YCf4uxHOcz6#0] ^агрессорланы/агрессор<n><pl><acc>/агрессор<n><pl><gen>$
 [/0YCf4uxHOcz6]
@@ -6,9 +6,9 @@
 [/Csy8iPJTNFOT]
 [GPT9Flk0YEG0#0] ^кёзюуюнде/кёзюу<n><px3sp><loc>$
 [/GPT9Flk0YEG0]
-[LA-FO2fMRa-g#0] ^айнырыкъ/айны<v><tv>\<gpr_fut2\>/айны<v><tv>\<ger_fut2\><nom>$
+[LA-FO2fMRa-g#0] ^айнырыкъ/айны<v><tv><gpr_fut2>/айны<v><tv>\<ger_fut2\><nom>$
 [/LA-FO2fMRa-g]
-[LmNt-e8Mbsd1#0] ^тёлеую/тёлеу<n><px3sp><nom>$
+[LmNt-e8Mbsd1#0] ^тёлеую/тёле<v><tv><ger><px3sp><nom>/тёлеу<n><px3sp><nom>$
 [/LmNt-e8Mbsd1]
 [O1rcOFICGrLc#0] ^ачханлагъа/ач<v><tv><ger_past><pl><dat>$
 [/O1rcOFICGrLc]
@@ -22,5 +22,5 @@
 [/hZXGMdx54Fn6]
 [ikJ2pKv2VsPU#0] ^аквариумларыбызда/аквариум<n><pl><px1pl><loc>$
 [/ikJ2pKv2VsPU]
-[kh28_QTAIdZC#0] ^алгъынча/ал<v><tv>\<gna_until\>/ал\<vaux\>\<gna_until\>$
+[kh28_QTAIdZC#0] ^алгъынча/ал<vaux><gna_until>/ал<v><tv><gna_until>$
 [/kh28_QTAIdZC]

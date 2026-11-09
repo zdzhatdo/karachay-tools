@@ -478,7 +478,7 @@
 [/jYy8OL0_Y465]
 [jZQrswqgIO6j#0] 306-чы
 [/jZQrswqgIO6j]
-[jeBTkThF_eGK#0] 55-чисинди
+[jeBTkThF_eGK#0] 55-чисиди
 [/jeBTkThF_eGK]
 [jlukXHxnG6x1#0] 30-дан
 [/jlukXHxnG6x1]
@@ -670,5 +670,5 @@
 [/zjbmYRWA3egu]
 [zqhwHoElx9o1#0] 131-чи
 [/zqhwHoElx9o1]
-[zsxyHyyGuqPb#0] 39-чусунду
+[zsxyHyyGuqPb#0] 39-чусуду
 [/zsxyHyyGuqPb]
