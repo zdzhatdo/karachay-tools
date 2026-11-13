@@ -219,3 +219,30 @@
 **Next**
 - Pin action versions and `pytest` together with the base-image digest.
 - Add the U+0301 stripping rule to the normalize stage in DESIGN.md §6.
+
+## 2026-11-12 — Week 2, day 2: pipeline stage 1 (fetch)
+
+**Did**
+- Added `pyproject.toml` (Python ≥ 3.12, `typer`, dev extra `pytest`, `krc-pipeline` command, pytest test
+  paths). CI now installs from it, so CI and local use the same dependency list.
+- Added `pipeline/fetch.py` and `krc-pipeline fetch --date 20261101`: downloads the dated Karachay-Balkar
+  Wikipedia articles dump (5,521,144 bytes), verifies size and SHA-1 against Wikimedia's `dumpstatus.json`,
+  stores it as `data/raw/<sha256>.xml.bz2`, and appends a record to `data/raw/manifest.jsonl` (URL, dump
+  date, fetch time, license, size, SHA-1, SHA-256, stage version).
+- 3 tests with a fake network: stored under its hash and recorded; second run downloads nothing;
+  corrupted download rejected and nothing written. All 7 tests pass locally and in CI.
+
+**Design points**
+- Dated dump URL, not `latest`, so the same command always means the same input.
+- Idempotent: a second run finds the same SHA-1 in the manifest and skips the download (verified: same record,
+  same timestamp).
+- Reproducible: two independent downloads produced the same SHA-256 (`19db27f1…`).
+- Write to `.part`, then rename: a crash never leaves a half-written file under the final name.
+- The network function is passed in as a parameter (dependency injection), so tests need no internet.
+- No `http_status` field (DESIGN.md §6 lists one): any non-success response raises, so every stored record
+  is a successful download.
+- Reads the whole file into memory; fine at 5.5 MB, needs streaming for large sources.
+
+**Next**
+- Stage 2 (extract): wikitext from the dump → plain text with titles and paragraphs, keeping page IDs and
+  revision IDs for provenance.
