@@ -246,3 +246,43 @@
 **Next**
 - Stage 2 (extract): wikitext from the dump → plain text with titles and paragraphs, keeping page IDs and
   revision IDs for provenance.
+
+## 2026-11-12 — Week 2, day 3: pipeline stage 2 (extract)
+
+**Did**
+- Profiled the dump before designing (3 s): 3,140 articles, 2,075 redirects, ~12,000 non-article pages;
+  49% of articles under 1,000 characters of wikitext; 5,482 `<ref>` citations; 1.28 million Latin letters in
+  article wikitext (mostly citation templates and URLs); 982 U+0301 stress marks.
+- Added `pipeline/extract.py` and `krc-pipeline extract <dump>`, using `mwparserfromhell` (parses wiki markup
+  into a tree; regexes break on nested templates). Keeps titles, section headings, and paragraphs; drops
+  templates, citations, tables, images, and categories. One JSON line per article with page ID, revision ID,
+  template names, source SHA-256, and stage version.
+- Result: 2,617 articles extracted. Skips are counted by reason and reconcile with the profile:
+  2,617 + 523 empty = 3,140 articles.
+- Checked one article against Wikipedia's own plain text (`Алан`): 1,282 vs 1,335 words (difference is mostly
+  headings), and the same 24 Latin letters, so citations were removed cleanly.
+- 4 new tests (11 total); all pass locally and in CI.
+
+**Design points**
+- Streams the dump (`iterparse` + `clear()`), so memory stays flat regardless of dump size.
+- Output file is named `<input sha256>.<stage version>.jsonl`: new input or new code version means a new file;
+  old outputs are never overwritten. Idempotent: an existing output is not rebuilt.
+- Deterministic: two runs in different environments produced byte-identical output.
+- File and category namespace names are read from the dump, not hard-coded.
+- Template names are kept so later stages can flag stubs without parsing wikitext again.
+- Stress-mark stripping and whitespace cleanup belong to stage 3 (normalize), not extract.
+
+**Broke / learned**
+- The 523 empty articles were checked, not assumed: 504 are year pages with only empty headings, 18 are
+  infobox-only, 1 is a list made entirely of a table. Dropping tables also drops table-only articles (accepted
+  for now).
+- Breaking the code on purpose showed a weak test: with citations no longer removed, all tests still passed,
+  because the test citation contained only a template. Added a citation with plain text; now it fails as it
+  should. Same check confirmed the idempotency test catches a missing skip.
+
+**To verify with native speakers**
+- Does the template `тамамланмагъан статья` (760 pages) mean "unfinished/incomplete article" (a stub marker)?
+
+**Next**
+- Stage 3 (normalize): Unicode NFC, strip U+0301, fix Latin/Cyrillic lookalikes, tidy whitespace; log every
+  change and report volumes.
