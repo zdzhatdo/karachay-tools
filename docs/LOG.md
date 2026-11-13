@@ -286,3 +286,40 @@
 **Next**
 - Stage 3 (normalize): Unicode NFC, strip U+0301, fix Latin/Cyrillic lookalikes, tidy whitespace; log every
   change and report volumes.
+
+## 2026-11-13 — Week 2, day 4: pipeline stage 3 (normalize)
+
+**Did**
+- Profiled the extracted text before writing rules, so every rule targets a measured problem.
+- Added `pipeline/normalize.py` and `krc-pipeline normalize <extract output>`. Rules, in order: Unicode NFC,
+  remove U+0301 stress marks, remove invisible characters (soft hyphen, zero-width space, word joiner, BOM),
+  replace special spaces (no-break, thin, figure) with a normal space, fix mixed Latin/Cyrillic words, collapse
+  repeated spaces, remove spaces before `, . ; :`.
+- Result on 2,617 articles: 7,180 special spaces replaced, 2,129 repeated spaces collapsed, 906 spaces before
+  punctuation removed, 754 stress marks removed, 53 invisible characters removed, 35 mixed-script words fixed,
+  0 NFC changes.
+- Each article records its own change counts and every mixed-script fix as [before, after], plus
+  `stage_versions` for both extract and normalize.
+- 5 new tests (16 total); all pass locally and in CI.
+
+**Design points**
+- Mixed-script words are fixed only in two safe cases: every Latin letter has a Cyrillic twin (`Aзия` →
+  `Азия`), or the word is a Roman numeral typed with Cyrillic Х (`ХIХ` → `XIX`). Anything else (glued words,
+  palochka-like `I`) is left for a human.
+- Zero-width (non-)joiners are kept: in this corpus they occur only in Sinhala and Persian words, where they
+  change meaning.
+- Guillemets and dashes are left alone: the analyzer already handles them.
+- Same contract as earlier stages: output named `<input>.normalize-1.jsonl`, written to a `.part` file then
+  renamed, skipped if it already exists.
+
+**Broke / learned**
+- Reviewed all 35 mixed-script fixes by hand. 31 are correct; 4 were broken in the source and the rule can't
+  repair them (glued words, a stray letter, one extra keystroke: `къоркъyуу` → `къоркъууу`, standard form
+  likely `къоркъуу`). One is a real misfire: in `−4 °C 10° дериC` the stray Latin `C` is the Celsius unit, and
+  the rule turned it into Cyrillic `С`. Accepted for now; the analyzer will list these as unknown words.
+- Decided against a "no three identical letters" guard: Karachay-Balkar has legitimate `ууу` sequences
+  (e.g. `суууна`, also attested in published poetry), so the guard would block correct fixes.
+- Breaking the code on purpose (6 changes) made a test fail each time.
+
+**Next**
+- Stage 4 (language ID): tag paragraphs as krc / rus / other, so Russian quotes don't count against coverage.
