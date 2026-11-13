@@ -6,6 +6,7 @@ import typer
 
 from pipeline.extract import extract_dump
 from pipeline.fetch import fetch_dump
+from pipeline.normalize import normalize_file
 
 app = typer.Typer(help="Karachay-Balkar corpus pipeline.")
 
@@ -36,3 +37,17 @@ def extract(
     typer.echo(out)
     for name, count in stats.most_common():
         typer.echo(f"  {name}: {count}")
+
+
+@app.command()
+def normalize(
+    extracted: Path = typer.Argument(..., help="An extract output, e.g. data/extracted/<sha256>.extract-1.jsonl."),
+    out_dir: Path = typer.Option(Path("data/normalized"), help="Where normalized JSONL files go."),
+) -> None:
+    """Clean extracted text with counted rules; print what changed."""
+    out, totals, fixes = normalize_file(extracted, out_dir)
+    typer.echo(out)
+    for name, count in totals.most_common():
+        typer.echo(f"  {name}: {count}")
+    for before, after in fixes:
+        typer.echo(f"  fixed: {before} -> {after}")
