@@ -4,6 +4,7 @@ from pathlib import Path
 
 import typer
 
+from pipeline.extract import extract_dump
 from pipeline.fetch import fetch_dump
 
 app = typer.Typer(help="Karachay-Balkar corpus pipeline.")
@@ -23,3 +24,15 @@ def fetch(
     """Download a Wikipedia articles dump, verify it, and store it by content hash."""
     record = fetch_dump(wiki, date, raw_dir)
     typer.echo(f"{record['path']}  {record['size']} bytes  fetched {record['fetched_at']}")
+
+
+@app.command()
+def extract(
+    dump: Path = typer.Argument(..., help="A raw dump stored by `fetch`, e.g. data/raw/<sha256>.xml.bz2."),
+    out_dir: Path = typer.Option(Path("data/extracted"), help="Where extracted JSONL files go."),
+) -> None:
+    """Turn a stored Wikipedia dump into plain-text articles (one JSON line per article)."""
+    out, stats = extract_dump(dump, out_dir)
+    typer.echo(out)
+    for name, count in stats.most_common():
+        typer.echo(f"  {name}: {count}")
