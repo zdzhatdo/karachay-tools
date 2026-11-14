@@ -6,6 +6,7 @@ import typer
 
 from pipeline.extract import extract_dump
 from pipeline.fetch import fetch_dump
+from pipeline.langid import MODEL_URL, langid_file, load_glotlid
 from pipeline.normalize import normalize_file
 
 app = typer.Typer(help="Karachay-Balkar corpus pipeline.")
@@ -51,3 +52,16 @@ def normalize(
         typer.echo(f"  {name}: {count}")
     for before, after in fixes:
         typer.echo(f"  fixed: {before} -> {after}")
+
+
+@app.command()
+def langid(
+    normalized: Path = typer.Argument(..., help="A normalize output, e.g. data/normalized/<...>.normalize-1.jsonl."),
+    model: Path = typer.Option(Path("data/models/glotlid-v4.bin"), help=f"GlotLID v4, from {MODEL_URL}"),
+    out_dir: Path = typer.Option(Path("data/langid"), help="Where tagged JSONL files go."),
+) -> None:
+    """Tag every paragraph as krc, rus, or other; print the counts."""
+    out, totals = langid_file(normalized, out_dir, lambda: load_glotlid(model))
+    typer.echo(out)
+    for name, count in totals.most_common():
+        typer.echo(f"  {name}: {count}")

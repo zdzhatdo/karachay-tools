@@ -1,0 +1,244 @@
+# Second sample: paragraphs under the heading «Литература», to measure Russian detection.
+# Fill in label= with krc, rus, other, or name (mixed: the language of most words).
+# name = only names or terms, with no evidence of either language (e.g. a place name). Left out of accuracy.
+
+[1] page=2051 para=18 title=Жанна д’Арк
+label=name
+В. Тропейко. Жанна д’Арк
+
+[2] page=10409 para=14 title=Биринчи Торунь мамырлыкъ
+label=other
+Kuczyński S. M., Pierwszy pokój toruński (1 lutego 1411), «Zapiski Historyczne», t. 20, 1955, nr 1-4, s. 139—165;
+
+[3] page=19703 para=16 title=Смоленскни къуршаланыуу (1654)
+label=other
+Kroll P. Obrona Smolenska w 1654 r. // Staropolska sztuka wojenna XVI—XVII wieku. Warszawa, 2002
+
+[4] page=16893 para=69 title=Финляндияда граждан къазауат
+label=rus
+Гражданская война по-фински или вновь Север против Юга // Битва Гвардий — https://btgv.ru/history/civil-war/the-finnish-civil-war-or-the-north-against-the-south-again/
+
+[5] page=17180 para=88 title=Биринчи империя
+label=other
+McLynn, Frank. Napoleon: A Biography. New York: Arcade Publishing Inc., 1997.
+
+[6] page=5460 para=14 title=Африкаанс тил
+label=other
+Meijers, J. A. 1953. Afrikaans: hoe om dit maklik te leer praat. Leiden: A. W. Sijthoff’s uitgeversmaatchappij NV
+
+[7] page=17180 para=80 title=Биринчи империя
+label=other
+influential wide-ranging history
+
+[8] page=1388 para=27 title=Къарачай-малкъар тил
+label=rus
+Толковый словарь карачаево-балкарского языка. Т. 1. Нальчик, 1995.
+
+[9] page=16209 para=77 title=Уллу герцоглукъ Франкфурт
+label=other
+Konrad M. Färber: Kaiser und Erzkanzler, Carl von Dalberg und Napoleon; die Biographie des letzten geistlichen Fürsten in Deutschland. Mittelbayerische Druck- und Verlagsgesellschaft, Regensburg 1994, ISBN 3-927529-51-6. (zugl. Diss. Univ. München 1982)
+
+[10] page=10409 para=10 title=Биринчи Торунь мамырлыкъ
+label=other
+Biskup M., Labuda G., Dzieje zakonu krzyżackiego w Prusach, Gdańsk 1986;
+
+[11] page=16148 para=17 title=Партенопей республика
+label=other
+Gregory, Desmond. Napoleon’s Italy (2001)
+
+[12] page=6303 para=35 title=Революция
+label=rus
+Волобуев П. В. Выбор путей общественного развития: теория, история, современность. Москва, Политиздат, 1987
+
+[13] page=1388 para=29 title=Къарачай-малкъар тил
+label=rus
+Хабичев М. А. Карачаево-балкарское именное словообразование. Черкесск, 1989.
+
+[14] page=16144 para=18 title=Рим республика (1798—1799)
+label=other
+Une source inédite de l’histoire de la Republique Romaine: les registres du commandant Girardon. L’"insorgenza" du Latium méridional et la campagne du Circeo, in Mélanges de l’École Française de Rome. Italie et Méditerranée, tome 104, 1992,
+
+[15] page=19598 para=29 title=Автономия
+label=rus
+И. В. Ирхин, «Основные сценарии формирования территориальных автономий в современном мире (конституционно-правовой аспект)», 2019 год.
+
+[16] page=16042 para=63 title=Югославия
+label=other
+Hoare, Marko A., A History of Bosnia: From the Middle Ages to the Present Day. London: Saqi, 2007
+
+[17] page=16068 para=61 title=Социалист автоном край Косово
+label=krc
+Косовону бютеу конституциялары
+
+[18] page=10812 para=147 title=Берлин операция
+label=rus
+Зайцев В. И. Гвардейская танковая — Свердловск: Сред.-Урал. кн. изд-во, 1989. ISBN 5-7529-0110-3
+
+[19] page=9200 para=154 title=Тюркле
+label=rus
+Л. Н. Гумилёв. История народа хунну
+
+[20] page=10409 para=12 title=Биринчи Торунь мамырлыкъ
+label=other
+Gąsiorowski A., Formularz dokumentów traktatowych polsko-krzyżackich z XIV—XV w wieku, «Archeion», t. 46, 1978, s. 171—184;
+
+[21] page=16245 para=82 title=Мюнхен келишиу
+label=rus
+Пеганов А. О. Чехословацкий кризис в 1938—1939 гг.: взаимосвязь неблагоприятной внешнеполитической конъюнктуры и проблемы национальных меньшинств. // Международные отношения: История и современные аспекты. Теории и исследовательские практики. Вып. II. — Москва-Ставрополь, 2011. — С. 91—109. — 353 с.
+
+[22] page=6303 para=31 title=Революция
+label=rus
+Люксембург Р. Социальная реформа или революция. М.: Государственное издательство политической литературы, 1959.
+
+[23] page=17180 para=107 title=Биринчи империя
+label=other
+=
+
+[24] page=20186 para=112 title=Федератив кърал
+label=rus
+Бредихин А. Л. Федеративная система Российской Федерации. Учебное пособие. — Москва: Литрес: Самиздат, 2019. — 120 с.
+
+[25] page=8485 para=37 title=Уллу депрессия
+label=other
+Rothbard, Murray «America’s Great Depression» (2000)
+
+[26] page=16042 para=51 title=Югославия
+label=other
+Cigar, Norman,: Genocide in Bosnia: The Policy of Ethnic-Cleansing. College Station: Texas A&M University Press, 1995
+
+[27] page=8476 para=7 title=Утилитаризм
+label=rus
+А. А. Гусейнов. История этических учений: Утилитаризм
+
+[28] page=16068 para=59 title=Социалист автоном край Косово
+label=other
+Закон о установљењу и устројству Аутономне Косовско-метохијске области ("Службени гласник Србије", бр. 28/45, стр. 426.)
+
+[29] page=16893 para=65 title=Финляндияда граждан къазауат
+label=rus
+Вестерлунд Л. Мы ждали вас как освободителей, а вы принесли нам смерть. — 2013. — 128 с. — ISBN 5-93768-060-X.
+
+[30] page=13228 para=4 title=Ыйых кюн
+label=krc
+башха тилледе
+
+[31] page=5460 para=9 title=Африкаанс тил
+label=rus
+Игнатенко, А. К. Учебник языка африкаанс М., 2000
+
+[32] page=8039 para=8 title=Македон тил
+label=rus
+Усикова Р. П.,, Македонский язык, Скопје, 1985.
+
+[33] page=19991 para=44 title=The Times
+label=other
+Riggs, Bruce Timothy. «Geoffrey Dawson, editor of „The Times“ (London), and his contribution to the appeasement movement» (PhD dissertation, U of North Texas, 1993) online, bibliography pp 229-33.
+
+[34] page=16005 para=31 title=Алаш
+label=rus
+Аманжолова Д. Партия «Алаш»: история и историография. — Семипалатинск, 1993.
+
+[35] page=8038 para=7 title=Аусбау-парадигма
+label=other
+Trudgill P. Norwegian as a Normal Language. 2002
+
+[36] page=16245 para=84 title=Мюнхен келишиу
+label=rus
+Секреты польской политики. Сборник документов (1935—1945). / Сост. Л. Ф. Соцков. — М.: Архив Службы внешней разведки Российской федерации, 2009. — 383 с.
+
+[37] page=16144 para=17 title=Рим республика (1798—1799)
+label=other
+Albert DUFOURCQ, Le Régime jacobin en Italie. Étude sur la République romaine, Paris, 1900.
+
+[38] page=5730 para=9 title=Сентябрь къозгъалыу
+label=rus
+В. Андриянов, А. Москаленко. Полынь чужбины. К., Радянський письменник, 1982
+
+[39] page=2235 para=139 title=Джазма
+label=rus
+Добльхофер Э. Знаки и чудеса. М., 1963.
+
+[40] page=9076 para=21 title=Къара шкилди
+label=other
+— ISBN 978-1-84593-826-0
+
+[41] page=8039 para=7 title=Македон тил
+label=rus
+Селищев А. М. Очерки по македонской диалектологии, Казань, 1918
+
+[42] page=4448 para=68 title=Уллу француз революция
+label=rus
+Фюре Ф. Постижение Французской революции. СПб., 1998.
+
+[43] page=16042 para=47 title=Югославия
+label=rus
+Югославия в XX веке: очерки политической истории / К. В. Никифоров (отв. ред.), А. И. Филимонова, А. Л. Шемякин и др. — М.: Индрик, 2011.
+
+[44] page=17629 para=137 title=Информация
+label=rus
+Стратонович Р. Л. Теория информации М.: Сов. радио, 1975. — 424 с.
+
+[45] page=8038 para=8 title=Аусбау-парадигма
+label=other
+Trudgill P. Glocalisation and the Ausbau sociolinguistics of modern Europe. 2004
+
+[46] page=15959 para=7 title=Эланд сермешиу (1676)
+label=other
+Naval Wars in the Baltic 1553—1850 (1910) — R. C. Anderson
+
+[47] page=5730 para=8 title=Сентябрь къозгъалыу
+label=rus
+Ц. Драгойчева. По велению долга. Москва, Издательство политической литературы, 1974
+
+[48] page=11595 para=15 title=Рур конфликт
+label=other
+Gerd Krüger: «Aktiver» und passiver Widerstand im Ruhrkampf 1923, in: Besatzung. Funktion und Gestalt militärischer Fremdherrschaft von der Antike bis zum 20. Jahrhundert, hrsg. von Günther Kronenbitter, Markus Pöhlmann und Dierk Walter, Paderborn / München / Wien / Zürich 2006 (Krieg in der Geschichte, 28) S. 119—130.
+
+[49] page=8038 para=6 title=Аусбау-парадигма
+label=other
+Kloss H. Abstand languages and Ausbau languages // Anthropological Linguistics. Harvard: Harvard Press, 1967.
+
+[50] page=6303 para=30 title=Революция
+label=rus
+Ленин В. И. Пролетарская революция и ренегат Каутский // Ленин В. И. Полное собрание сочинений. Т. 37.
+
+[51] page=16042 para=59 title=Югославия
+label=other
+Gutman, Roy.: A Witness to Genocide. The 1993 Pulitzer Prize-winning Dispatches on the «Ethnic Cleansing» of Bosnia. New York: Macmillan, 1993
+
+[52] page=10812 para=141 title=Берлин операция
+label=rus
+Бабаджанян А. X. Дороги победы — М.: «Молодая гвардия», 1975
+
+[53] page=6303 para=29 title=Революция
+label=rus
+Ленин В. И. Государство и революция // Ленин В. И. Полное собрание сочинений. Т. 33.
+
+[54] page=9200 para=160 title=Тюркле
+label=rus
+Мирфатых Закиев Происхождение тюрков и татар
+
+[55] page=8039 para=4 title=Македон тил
+label=other
+Конески Б., Граматика на македонскиот литературен јазик, в его кн.: Избрани дела, 2 изд., кн. 6, Скопје, 1981;
+
+[56] page=2051 para=15 title=Жанна д’Арк
+label=name
+Дмитрий Мережковский. «Жанна д’Арк»
+
+[57] page=16144 para=20 title=Рим республика (1798—1799)
+label=other
+Gérard PELLETIER, Rome et la Révolution française. La théologie et la politique du Saint Siège devant la Révolution française (1789—1799), Rome, École française de Rome, 2004.
+
+[58] page=16699 para=40 title=Физикалыкъ уллулукъну ёлчемлиги
+label=rus
+Сена Л. А. Единицы физических величин и их размерности. — М.: Наука, 1977. — 336 c.
+
+[59] page=16144 para=22 title=Рим республика (1798—1799)
+label=other
+Richard Wichterich: Sein Schicksal war Napoleon. Leben und Zeit des Kardinalstaatssekretärs Ercole Consalvi 1757—1824. Heidelberg 1951.
+
+[60] page=16042 para=75 title=Югославия
+label=other
+West, Rebecca: Black Lamb and Gray Falcon: A Journey Through Yugoslavia. Viking, 1941
+
