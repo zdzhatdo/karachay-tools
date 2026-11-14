@@ -323,3 +323,37 @@
 
 **Next**
 - Stage 4 (language ID): tag paragraphs as krc / rus / other, so Russian quotes don't count against coverage.
+
+## 2026-11-14 — Week 2, day 5: pipeline stage 4 (language ID)
+
+**Did**
+- Built a gold set before choosing a tool: 150 random paragraphs (fixed seed), labeled by a native speaker as
+  krc / rus / other / name. `name` = only names or terms (e.g. `Сиэтл`), with no evidence of either language;
+  left out of accuracy. The random sample had only 9 Russian paragraphs, all citations, so a second sample of
+  60 paragraphs was drawn from sections headed «Литература». Totals: 126 krc, 37 rus, 31 other, 16 name.
+- Compared GlotLID v4 small (131 MB) and full (783 MB) on the gold set. The small model mistook Russian for
+  Bulgarian/Ukrainian (28/37 correct); the full model got 36/37. Chose the full model.
+- Added `pipeline/langid.py` and `krc-pipeline langid`. Each paragraph gets a label, the raw GlotLID code and
+  probability, and whether the short-line rule decided it. Text is never changed.
+- Result on 25,004 paragraphs: 19,627 krc, 3,732 rus (15%, mostly citations), 1,645 other.
+- `eval/langid_eval.py` reproduces the accuracy table: krc 25/27 short and 97/99 long, rus 36/37, other 31/31.
+- 4 new tests (20 total); all pass locally and in CI.
+
+**Design points**
+- Short-line rule: lines under 40 characters that the model assigns to another Cyrillic language (mostly
+  Tatar, Kyrgyz, Bashkir) are labeled krc. This raised short krc lines from 19/27 to 25/27 without changing rus
+  or other. Caveat: the rule was chosen on the same gold set, so these numbers are optimistic; a fresh sample is
+  needed for an unbiased estimate.
+- The stage version is tied to one model file: the loader checks its SHA-256 and refuses any other file.
+- The model is downloaded, not committed; fastText is an optional extra, so CI never needs the 783 MB file
+  (tests use a fake model).
+- Did not use the analyzer to decide language: that would let the thing being measured choose its own test data.
+- Output was byte-identical across two environments (Python 3.11 and 3.12).
+
+**Broke / learned**
+- fastText has no build for Python 3.14; the local environment was moved to Python 3.12, matching CI.
+- Labeling exposed an extract bug: an interlanguage link (`sv:Toppdomän#R`) leaked into article text.
+- Breaking the code on purpose (6 changes) made a test fail each time.
+
+**Next**
+- Stage 5 (segment): sentence splitting.
