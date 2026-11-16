@@ -357,3 +357,20 @@
 
 **Next**
 - Stage 5 (segment): sentence splitting.
+
+## 2026-11-16 — Engineering hygiene: lint and type checks
+
+**Did**
+- Added ruff (lint + format) and mypy to the dev tools and a `lint` job to CI; it is a required check on main.
+- Fixed what they found: invisible characters (stress mark, zero-width and no-break spaces) were written
+  directly into source and tests, so a reader couldn't see what a regex matched; now visible `\u` escapes.
+  `extract.py` could crash with an unclear `TypeError` on a page without an ID; now `required_text` raises a
+  clear error (new test, 21 total).
+- Formatting applied in its own commit so the real fixes stay easy to review.
+
+**Design points**
+- Every disabled rule has a reason in `pyproject.toml`: Cyrillic letters that look Latin are deliberate here
+  (mixed-script tests), and `typer.Option(...)` defaults are Typer's documented pattern.
+
+**Next**
+- Reproducible builds: dependency lock file, pinned Actions and base image, Dependabot.
