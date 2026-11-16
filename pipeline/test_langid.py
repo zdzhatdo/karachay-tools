@@ -15,11 +15,17 @@ def test_to_label_maps_codes_and_applies_the_short_line_rule():
 
 def test_langid_file_tags_every_paragraph_and_records_lineage(tmp_path):
     source = tmp_path / "abc.extract-1.normalize-1.jsonl"
-    source.write_text(json.dumps({
-        "title": "T",
-        "sections": [{"heading": None, "paragraphs": ["one", "two"]}],
-        "stage_versions": {"extract": "extract-1", "normalize": "normalize-1"},
-    }) + "\n", encoding="utf-8")
+    source.write_text(
+        json.dumps(
+            {
+                "title": "T",
+                "sections": [{"heading": None, "paragraphs": ["one", "two"]}],
+                "stage_versions": {"extract": "extract-1", "normalize": "normalize-1"},
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
     fake = {"one": ("krc_Cyrl", 0.9), "two": ("kir_Cyrl", 0.5)}
 
     out, totals = langid_file(source, tmp_path / "out", lambda: fake.__getitem__)

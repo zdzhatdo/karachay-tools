@@ -10,12 +10,20 @@ DUMP_URL = "/testwiki/20260101/testwiki-20260101-pages-articles.xml.bz2"
 
 def fake_get(payload: bytes, published: bytes):
     """A stand-in for the network: dumpstatus.json describes `published`, the download returns `payload`."""
-    status = {"jobs": {"articlesdump": {"status": "done", "files": {
-        "testwiki-20260101-pages-articles.xml.bz2": {
-            "size": len(published),
-            "sha1": hashlib.sha1(published).hexdigest(),
-            "url": DUMP_URL,
-        }}}}}
+    status = {
+        "jobs": {
+            "articlesdump": {
+                "status": "done",
+                "files": {
+                    "testwiki-20260101-pages-articles.xml.bz2": {
+                        "size": len(published),
+                        "sha1": hashlib.sha1(published).hexdigest(),
+                        "url": DUMP_URL,
+                    }
+                },
+            }
+        }
+    }
     downloads = []
 
     def get(url: str) -> bytes:

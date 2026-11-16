@@ -92,7 +92,9 @@ def extract_dump(dump: Path, out_dir: Path) -> tuple[Path, Counter]:
             if not article_sections:
                 stats["skipped: no text after extraction"] += 1
                 continue
-            templates = sorted({str(t.name).strip().lower() for t in mwparserfromhell.parse(wikitext).filter_templates()})
+            templates = sorted(
+                {str(t.name).strip().lower() for t in mwparserfromhell.parse(wikitext).filter_templates()}
+            )
             record = {
                 "page_id": int(required_text(page, "{*}id")),
                 "rev_id": int(required_text(page, "{*}revision/{*}id")),

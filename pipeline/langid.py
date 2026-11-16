@@ -12,9 +12,7 @@ from pathlib import Path
 
 STAGE_VERSION = "langid-1"
 # This stage version is tied to one exact model file: GlotLID v4 (Apache 2.0 plus notices).
-MODEL_URL = (
-    "https://huggingface.co/cis-lmu/glotlid/resolve/e9592e0a9bc3b6f2a946de94faaa188d1dd6f522/model_v4.bin"
-)
+MODEL_URL = "https://huggingface.co/cis-lmu/glotlid/resolve/e9592e0a9bc3b6f2a946de94faaa188d1dd6f522/model_v4.bin"
 MODEL_SHA256 = "3b26297652e105cb63acde0fbf5aa228161528b519331e58a7c94ea9fe58474c"
 # Below this many characters the model often mistakes krc for a related Turkic language.
 SHORT = 40
@@ -73,7 +71,8 @@ def langid_file(normalized: Path, out_dir: Path, load: Callable[[], Predict]) ->
                     code, probability = predict(paragraph)
                     label, short_rule = to_label(paragraph, code)
                     section["langs"].append(
-                        {"lang": label, "glotlid": code, "p": probability, "short_rule": short_rule})
+                        {"lang": label, "glotlid": code, "p": probability, "short_rule": short_rule}
+                    )
                     totals[f"paragraphs {label}"] += 1
                     totals["short-line rule applied"] += short_rule
             record["stage_versions"]["langid"] = STAGE_VERSION

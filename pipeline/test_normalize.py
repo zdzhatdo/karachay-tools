@@ -31,11 +31,22 @@ def test_mixed_script_fixes_only_the_safe_cases():
 
 def test_normalize_file_records_lineage_changes_and_fixes(tmp_path):
     source = tmp_path / "abc.extract-1.jsonl"
-    source.write_text(json.dumps({
-        "page_id": 1, "rev_id": 2, "title": "T",
-        "sections": [{"heading": "Aзия", "paragraphs": ["x\u0301 ,y"]}],
-        "templates": [], "source_sha256": "abc", "stage_version": "extract-1",
-    }, ensure_ascii=False) + "\n", encoding="utf-8")
+    source.write_text(
+        json.dumps(
+            {
+                "page_id": 1,
+                "rev_id": 2,
+                "title": "T",
+                "sections": [{"heading": "Aзия", "paragraphs": ["x\u0301 ,y"]}],
+                "templates": [],
+                "source_sha256": "abc",
+                "stage_version": "extract-1",
+            },
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
 
     out, _, fixes = normalize_file(source, tmp_path / "out")
     record = json.loads(out.read_text(encoding="utf-8"))
@@ -44,7 +55,10 @@ def test_normalize_file_records_lineage_changes_and_fixes(tmp_path):
     assert record["sections"] == [{"heading": "Азия", "paragraphs": ["x,y"]}]
     assert record["stage_versions"] == {"extract": "extract-1", "normalize": "normalize-1"}
     assert record["normalize_changes"] == {
-        "mixed-script words fixed": 1, "spaces before punctuation removed": 1, "stress marks removed": 1}
+        "mixed-script words fixed": 1,
+        "spaces before punctuation removed": 1,
+        "stress marks removed": 1,
+    }
     assert record["mixed_script_fixes"] == fixes == [["Aзия", "Азия"]]
     assert "stage_version" not in record
 

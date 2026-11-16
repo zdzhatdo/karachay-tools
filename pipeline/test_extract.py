@@ -47,13 +47,23 @@ def test_extract_dump_writes_articles_with_provenance_and_counts_skips(tmp_path)
     out, stats = extract_dump(dump, tmp_path / "out")
 
     records = [json.loads(line) for line in out.read_text(encoding="utf-8").splitlines()]
-    assert records == [{
-        "page_id": 1, "rev_id": 10, "title": "Article",
-        "sections": [{"heading": None, "paragraphs": ["Some text."]}],
-        "templates": ["stub"], "source_sha256": "abc123", "stage_version": "extract-1",
-    }]
-    assert stats == {"articles": 1, "skipped: redirect": 1, "skipped: not an article": 1,
-                     "skipped: no text after extraction": 1}
+    assert records == [
+        {
+            "page_id": 1,
+            "rev_id": 10,
+            "title": "Article",
+            "sections": [{"heading": None, "paragraphs": ["Some text."]}],
+            "templates": ["stub"],
+            "source_sha256": "abc123",
+            "stage_version": "extract-1",
+        }
+    ]
+    assert stats == {
+        "articles": 1,
+        "skipped: redirect": 1,
+        "skipped: not an article": 1,
+        "skipped: no text after extraction": 1,
+    }
 
 
 def test_extract_dump_is_idempotent(tmp_path):
