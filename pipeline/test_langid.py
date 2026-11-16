@@ -38,7 +38,7 @@ def test_langid_file_tags_every_paragraph_and_records_lineage(tmp_path):
 def test_existing_output_is_skipped_without_loading_the_model(tmp_path):
     source = tmp_path / "abc.jsonl"
     source.write_text(json.dumps({"sections": [], "stage_versions": {}}) + "\n", encoding="utf-8")
-    first, _ = langid_file(source, tmp_path / "out", lambda: None)
+    first, _ = langid_file(source, tmp_path / "out", lambda: lambda text: ("krc_Cyrl", 1.0))
     content = first.read_bytes()
 
     def must_not_load():

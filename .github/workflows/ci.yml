@@ -19,6 +19,18 @@ jobs:
       - run: pip install -e ".[dev]"
       - run: pytest -v
 
+  lint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: ruff check pipeline eval
+      - run: ruff format --check pipeline eval
+      - run: mypy pipeline eval
+
   analyzer:
     runs-on: ubuntu-24.04
     steps:

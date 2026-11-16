@@ -1,7 +1,10 @@
 import bz2
 import json
+import xml.etree.ElementTree as ET
 
-from pipeline.extract import extract_dump, plain_text, sections
+import pytest
+
+from pipeline.extract import extract_dump, plain_text, required_text, sections
 
 LINKS = ("file:", "category:")
 
@@ -25,9 +28,13 @@ def test_sections_keep_headings_and_drop_empty_sections():
 
 def make_dump(path):
     xml = """<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/">
-  <siteinfo><namespaces><namespace key="6">File</namespace><namespace key="14">Category</namespace></namespaces></siteinfo>
-  <page><title>Article</title><ns>0</ns><id>1</id><revision><id>10</id><text>Some text. {{Stub}}</text></revision></page>
-  <page><title>Old name</title><ns>0</ns><id>2</id><redirect title="Article" /><revision><id>20</id><text>#REDIRECT [[Article]]</text></revision></page>
+  <siteinfo><namespaces>
+    <namespace key="6">File</namespace><namespace key="14">Category</namespace>
+  </namespaces></siteinfo>
+  <page><title>Article</title><ns>0</ns><id>1</id>
+    <revision><id>10</id><text>Some text. {{Stub}}</text></revision></page>
+  <page><title>Old name</title><ns>0</ns><id>2</id>
+    <redirect title="Article" /><revision><id>20</id><text>#REDIRECT [[Article]]</text></revision></page>
   <page><title>Template:Stub</title><ns>10</ns><id>3</id><revision><id>30</id><text>stub box</text></revision></page>
   <page><title>Empty</title><ns>0</ns><id>4</id><revision><id>40</id><text>{{Infobox}}</text></revision></page>
 </mediawiki>"""
@@ -58,3 +65,10 @@ def test_extract_dump_is_idempotent(tmp_path):
 
     assert second == first and second.read_bytes() == content
     assert stats == {"skipped (already extracted)": 1}
+
+
+def test_required_text_fails_clearly_when_a_field_is_missing():
+    page = ET.fromstring("<page><title>T</title></page>")
+    assert required_text(page, "title") == "T"
+    with pytest.raises(ValueError, match="page is missing id"):
+        required_text(page, "id")
