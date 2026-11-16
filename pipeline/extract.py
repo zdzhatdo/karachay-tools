@@ -8,6 +8,7 @@ from collections.abc import Iterator
 from pathlib import Path
 
 import mwparserfromhell
+from mwparserfromhell.nodes import Node
 
 STAGE_VERSION = "extract-1"
 DROPPED_TAGS = {"ref", "references", "gallery", "math", "table", "syntaxhighlight", "timeline", "score"}
@@ -20,10 +21,18 @@ def link_prefixes(namespaces: dict[int, str]) -> tuple[str, ...]:
     return tuple(f"{name.lower()}:" for name in names if name)
 
 
+def required_text(element: ET.Element, path: str) -> str:
+    """Return the text at path, failing clearly if the dump lacks it."""
+    value = element.findtext(path)
+    if value is None:
+        raise ValueError(f"page is missing {path}")
+    return value
+
+
 def plain_text(wikitext: str, drop_links: tuple[str, ...]) -> str:
     """Remove templates, citations, tables, files, and categories; keep the readable text."""
     code = mwparserfromhell.parse(wikitext)
-    unwanted = [tag for tag in code.filter_tags() if str(tag.tag).strip().lower() in DROPPED_TAGS]
+    unwanted: list[Node] = [tag for tag in code.filter_tags() if str(tag.tag).strip().lower() in DROPPED_TAGS]
     unwanted += [link for link in code.filter_wikilinks() if str(link.title).strip().lower().startswith(drop_links)]
     for node in unwanted:
         try:
@@ -83,10 +92,12 @@ def extract_dump(dump: Path, out_dir: Path) -> tuple[Path, Counter]:
             if not article_sections:
                 stats["skipped: no text after extraction"] += 1
                 continue
-            templates = sorted({str(t.name).strip().lower() for t in mwparserfromhell.parse(wikitext).filter_templates()})
+            templates = sorted(
+                {str(t.name).strip().lower() for t in mwparserfromhell.parse(wikitext).filter_templates()}
+            )
             record = {
-                "page_id": int(page.findtext("{*}id")),
-                "rev_id": int(page.findtext("{*}revision/{*}id")),
+                "page_id": int(required_text(page, "{*}id")),
+                "rev_id": int(required_text(page, "{*}revision/{*}id")),
                 "title": page.findtext("{*}title"),
                 "sections": article_sections,
                 "templates": templates,

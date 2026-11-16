@@ -12,11 +12,11 @@ from pathlib import Path
 
 STAGE_VERSION = "normalize-1"
 
-STRESS_MARK = "́"
+STRESS_MARK = "\u0301"
 # Soft hyphen, zero-width space, word joiner, byte-order mark. Zero-width (non-)joiners are kept:
 # in this corpus they occur only inside Sinhala and Persian words, where they are meaningful.
-INVISIBLE = re.compile("[­​⁠﻿]")
-OTHER_SPACES = re.compile("[    ]")
+INVISIBLE = re.compile("[\u00ad\u200b\u2060\ufeff]")
+OTHER_SPACES = re.compile("[\u00a0\u2007\u2009\u202f]")
 REPEATED_SPACES = re.compile(" {2,}")
 SPACE_BEFORE_PUNCTUATION = re.compile(r" +(?=[,.;:])")
 WORD = re.compile(r"[A-Za-zЀ-ӿ]+")

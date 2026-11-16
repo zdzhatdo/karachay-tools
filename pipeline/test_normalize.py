@@ -5,8 +5,9 @@ from pipeline.normalize import fix_mixed_script, normalize_file, normalize_text
 
 
 def test_normalize_text_applies_each_rule_and_counts_it():
-    changes, fixes = Counter(), []
-    text = " ab́c­​d  e , f "
+    changes: Counter[str] = Counter()
+    fixes: list[list[str]] = []
+    text = " ab\u0301c\u00ad\u200bd  e ,\u00a0f "
     assert normalize_text(text, changes, fixes) == "abcd e, f"
     assert changes["stress marks removed"] == 1
     assert changes["invisible characters removed"] == 2
@@ -16,7 +17,7 @@ def test_normalize_text_applies_each_rule_and_counts_it():
 
 
 def test_zero_width_joiners_are_kept():
-    assert normalize_text("a‌b‍c", Counter(), []) == "a‌b‍c"
+    assert normalize_text("a\u200cb\u200dc", Counter(), []) == "a\u200cb\u200dc"
 
 
 def test_mixed_script_fixes_only_the_safe_cases():
@@ -30,20 +31,34 @@ def test_mixed_script_fixes_only_the_safe_cases():
 
 def test_normalize_file_records_lineage_changes_and_fixes(tmp_path):
     source = tmp_path / "abc.extract-1.jsonl"
-    source.write_text(json.dumps({
-        "page_id": 1, "rev_id": 2, "title": "T",
-        "sections": [{"heading": "Aзия", "paragraphs": ["x́ ,y"]}],
-        "templates": [], "source_sha256": "abc", "stage_version": "extract-1",
-    }, ensure_ascii=False) + "\n", encoding="utf-8")
+    source.write_text(
+        json.dumps(
+            {
+                "page_id": 1,
+                "rev_id": 2,
+                "title": "T",
+                "sections": [{"heading": "Aзия", "paragraphs": ["x\u0301 ,y"]}],
+                "templates": [],
+                "source_sha256": "abc",
+                "stage_version": "extract-1",
+            },
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
 
-    out, totals, fixes = normalize_file(source, tmp_path / "out")
+    out, _, fixes = normalize_file(source, tmp_path / "out")
     record = json.loads(out.read_text(encoding="utf-8"))
 
     assert out.name == "abc.extract-1.normalize-1.jsonl"
     assert record["sections"] == [{"heading": "Азия", "paragraphs": ["x,y"]}]
     assert record["stage_versions"] == {"extract": "extract-1", "normalize": "normalize-1"}
     assert record["normalize_changes"] == {
-        "mixed-script words fixed": 1, "spaces before punctuation removed": 1, "stress marks removed": 1}
+        "mixed-script words fixed": 1,
+        "spaces before punctuation removed": 1,
+        "stress marks removed": 1,
+    }
     assert record["mixed_script_fixes"] == fixes == [["Aзия", "Азия"]]
     assert "stage_version" not in record
 

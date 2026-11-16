@@ -4,7 +4,7 @@ import hashlib
 import json
 import urllib.request
 from collections.abc import Callable
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 STAGE_VERSION = "fetch-1"
@@ -71,7 +71,7 @@ def fetch_dump(wiki: str, date: str, raw_dir: Path, get: Callable[[str], bytes] 
         "source": wiki,
         "url": url,
         "dump_date": date,
-        "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "fetched_at": datetime.now(UTC).isoformat(timespec="seconds"),
         "license": LICENSE,
         "size": len(data),
         "sha1": info["sha1"],
