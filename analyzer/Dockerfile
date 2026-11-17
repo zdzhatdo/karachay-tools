@@ -1,6 +1,6 @@
 # Stage 1: build the Karachay-Balkar transducers from the vendored apertium-krc in lexicon/.
 # Run from the repo root:  docker build -f analyzer/Dockerfile -t krc-analyzer .
-FROM debian:bookworm AS build
+FROM debian:bookworm@sha256:268fb24c39bca92d326dd83ea3abebe4a3f7751c804ffef23bb6d857dd343ff8 AS build
 
 # UTF-8 so Cyrillic isn't mangled; apt must never wait for an answer.
 ENV LANG=C.UTF-8 \
